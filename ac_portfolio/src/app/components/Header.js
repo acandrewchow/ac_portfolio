@@ -1,5 +1,5 @@
-import React from 'react';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import React from "react";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 
 const Header = ({ toggleDarkMode }) => {
   return (
