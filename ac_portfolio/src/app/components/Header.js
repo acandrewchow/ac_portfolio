@@ -15,7 +15,7 @@ const Header = ({ toggleDarkMode }) => {
         <li>
           <a
             className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-            href="http://andrewchow.ca/resume/"
+            href="https://docs.google.com/gview?url=https://github.com/acandrewchow/resume/raw/main/Chow_Andrew-Resume.pdf&embedded=true"
           >
             Resume
           </a>

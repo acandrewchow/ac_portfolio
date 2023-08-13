@@ -46,6 +46,7 @@ const ExperienceSection = ({ darkMode }) => {
                         src={experience.companyLogo}
                         alt={`${experience.companyName} Logo`}
                         className="w-full h-full object-contain"
+                        layout="responsive"
                         width={100}
                         height={100}
                       />
