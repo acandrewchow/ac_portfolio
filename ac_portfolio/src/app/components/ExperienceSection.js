@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 const ExperienceSection = ({ darkMode }) => {
     const experiences = [
@@ -41,7 +42,7 @@ const ExperienceSection = ({ darkMode }) => {
                 >
                   <div className="flex items-center">
                     <div className="w-1/2 pr-4">
-                      <img
+                      <Image
                         src={experience.companyLogo}
                         alt={`${experience.companyName} Logo`}
                         className="w-full h-full object-contain"
