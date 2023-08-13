@@ -20,7 +20,7 @@ const ExperienceSection = ({ darkMode }) => {
         {
           companyLogo: '/experience/theScore.jpg', 
           role: 'QA Analyst',
-          companyName: 'Example Company 2',
+          companyName: 'theScore',
           date: 'May 2022 - December 2022',
           description: 'QA Analyst on Promotions',
         },
@@ -37,7 +37,7 @@ const ExperienceSection = ({ darkMode }) => {
                 <div
                   key={index}
                   className={`p-6 rounded-lg shadow-md mb-6 ${
-                    darkMode ? 'bg-gray-800 text-gray-300' : 'bg-white text-gray-800'
+                    darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'
                   }`}
                 >
                   <div className="flex items-center">
@@ -46,16 +46,18 @@ const ExperienceSection = ({ darkMode }) => {
                         src={experience.companyLogo}
                         alt={`${experience.companyName} Logo`}
                         className="w-full h-full object-contain"
+                        width={100}
+                        height={100}
                       />
                     </div>
                     <div className="w-1/2">
                       <h3 className={`text-lg md:text-xl font-semibold ${darkMode ? 'text-white' : 'text-gray-800'}`}>
                         {experience.role}
                       </h3>
-                      <p className={`text-gray-600 ${darkMode ? 'text-gray-400' : ''}`}>
+                      <p className={`text-gray-600 ${darkMode ? 'text-white' : ''}`}>
                         {experience.companyName}
                       </p>
-                      <p className={`text-gray-600 mt-2 ${darkMode ? 'text-gray-400' : ''}`}>
+                      <p className={`text-gray-600 mt-2 ${darkMode ? 'text-white' : ''}`}>
                         {experience.date}
                       </p>
                       <p className={`mt-4 text-sm md:text-base ${darkMode ? 'text-gray-400' : ''}`}>
