@@ -36,8 +36,8 @@ const HeroSection = () => {
           <AiFillGithub />
           <AiFillInstagram />
         </div>
-        <div className="mx-auto rounded-full w-40 md:w-80 h-40 md:h-80 relative overflow-hidden mt-10 md:mt-20">
-          <Image src={ProfilePicture} alt="profile_pic" objectFit="cover" />
+        <div className="mx-auto rounded-full w-80 md:w-120 h-80 md:h-120 relative overflow-hidden mt-10 md:mt-20">
+          <Image src={ProfilePicture} alt="profile_pic" objectFit="cover"/>
         </div>
       </div>
     );
