@@ -3,10 +3,11 @@ import Head from "next/head";
 import { useState } from "react";
 import HeroSection from "../app/components/HeaderSection";
 import ContactSection from "../app/components/ContactSection";
-import Header from "../app/components/Header";
+import Navbar from "./components/Navbar";
 import SkillSection from "../app/components/SkillSection";
 import ExperienceSection from "./components/ExperienceSection";
 import Footer from "./components/Footer";
+// import ProjectSection from "./components/ProjectSection";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,11 +25,12 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <HeroSection darkMode ={darkMode}/>
         </section>
         <SkillSection darkMode ={darkMode} />
         <ExperienceSection darkMode ={darkMode} />
+        {/* <ProjectSection darkMode ={darkMode} /> */}
         <ContactSection darkMode={darkMode}/>
         <Footer darkMode={darkMode} />
       </main>
