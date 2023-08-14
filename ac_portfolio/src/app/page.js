@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <ParticlesBackground darkMode={darkMode} />
+          <ParticlesBackground darkMode={darkMode}/>
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <HeroSection darkMode ={darkMode}/>
         <SkillSection darkMode ={darkMode} />
