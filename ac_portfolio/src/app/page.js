@@ -12,7 +12,7 @@ import ParticleTest from "./components/ParticleTest";
 // import ProjectSection from "./components/ProjectSection";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
