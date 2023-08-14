@@ -1,13 +1,31 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import particlesConfig from "./config/particles-config";
+import { useState, useEffect } from "react";
+import particlesConfig from "./config/particles-config"; 
 
 const ParticlesBackground = ( {darkMode }) => {
+  const [particleSize, setParticleSize] = useState(4);
+  const [lineDistance, setLineDistance] = useState(600); 
+
   const particlesInit = async (main) => {
     console.log(main);
 
     await loadFull(main);
   };
+
+  const handleResize = () => {
+    const isMobile = window.innerWidth <= 768; 
+    setParticleSize(isMobile ? 2 : 4); 
+    setLineDistance(isMobile ? 300 : 600);
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <Particles
       init={particlesInit}
@@ -25,7 +43,7 @@ const ParticlesBackground = ( {darkMode }) => {
             },
           },
           color: {
-            value: darkMode ? "#fff" : "#000", // Set different colors based on darkMode
+            value: darkMode ? "#fff" : "#000", 
           },
           shape: {
             type: "star",
@@ -34,7 +52,7 @@ const ParticlesBackground = ( {darkMode }) => {
             },
           },
           opacity: {
-            value: darkMode ? 0.6 : 0.4, // Adjust opacity based on darkMode
+            value: darkMode ? 0.6 : 0.4, 
             random: false,
             anim: {
               enable: false,
@@ -44,7 +62,7 @@ const ParticlesBackground = ( {darkMode }) => {
             },
           },
           size: {
-            value: 4,
+            value: particleSize,
             random: false,
             anim: {
               enable: false,
@@ -65,8 +83,8 @@ const ParticlesBackground = ( {darkMode }) => {
           },
           line_linked: {
             enable: true,
-            distance: 600,
-            color: darkMode ? "#ffffff" : "#000000", // Set different colors based on darkMode
+            distance: lineDistance, 
+            color: darkMode ? "#ffffff" : "#000000",
             opacity: 0.4,
             width: 2,
           },
@@ -84,51 +102,7 @@ const ParticlesBackground = ( {darkMode }) => {
             },
           },
         },
-        // interactivity: {
-        //   events: {
-        //     onhover: {
-        //       enable: true,
-        //       mode: ["grab"],
-        //     },
-        //     onclick: {
-        //       enable: false,
-        //       mode: "bubble",
-        //     },
-        //     resize: true,
-        //   },
-        //   modes: {
-        //     grab: {
-        //       distance: 400,
-        //       line_linked: {
-        //         opacity: 1,
-        //       },
-        //     },
-        //     bubble: {
-        //       distance: 400,
-        //       size: 40,
-        //       duration: 2,
-        //       opacity: 8,
-        //       speed: 3,
-        //     },
-        //     repulse: {
-        //       distance: 200,
-        //     },
-        //     push: {
-        //       particles_nb: 4,
-        //     },
-        //     remove: {
-        //       particles_nb: 2,
-        //     },
-        //   },
-        // },
         retina_detect: true,
-        // background: {
-        //   color: "#111",
-        //   image: "",
-        //   position: "50% 50%",
-        //   repeat: "no-repeat",
-        //   size: "cover",
-        // },
       }}
     />
   );
