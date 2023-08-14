@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar";
 import SkillSection from "../app/components/SkillSection";
 import ExperienceSection from "./components/ExperienceSection";
 import Footer from "./components/Footer";
-import ParticleTest from "./components/ParticleTest";
 // import ProjectSection from "./components/ProjectSection";
 
 export default function Home() {
