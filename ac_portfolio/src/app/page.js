@@ -27,15 +27,15 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <ParticlesBackground />
+          <ParticlesBackground darkMode={darkMode} />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <HeroSection darkMode ={darkMode}/>
-        </section>
         <SkillSection darkMode ={darkMode} />
         <ExperienceSection darkMode ={darkMode} />
         {/* <ProjectSection darkMode ={darkMode} /> */}
         <ContactSection darkMode={darkMode}/>
         <Footer darkMode={darkMode} />
+        </section>
       </main>
     </div>
   );
