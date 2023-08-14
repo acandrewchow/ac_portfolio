@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import SkillSection from "../app/components/SkillSection";
 import ExperienceSection from "./components/ExperienceSection";
 import Footer from "./components/Footer";
+import ParticleTest from "./components/ParticleTest";
 // import ProjectSection from "./components/ProjectSection";
 
 export default function Home() {
@@ -19,7 +20,6 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <ParticlesBackground />
       <Head>
         <title>Andrew Chow</title>
         <meta name="description" content="Personal Portfolio" />
@@ -27,6 +27,7 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
+          <ParticlesBackground />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <HeroSection darkMode ={darkMode}/>
         </section>
