@@ -1,7 +1,7 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useState, useEffect } from "react";
-import particlesConfig from "./config/particles-config"; 
+import particlesConfig from "./config/particles-config";
 
 const ParticlesBackground = ( {darkMode }) => {
   const [particleSize, setParticleSize] = useState(4);
@@ -36,10 +36,10 @@ const ParticlesBackground = ( {darkMode }) => {
         },
         particles: {
           number: {
-            value: 10,
+            value: 20,
             density: {
               enable: false,
-              value_area: 800,
+              value_area: 1200,
             },
           },
           color: {
@@ -82,22 +82,22 @@ const ParticlesBackground = ( {darkMode }) => {
             },
           },
           line_linked: {
-            enable: true,
+            enable: false,
             distance: lineDistance, 
             color: darkMode ? "#ffffff" : "#000000",
-            opacity: 0.4,
+            opacity: 0.2,
             width: 2,
           },
           move: {
             enable: true,
-            speed: 2,
+            speed: 8,
             direction: "none",
             random: false,
             straight: false,
             out_mode: "out",
             attract: {
               enable: false,
-              rotateX: 600,
+              rotateX: 1200,
               rotateY: 1200,
             },
           },
