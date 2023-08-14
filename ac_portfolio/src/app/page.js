@@ -1,6 +1,7 @@
 "use client";
 import Head from "next/head";
 import { useState } from "react";
+import ParticlesBackground from "./components/ParticlesBackground";
 import HeroSection from "../app/components/HeaderSection";
 import ContactSection from "../app/components/ContactSection";
 import Navbar from "./components/Navbar";
@@ -18,6 +19,7 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
+      <ParticlesBackground />
       <Head>
         <title>Andrew Chow</title>
         <meta name="description" content="Personal Portfolio" />
