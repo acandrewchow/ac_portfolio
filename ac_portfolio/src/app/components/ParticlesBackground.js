@@ -15,7 +15,7 @@ const ParticlesBackground = ( {darkMode }) => {
 
   const handleResize = () => {
     const isMobile = window.innerWidth <= 768; 
-    setParticleSize(isMobile ? 2 : 4); 
+    setParticleSize(isMobile ? 3 : 6); 
     setLineDistance(isMobile ? 300 : 600);
   };
 
@@ -52,7 +52,7 @@ const ParticlesBackground = ( {darkMode }) => {
             },
           },
           opacity: {
-            value: darkMode ? 0.6 : 0.4, 
+            value: darkMode ? 0.2 : 0.2, 
             random: false,
             anim: {
               enable: false,
@@ -90,7 +90,7 @@ const ParticlesBackground = ( {darkMode }) => {
           },
           move: {
             enable: true,
-            speed: 8,
+            speed: 4,
             direction: "none",
             random: false,
             straight: false,
