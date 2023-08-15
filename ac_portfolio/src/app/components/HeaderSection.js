@@ -1,9 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion"; // Import the motion component
+import { motion } from "framer-motion";
 import Image from "next/image";
 import {
   AiFillLinkedin,
-  AiFillFacebook,
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
@@ -41,12 +40,42 @@ const HeroSection = () => {
           providing innovative solutions to solve user problems.
         </p>
       </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.4 }}
+      >
+        <p className="text-md py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
+          If you're interested in learning more about me, feel free to read my{" "}
+          <a
+            href="https://acandrewchow.github.io/blog"
+            target="_blank"
+            className="text-blue-700 dark:text-blue-200"
+          >
+            {" "}
+            personal blog
+          </a>{" "}
+          where I document my adventures in the world of software!
+        </p>
+      </motion.div>
       <div className="text-4xl md:text-5xl flex justify-center gap-6 py-3 text-gray-600 dark:text-gray-400">
-        <AiFillLinkedin />
-        <AiFillFacebook />
-        <AiFillGithub />
-        <AiFillInstagram />
+        <motion.div whileHover={{ scale: 1.2 }}>
+          <a href="https://linkedin.com/in/acandrewchow" target="_blank">
+            <AiFillLinkedin />
+          </a>
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.2}}>
+          <a href="https://github.com/acandrewchow" target="_blank">
+            <AiFillGithub />
+          </a>
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.2 }}>
+          <a href="https://www.instagram.com/_andrewchow/" target="_blank">
+            <AiFillInstagram />
+          </a>
+        </motion.div>
       </div>
+
       <div className="mx-auto rounded-full w-60 md:w-80 h-60 md:h-80 relative overflow-hidden mt-10 md:mt-20">
         <Image src={ProfilePicture} alt="profile_pic" objectFit="cover" />
       </div>
