@@ -2,7 +2,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import ParticlesBackground from "./components/ParticlesBackground";
-import HeroSection from "../app/components/HeaderSection";
+import HeroSection from "./components/HeroSection";
 import ContactSection from "../app/components/ContactSection";
 import Navbar from "./components/Navbar";
 import SkillSection from "../app/components/SkillSection";

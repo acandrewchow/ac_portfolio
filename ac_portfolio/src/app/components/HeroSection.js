@@ -1,11 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import {
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import ProfilePicture from "../../../public/profile_pic.png";
 import Type from "./Type";
 
@@ -23,7 +19,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <p className="text-md py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
+        <p className="text-xl py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
           I'm Andrew, a Software Engineering student at the University of Guelph
           who loves to solve problems! I have a passion for building new
           products and applications through the world of technology.
@@ -34,7 +30,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.4 }}
       >
-        <p className="text-md py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
+        <p className="text-xl py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
           From design and development to product management, my interest lies
           within the realm of understanding customers, identifying gaps and
           providing innovative solutions to solve user problems.
@@ -45,7 +41,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.4 }}
       >
-        <p className="text-md py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
+        <p className="text-xl py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
           If you're interested in learning more about me, feel free to read my{" "}
           <a
             href="https://acandrewchow.github.io/blog"
@@ -58,13 +54,14 @@ const HeroSection = () => {
           where I document my adventures in the world of software!
         </p>
       </motion.div>
+
       <div className="text-4xl md:text-5xl flex justify-center gap-6 py-3 text-gray-600 dark:text-gray-400">
         <motion.div whileHover={{ scale: 1.2 }}>
           <a href="https://linkedin.com/in/acandrewchow" target="_blank">
             <AiFillLinkedin />
           </a>
         </motion.div>
-        <motion.div whileHover={{ scale: 1.2}}>
+        <motion.div whileHover={{ scale: 1.2 }}>
           <a href="https://github.com/acandrewchow" target="_blank">
             <AiFillGithub />
           </a>
