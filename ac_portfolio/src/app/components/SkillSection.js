@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useInView } from 'react-intersection-observer'
 
 const skillsData = [
   { name: 'HTML', imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg' },
@@ -25,8 +26,9 @@ const SkillsSection = ({ darkMode }) => {
     visible: { opacity: 1, y: 0, transition: { duration: 2 } },
   };
 
+  const [ref, inView] = useInView({ triggerOnce: true }); // Initialize the in-view hook
   return (
-    <section className={`py-10 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
+    <section ref={ref} className={`py-10 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
       <div className="container mx-auto px-4">
         <h2 className={`text-4xl md:text-5xl text-center font-semibold mb-8 py-1 ${darkMode ? 'text-white' : 'dark:text-white'} mb-8`}>Skills</h2>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
@@ -35,7 +37,7 @@ const SkillsSection = ({ darkMode }) => {
               <motion.div
                 key={skill.name}
                 initial="hidden"
-                animate="visible"
+                animate={inView ? "visible" : "hidden"}
                 variants={skillsVariants}
                 exit="hidden"
                 className={`flex flex-col items-center p-2 sm:p-4 border-2 ${darkMode ? 'border-gray-700 bg-gray-800' : 'border-white-100'} rounded-lg transition-transform hover:scale-105`}
