@@ -1,7 +1,6 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useState, useEffect } from "react";
-import particlesConfig from "./config/particles-config";
 
 const ParticlesBackground = ( {darkMode }) => {
   const [particleSize, setParticleSize] = useState(4);

@@ -1,7 +1,7 @@
 import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
-const Header = ({ toggleDarkMode }) => {
+const Navbar = ({ toggleDarkMode }) => {
   return (
     <nav className="py-10 mb-12 flex justify-between dark:text-white">
       <h1 className="font-burtons text-xl">Andrew Chow</h1>
@@ -25,4 +25,4 @@ const Header = ({ toggleDarkMode }) => {
   );
 };
 
-export default Header;
+export default Navbar;
