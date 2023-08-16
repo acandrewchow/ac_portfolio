@@ -21,9 +21,9 @@ const Navbar = ({ toggleDarkMode }) => {
             Resume
           </a>
         </li>
-        <li>
+        {/* <li>
           <Link href="/blog">Blog</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
