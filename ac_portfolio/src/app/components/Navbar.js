@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import Link from "next/link";
 
 const Navbar = ({ toggleDarkMode }) => {
   return (
@@ -19,6 +20,9 @@ const Navbar = ({ toggleDarkMode }) => {
           >
             Resume
           </a>
+        </li>
+        <li>
+          <Link href="/blog">Blog</Link>
         </li>
       </ul>
     </nav>
