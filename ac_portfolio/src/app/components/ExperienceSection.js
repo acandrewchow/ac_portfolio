@@ -4,21 +4,21 @@ import Image from "next/image";
 const ExperienceSection = ({ darkMode }) => {
     const experiences = [
         {
-          companyLogo: '/experience/theScore.jpg', 
+          companyLogo: '/images/experience/theScore.jpg', 
           role: 'Software Developer',
           companyName: 'theScore',
           date: 'May 2023 - August 2023',
           description: 'theScore, a wholly-owned subsidiary of PENN Entertainment, empowers millions of sports fans through its digital media and sports betting products. Worked on the Promotions team for theScoreBet. A team responsible for creating dynamic marketing campaigns',
         },
         {
-          companyLogo: '/experience/Guelph.jpg', 
+          companyLogo: '/images/experience/Guelph.jpg', 
           role: 'Teaching Assistant',
           companyName: 'University of Guelph',
           date: 'January 2023 - May 2023',
           description: 'Teaching Assistant for CIS*2170 - User Interface Design for Winter 2023. Teaching students about UI/UX, Design practices and prototyping',
         },
         {
-          companyLogo: '/experience/theScore.jpg', 
+          companyLogo: '/images/experience/theScore.jpg', 
           role: 'QA Analyst',
           companyName: 'theScore',
           date: 'May 2022 - December 2022',
