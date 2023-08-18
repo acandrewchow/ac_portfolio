@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import ProfilePicture from "../../../public/profile_pic.png";
 import Type from "./Type";
+import ResumeLink from "./ResumeLink";
 
 const HeroSection = () => {
   return (
@@ -57,8 +58,7 @@ const HeroSection = () => {
           where I document my adventures in the world of software!
         </p>
       </motion.div>
-
-      <div className="text-4xl md:text-5xl flex justify-center gap-6 py-3 text-gray-600 dark:text-gray-400">
+      <div className="text-4xl md:text-4xl flex justify-center gap-6 py-3 text-gray-600 dark:text-gray-400">
         <motion.div whileHover={{ scale: 1.2 }}>
           <a href="https://linkedin.com/in/acandrewchow" target="_blank">
             <AiFillLinkedin />

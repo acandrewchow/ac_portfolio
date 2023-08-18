@@ -13,17 +13,11 @@ const Navbar = ({ toggleDarkMode }) => {
             className="cursor-pointer text-2xl"
           />
         </li>
-        <li>
-          <a
-            className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-            href="https://docs.google.com/gview?url=https://github.com/acandrewchow/resume/raw/main/Chow_Andrew-Resume.pdf&embedded=true"
-          >
-            Resume
-          </a>
+        <li className="ml-8 text-xl">
+          <Link href="/blog" target="_blank">
+            <div className="text-black hover:text-teal-400 transition duration-300 dark:text-teal-400">Blog</div>
+          </Link>
         </li>
-        {/* <li>
-          <Link href="/blog">Blog</Link>
-        </li> */}
       </ul>
     </nav>
   );
