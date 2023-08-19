@@ -22,10 +22,10 @@ const TheScoreQa = () => {
       </Head>
       <ParticlesBackground darkMode={darkMode} />
 
-      <main className="bg-white dark:bg-gray-900 px-10 md:px-20 lg:px-40">
+      <main className="bg-white dark:bg-gray-900 px-4 md:px-8">
         <section className="min-h-screen">
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-          <div className="max-w-4xl mx-auto py-8 px-4 md:px-8">
+          <div className="max-w-4xl mx-auto py-8">
             <h1
               className={`text-4xl font-extrabold mb-4 text-center ${
                 darkMode ? "text-white" : "text-gray-900"
@@ -47,13 +47,13 @@ const TheScoreQa = () => {
             >
               By: Andrew Chow
             </p>
-            <div className="max-w-full mb-8">
+            <div className="max-w-full mb-4">
               <Image
                 src="/images/blog/tsb.jpg"
                 alt="theScore Company Logo"
                 layout="responsive"
-                width={500}
-                height={300}
+                width={1000}
+                height={600}
               />
             </div>
             <div className="max-w-3xl mx-auto text-left text-gray-800 dark:text-gray-300">
@@ -195,23 +195,23 @@ const TheScoreQa = () => {
               <h3 className="text-xl font-semibold mt-8 mb-4">
                 Acknowledgments
               </h3>
-              <ul className="list-none pl-6 mb-4">
-                <li>
-                  🥇 Special thanks to Charlotte and Jamie, my supervisor and
-                  manager at theScore who gave me feedback to achieve my
-                  learning goals as well as helping to answer any work related
-                  questions I had
+              <ul className="list-none pl-0 mb-4">
+                <li className="flex items-start mb-4">
+                  <span className="mr-2">🥇</span> Special thanks to Charlotte
+                  and Jamie, my supervisor and manager at theScore who gave me
+                  feedback to achieve my learning goals as well as helping to
+                  answer any work related questions I had
                 </li>
-                <li>
-                  🥈 I would also like to thank everyone on the Promotions and
-                  QA team for being amazing people to work with, from Vegas
-                  launch to Parlay+ it was a great experience to work with
-                  everybody
+                <li className="flex items-start mb-4">
+                  <span className="mr-2">🥈</span> I would also like to thank
+                  everyone on the Promotions and QA team for being amazing
+                  people to work with, from Vegas launch to Parlay+ it was a
+                  great experience to work with everybody
                 </li>
-                <li>
-                  🥉 Lastly, I would like to thank Michelle for the smooth
-                  hiring process, as well as organizing projects and activities
-                  for the co-op students at theScore
+                <li className="flex items-start mb-4">
+                  <span className="mr-2">🥉</span> Lastly, I would like to thank
+                  Michelle for the smooth hiring process, as well as organizing
+                  projects and activities for the co-op students at theScore
                 </li>
               </ul>
 
@@ -226,7 +226,7 @@ const TheScoreQa = () => {
                     width={500}
                     height={300}
                   />
-                  <p className="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white text-center py-2">
+                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm">
                     theScore Co-op Project Summer 2022
                   </p>
                 </div>
@@ -241,7 +241,7 @@ const TheScoreQa = () => {
                     width={500}
                     height={300}
                   />
-                  <p className="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white text-center py-2">
+                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm">
                     National Jamboree '22 - Blue Jays Foundation
                   </p>
                 </div>
@@ -256,7 +256,7 @@ const TheScoreQa = () => {
                     width={500}
                     height={300}
                   />
-                  <p className="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white text-center py-2">
+                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm">
                     Promotions Team Event
                   </p>
                 </div>
