@@ -5,7 +5,7 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
 
-const theScoreQa = () => {
+const TheScoreQa = () => {
   const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
@@ -250,4 +250,4 @@ const theScoreQa = () => {
   );
 };
 
-export default theScoreQa;
+export default TheScoreQa;
