@@ -10,13 +10,13 @@ const EducationSection = ({ darkMode }) => {
           date: 'September 2020 - Present',
           description: 'Software Engineering',
         },
-        // {
-        //     institutionLogo: '/images/education/Brock.jpg',
-        //     degree: 'Bachelor of Science, Bachelor of Education',
-        //     institutionName: 'Brock University',
-        //     date: 'September 2020 - Present',
-        //     description: 'Concurrent Education (I/S)',
-        // },
+        {
+            institutionLogo: '/images/education/Brock.jpg',
+            degree: 'Bachelor of Science, Bachelor of Education',
+            institutionName: 'Brock University',
+            date: 'September 2019 - April 2020',
+            description: 'Concurrent Education (I/S)',
+        },
       ];
 
       return (
