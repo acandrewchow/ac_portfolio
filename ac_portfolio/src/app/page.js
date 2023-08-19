@@ -22,7 +22,7 @@ export default function Home() {
       <Head>
         <title>Andrew Chow</title>
         <meta name="description" content="Personal Portfolio" />
-        <link rel="icon" href="/favicons/favicon.ico" />
+        <link rel="icon" href="./favicons/favicon.ico" />
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
