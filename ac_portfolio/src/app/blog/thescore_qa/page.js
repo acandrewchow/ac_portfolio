@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";\
+import Footer from "@/app/components/Footer";
 import Image from "next/image";
 
 const theScoreQa = () => {
