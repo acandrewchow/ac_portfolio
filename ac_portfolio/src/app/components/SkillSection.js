@@ -17,7 +17,11 @@ const skillsData = [
   { name: 'Phoenix', imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phoenix/phoenix-original-wordmark.svg'},
   { name: 'SQLite', imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg'},
   { name: 'PostgreSQL', imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg'},
-  { name: 'Figma', imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'},
+  { name: 'Apache Kafka', imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original-wordmark.svg'},
+  { name: 'GraphQl', imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg'},
+  { name: 'Pandas', imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg'},
+  { name: 'Tensorflow', imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'},
+  { name: 'Figma', imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'}
 ];
 
 const SkillsSection = ({ darkMode }) => {
