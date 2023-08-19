@@ -7,6 +7,7 @@ import ContactSection from "./components/ContactSection";
 import Navbar from "./components/Navbar";
 import SkillSection from "./components/SkillSection";
 import ExperienceSection from "./components/ExperienceSection";
+import EducationSection from "./components/EducationSection";
 import Footer from "./components/Footer";
 // import ProjectSection from "./components/ProjectSection";
 
@@ -31,6 +32,7 @@ export default function Home() {
           <HeroSection darkMode={darkMode} />
           <SkillSection darkMode={darkMode} />
           <ExperienceSection darkMode={darkMode} />
+          <EducationSection darkMode={darkMode} />
           {/* <ProjectSection darkMode ={darkMode} /> */}
           <ContactSection darkMode={darkMode} />
           <Footer darkMode={darkMode} />
