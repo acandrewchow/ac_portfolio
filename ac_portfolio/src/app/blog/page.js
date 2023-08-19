@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
 import { useState } from "react";
 import ParticlesBackground from "../components/ParticlesBackground";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import BlogPostCard from "../components/BlogPostCard";
+import Link from "next/link";
 
 const blogPostData = [
   {
@@ -25,7 +25,7 @@ const blogPostData = [
   },
 ];
 
-export default function Home() {
+export default function BlogHome() {
   const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
@@ -44,7 +44,7 @@ export default function Home() {
         <section className="min-h-screen">
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl">
+          <div className="max-w-xl mx-auto space-y-8"> {/* Adjust the max width */}
             {blogPostData.map((post, index) => (
               <div key={index}>
                 <Link
