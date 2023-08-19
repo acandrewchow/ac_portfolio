@@ -63,6 +63,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }} // Adjust the delay to your preference
       >
+      <div className="max-w-md mx-auto">
         <div className="bg-teal-100 dark:bg-blue-700 p-4 rounded-lg my-6">
           <h4 className="text-xl md:text-2xl py-2 text-black font-medium dark:text-white">
             Interesting Facts
@@ -78,6 +79,7 @@ const HeroSection = () => {
               🐶 My favourite dog are Pomskies
             </li>
           </ul>
+        </div>
         </div>
       </motion.div>
 

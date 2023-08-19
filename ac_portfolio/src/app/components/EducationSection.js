@@ -21,7 +21,7 @@ const EducationSection = ({ darkMode }) => {
 
       return (
         <section className={`py-10 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-800'}`}>
-          <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto px-4">
             <h2 className={`text-4xl md:text-5xl text-center font-semibold mb-8 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
               Education
             </h2>
