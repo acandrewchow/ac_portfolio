@@ -47,13 +47,12 @@ const TheScoreQa = () => {
             >
               By: Andrew Chow
             </p>
-            <div className="max-w-full mb-4">
+            <div className="max-w-full mb-8 mt-8 flex justify-center">
               <Image
                 src="/images/blog/tsb.jpg"
                 alt="theScore Company Logo"
-                layout="responsive"
-                width={1000}
-                height={600}
+                width={400}
+                height={70}
               />
             </div>
             <div className="max-w-3xl mx-auto text-left text-gray-800 dark:text-gray-300">
@@ -226,7 +225,7 @@ const TheScoreQa = () => {
                     width={500}
                     height={300}
                   />
-                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm">
+                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm italic">
                     theScore Co-op Project Summer 2022
                   </p>
                 </div>
@@ -241,7 +240,7 @@ const TheScoreQa = () => {
                     width={500}
                     height={300}
                   />
-                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm">
+                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm italic">
                     National Jamboree '22 - Blue Jays Foundation
                   </p>
                 </div>
@@ -256,7 +255,7 @@ const TheScoreQa = () => {
                     width={500}
                     height={300}
                   />
-                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm">
+                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm italic">
                     Promotions Team Event
                   </p>
                 </div>
