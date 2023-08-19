@@ -4,8 +4,8 @@ const BlogPostCard = ({ title, date, role, imageUrl, darkMode }) => {
   return (
     <div className={`bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden`}>
       <img
-        src={imageUrl || "/placeholder-image.jpg"} // Replace with actual image URL or use a placeholder
-        alt={`${title} Thumbnail`}
+        src={imageUrl || "/placeholder-image.jpg"}
+        alt={`${title}`}
         className="w-full h-56 object-cover"
       />
       <div className="p-4">

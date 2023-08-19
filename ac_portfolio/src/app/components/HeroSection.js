@@ -48,7 +48,7 @@ const HeroSection = () => {
         <p className="text-xl py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
           If you're interested in learning more about me, feel free to read my{" "}
           <a
-            href="https://acandrewchow.github.io/blog"
+            href="/blog"
             target="_blank"
             className="text-blue-700 dark:text-blue-200"
           >
@@ -58,7 +58,30 @@ const HeroSection = () => {
           where I document my adventures in the world of software!
         </p>
       </motion.div>
-      <div className="text-4xl md:text-4xl flex justify-center gap-6 py-3 text-gray-600 dark:text-gray-400">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.8 }} // Adjust the delay to your preference
+      >
+        <div className="bg-teal-100 dark:bg-blue-700 p-4 rounded-lg my-6">
+          <h4 className="text-xl md:text-2xl py-2 text-black font-medium dark:text-white">
+            Interesting Facts
+          </h4>
+          <ul className="list-none list-inside">
+            <li className="text-gray-800 dark:text-white">
+              🥋 I have a Black Belt in Tae Kwon Do
+            </li>
+            <li className="text-gray-800 dark:text-white">
+              💻 I can type more than 200+ words per minute
+            </li>
+            <li className="text-gray-800 dark:text-white">
+              🐶 My favourite dog are Pomskies
+            </li>
+          </ul>
+        </div>
+      </motion.div>
+
+      <div className="text-2xl md:text-2xl flex justify-center gap-6 py-3 text-gray-600 dark:text-gray-400">
         <motion.div whileHover={{ scale: 1.2 }}>
           <a href="https://linkedin.com/in/acandrewchow" target="_blank">
             <AiFillLinkedin />
@@ -73,6 +96,9 @@ const HeroSection = () => {
           <a href="https://www.instagram.com/_andrewchow/" target="_blank">
             <AiFillInstagram />
           </a>
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.2 }}>
+            <ResumeLink />
         </motion.div>
       </div>
     </div>

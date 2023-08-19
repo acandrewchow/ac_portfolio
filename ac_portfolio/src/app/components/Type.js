@@ -6,7 +6,7 @@ export default function Type() {
   
     useEffect(() => {
       const typed = new Typed(el.current, {
-        strings: ["Software Engineer", "Designer"], 
+        strings: ["Software", "Product", "Design"], 
         typeSpeed: 125,
         backSpeed: 125,
         loop: true
