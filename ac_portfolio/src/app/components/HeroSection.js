@@ -22,8 +22,8 @@ const HeroSection = () => {
         {/* <h3 className="text-xl md:text-3xl py-2 dark:text-white">
         <Type />
       </h3> */}
-        <div className="mx-auto rounded-full w-60 md:w-80 h-60 md:h-80 relative overflow-hidden mt-10 md:mt-15 mb-10">
-          <Image src={ProfilePicture} alt="profile_pic" objectFit="cover" />
+        <div className="mx-auto rounded-full w-60 md:w-80 h-60 md:h-80 overflow-hidden mt-10 md:mt-15 mb-10">
+          <Image src={ProfilePicture} alt="profile_pic"/>
         </div>
       </motion.div>
       <motion.div
