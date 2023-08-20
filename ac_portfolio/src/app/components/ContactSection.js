@@ -5,7 +5,7 @@ const ContactSection = ({ darkMode }) => {
         <h2
           className={`text-3xl text-center py-1 ${
             darkMode ? "text-white" : "dark:text-white"
-          } mb-8`}
+          } mb-4`}
         >
           Contact Me
         </h2>
@@ -15,7 +15,7 @@ const ContactSection = ({ darkMode }) => {
               darkMode ? "text-white" : "dark:text-white"
             }`}
           >
-            Have a question or want to work together? Feel free to reach out.
+            ☕ Let's connect! Feel free to leave a message. 📩
           </p>
           <form
             className="space-y-4"
