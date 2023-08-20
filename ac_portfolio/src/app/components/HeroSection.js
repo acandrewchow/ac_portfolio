@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import ProfilePicture from "../../../public/profile_pic.png";
 import Type from "./Type";
 import ResumeLink from "./ResumeLink";
@@ -9,17 +9,23 @@ import ResumeLink from "./ResumeLink";
 const HeroSection = () => {
   return (
     <div className="text-center p-6 md:p-10 py-10">
-      <h2 className="text-4xl md:text-5xl py-2 font-medium">
-        <span class="text-blue-500">Hello,</span>{" "}
-        <span class="text-yellow-500">I'm Andrew!</span>
-      </h2>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <h2 className="text-4xl md:text-5xl py-2 font-medium">
+          <span class="text-blue-400">Hello,</span>{" "}
+          <span class="text-teal-400">I'm Andrew!</span>
+        </h2>
 
-      {/* <h3 className="text-xl md:text-3xl py-2 dark:text-white">
+        {/* <h3 className="text-xl md:text-3xl py-2 dark:text-white">
         <Type />
       </h3> */}
-      <div className="mx-auto rounded-full w-60 md:w-80 h-60 md:h-80 relative overflow-hidden mt-10 md:mt-15 mb-10">
-        <Image src={ProfilePicture} alt="profile_pic" objectFit="cover" />
-      </div>
+        <div className="mx-auto rounded-full w-60 md:w-80 h-60 md:h-80 relative overflow-hidden mt-10 md:mt-15 mb-10">
+          <Image src={ProfilePicture} alt="profile_pic" objectFit="cover" />
+        </div>
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -50,15 +56,38 @@ const HeroSection = () => {
           where I document my adventures in the world of software!
         </p>
       </motion.div>
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.8 }} // Adjust the delay to your preference
+        transition={{ duration: 1, delay: 1 }}
+        className="flex flex-col md:flex-row md:justify-center md:space-x-6"
       >
-        <div className="max-w-md mx-auto">
-          <div className="bg-teal-100 dark:bg-blue-700 p-4 rounded-lg my-6">
+        <div className="max-w-md">
+          <div className="bg-teal-100 dark:bg-blue-700 p-4 rounded-full my-4 flex items-center justify-center md:justify-start">
+            <div className="rounded-full bg-white dark:bg-gray-800 p-8">
+              <h4 className="text-xl md:text-2xl py-6 text-black font-medium dark:text-white">
+                🧑‍💻 What I'm up to at the moment
+              </h4>
+              <ul className="list-none list-inside">
+                <li className="text-gray-800 dark:text-white">
+                  🚀 Exploring new frameworks & technologies
+                </li>
+                <li className="text-gray-800 dark:text-white">
+                  🚢 Learning about product management
+                </li>
+                <li className="text-gray-800 dark:text-white">
+                  📸 Enhancing my photography skills
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-md">
+          <div className="bg-teal-100 dark:bg-blue-700 p-4 rounded-lg my-10">
             <h4 className="text-xl md:text-2xl py-2 text-black font-medium dark:text-white">
-              Interesting Facts
+              Fun Facts! 🎉
             </h4>
             <ul className="list-none list-inside">
               <li className="text-gray-800 dark:text-white">
@@ -68,7 +97,7 @@ const HeroSection = () => {
                 💻 I can type more than 200+ words per minute
               </li>
               <li className="text-gray-800 dark:text-white">
-                🐶 My favourite dog are Pomskies
+                🐶 My favorite dogs are Pomskies
               </li>
             </ul>
           </div>
@@ -84,11 +113,6 @@ const HeroSection = () => {
         <motion.div whileHover={{ scale: 1.2 }}>
           <a href="https://github.com/acandrewchow" target="_blank">
             <AiFillGithub />
-          </a>
-        </motion.div>
-        <motion.div whileHover={{ scale: 1.2 }}>
-          <a href="https://www.instagram.com/_andrewchow/" target="_blank">
-            <AiFillInstagram />
           </a>
         </motion.div>
         <motion.div whileHover={{ scale: 1.2 }}>
