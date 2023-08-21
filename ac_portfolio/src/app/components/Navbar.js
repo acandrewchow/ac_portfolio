@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsFillMoonStarsFill} from "react-icons/bs";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import Link from "next/link";
 
 const Navbar = ({ toggleDarkMode }) => {
