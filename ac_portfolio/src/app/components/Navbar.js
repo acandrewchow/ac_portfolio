@@ -39,7 +39,10 @@ const Navbar = ({ toggleDarkMode }) => {
           onClick={toggleDarkMode}
           className="text-2xl cursor-pointer dark:text-white mr-8"
         />
-        <Link href="/blog" className="text-2xl">
+        <Link
+          href="/blog"
+          className="text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
+        >
           Blog
         </Link>
       </div>
@@ -82,10 +85,20 @@ const Navbar = ({ toggleDarkMode }) => {
             />
           </li>
           <li className="mb-8 text-2xl">
-            <Link href="/">Home</Link>
+            <Link
+              href="/"
+              className="text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
+            >
+              Home
+            </Link>
           </li>
           <li className="mb-8 text-2xl">
-            <Link href="/blog">Blog</Link>
+            <Link
+              href="/blog"
+              className="text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
+            >
+              Blog
+            </Link>
           </li>
         </ul>
       </div>
