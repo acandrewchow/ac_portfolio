@@ -10,6 +10,7 @@ import ExperienceSection from "./components/ExperienceSection";
 import EducationSection from "./components/EducationSection";
 import Footer from "./components/Footer";
 import ProjectSection from "./components/MyWork";
+import BackToTopButton from "./BackToTopButton";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -36,6 +37,7 @@ export default function Home() {
           <ProjectSection darkMode ={darkMode} />
           <ContactSection darkMode={darkMode} />
           <Footer darkMode={darkMode} />
+          <BackToTopButton />
         </section>
       </main>
     </div>
