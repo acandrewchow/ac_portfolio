@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill} from "react-icons/bs";
 import Link from "next/link";
 
 const Navbar = ({ toggleDarkMode }) => {
@@ -10,8 +10,8 @@ const Navbar = ({ toggleDarkMode }) => {
   };
 
   return (
-    <nav className="py-10 mb-12 flex justify-between dark:text-white">
-      <h1 className="font-burtons text-xl">
+    <nav className="py-10 flex justify-between dark:text-white">
+      <h1 className="font-burtons text-3xl">
         <Link href="/">Andrew Chow</Link>
       </h1>
       <div className="md:hidden">
@@ -20,7 +20,7 @@ const Navbar = ({ toggleDarkMode }) => {
           className="dark:text-white focus:outline-none"
         >
           <svg
-            className="w-6 h-6"
+            className="w-10 h-10"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -61,7 +61,7 @@ const Navbar = ({ toggleDarkMode }) => {
           className="absolute top-4 right-4 focus:outline-none"
         >
           <svg
-            className="w-6 h-6"
+            className="w-8 h-8"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
