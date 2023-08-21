@@ -94,6 +94,7 @@ const projects = [
 const MyWork = ({ darkMode }) => {
   return (
     <section
+      id="MyWork"
       className={`py-10 ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
       }`}

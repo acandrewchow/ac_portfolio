@@ -8,7 +8,7 @@ import ResumeLink from "./ResumeLink";
 
 const HeroSection = () => {
   return (
-    <div className="text-center p-6 md:p-10 py-10">
+    <div id="About" className="text-center p-6 md:p-10 py-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ const HeroSection = () => {
         <Type />
       </h3> */}
         <div className="mx-auto rounded-full w-60 md:w-80 h-60 md:h-80 overflow-hidden mt-10 md:mt-15 mb-10">
-          <Image src={ProfilePicture} alt="profile_pic"/>
+          <Image src={ProfilePicture} alt="profile_pic" />
         </div>
       </motion.div>
       <motion.div

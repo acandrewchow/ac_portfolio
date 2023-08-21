@@ -2,9 +2,9 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useState, useEffect } from "react";
 
-const ParticlesBackground = ( {darkMode }) => {
+const ParticlesBackground = ({ darkMode }) => {
   const [particleSize, setParticleSize] = useState(4);
-  const [lineDistance, setLineDistance] = useState(600); 
+  const [lineDistance, setLineDistance] = useState(600);
 
   const particlesInit = async (main) => {
     console.log(main);
@@ -13,8 +13,8 @@ const ParticlesBackground = ( {darkMode }) => {
   };
 
   const handleResize = () => {
-    const isMobile = window.innerWidth <= 768; 
-    setParticleSize(isMobile ? 3 : 6); 
+    const isMobile = window.innerWidth <= 768;
+    setParticleSize(isMobile ? 3 : 6);
     setLineDistance(isMobile ? 300 : 600);
   };
 
@@ -42,7 +42,7 @@ const ParticlesBackground = ( {darkMode }) => {
             },
           },
           color: {
-            value: darkMode ? "#fff" : "#000", 
+            value: darkMode ? "#fff" : "#000",
           },
           shape: {
             type: "star",
@@ -51,7 +51,7 @@ const ParticlesBackground = ( {darkMode }) => {
             },
           },
           opacity: {
-            value: darkMode ? 0.2 : 0.2, 
+            value: darkMode ? 0.2 : 0.2,
             random: false,
             anim: {
               enable: false,
@@ -82,7 +82,7 @@ const ParticlesBackground = ( {darkMode }) => {
           },
           line_linked: {
             enable: false,
-            distance: lineDistance, 
+            distance: lineDistance,
             color: darkMode ? "#ffffff" : "#000000",
             opacity: 0.2,
             width: 2,
