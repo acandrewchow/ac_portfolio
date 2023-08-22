@@ -45,7 +45,7 @@ const PromotionsTracker = () => {
               theScore MVP (Fall 2022) 🚀
             </h1>
 
-            <div className="max-w-full ml-10 mb-8 mt-8 flex flex-col md:flex-row justify-center gap-4">
+            <div className="max-w-full mb-8 mt-8 flex flex-col md:flex-row justify-center gap-28">
               <div className="w-full md:w-1/2 max-w-full">
                 <Image
                   src="/images/projects/promotions_tracker_one.png"
@@ -53,7 +53,7 @@ const PromotionsTracker = () => {
                   width={375}
                   height={10}
                 />
-                <p className="text-center mt-4 mb-12 mr-14 text-gray-600 dark:text-gray-300 italic">
+                <p className="text-center mt-4 mb-12 text-gray-600 dark:text-gray-300 italic">
                   Promotions Tracker - users can view promotions they are
                   participating in
                 </p>
@@ -65,14 +65,14 @@ const PromotionsTracker = () => {
                   height={10}
                 />
 
-                <p className="text-center mt-4 mb-12 mr-14 text-gray-600 dark:text-gray-300 italic">
+                <p className="text-center mt-4 text-gray-600 dark:text-gray-300 italic">
                   Promotions Tracker - displays the actions that are required to
                   complete
                 </p>
               </div>
               <div className="w-full md:w-1/2">
                 <div className="max-w-3xl mx-auto text-left text-gray-800 dark:text-gray-300">
-                  <h3 className="text-xl font-semibold mt-8 mb-2">
+                  <h3 className="text-xl font-semibold mt-4 mb-2">
                     🏅 Introduction to Promotions
                   </h3>
                   <p className="mb-8">
