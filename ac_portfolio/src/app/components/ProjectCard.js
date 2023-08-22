@@ -25,7 +25,7 @@ const ProjectCard = ({ project, darkMode }) => (
       <h3 className={`text-xl md:text-2xl font-semibold mb-2`}>
         {project.title}
       </h3>
-      <p className={`${darkMode ? "text-white" : "text-gray-800"}`}>
+      <p className={`${darkMode ? "text-white" : "text-gray-800"} mb-4`}>
         {project.description}
       </p>
       <div className="flex items-center space-x-2">

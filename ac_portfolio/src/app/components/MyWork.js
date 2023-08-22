@@ -55,6 +55,20 @@ const projects = [
     ],
     link: "https://github.com/acandrewchow/ePortfolio",
   },
+  {
+    title: "Promotions Tracker",
+    description:
+      "Product Feature for theScoreBet, presented to Sr. Leadership during the Fall 2022 term",
+    image: "/images/projects/s_bet.png",
+    tools: [
+      {
+        name: "Figma",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      },
+    ],
+    link: "/projects/promotions_tracker",
+  },
   // {
   //   title: "BetGenius",
   //   description: "Description of Project 3...",
@@ -70,18 +84,6 @@ const projects = [
   //       image:
   //         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
   //     },
-  //     {
-  //       name: "Figma",
-  //       image:
-  //         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Promotions Tracker",
-  //   description: "Description of Project 4...",
-  //   image: "/project4.jpg",
-  //   tools: [
   //     {
   //       name: "Figma",
   //       image:
@@ -112,12 +114,7 @@ const MyWork = ({ darkMode }) => {
             <p
               className={`text-lg ${darkMode ? "text-white" : "text-gray-800"}`}
             >
-              With experience in software development, design, and product
-              management, I bring a unique approach to every project. My journey
-              has allowed me to collaborate with others, transforming ideas into
-              user-centric products that drive impact and value. From crafting
-              elegant code to shaping intuitive user experiences, I am committed
-              to creating products that exceed user expectations.
+              🛠️ Here are some of the cool things that I've built!
             </p>
           </div>
         </div>
