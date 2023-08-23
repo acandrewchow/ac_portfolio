@@ -102,7 +102,7 @@ const SkillsSection = ({ darkMode }) => {
     visible: { opacity: 1, y: 0, transition: { duration: 2 } },
   };
 
-  const [ref, inView] = useInView({ triggerOnce: true }); // Initialize the in-view hook
+  const [ref, inView] = useInView({ triggerOnce: true });
   return (
     <section
       ref={ref}

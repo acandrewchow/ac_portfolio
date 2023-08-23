@@ -22,7 +22,7 @@ const TheScoreQa = () => {
       </Head>
       <ParticlesBackground darkMode={darkMode} />
 
-      <main className="bg-white dark:bg-gray-900 px-4 md:px-8">
+      <main className="bg-white dark:bg-gray-900 px-4 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <div className="max-w-4xl mx-auto py-8">
