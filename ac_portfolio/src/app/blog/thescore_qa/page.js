@@ -6,6 +6,7 @@ import Footer from "@/app/components/Footer";
 import Image from "next/image";
 import ParticlesBackground from "@/app/components/ParticlesBackground";
 import Head from "next/head";
+import BackToTopButton from "@/app/components/BackToTopButton";
 
 const TheScoreQa = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -262,8 +263,9 @@ const TheScoreQa = () => {
               </div>
             </div>
           </div>
-          <Footer darkMode={darkMode} />
         </section>
+        <Footer darkMode={darkMode} />
+        <BackToTopButton />
       </main>
     </div>
   );

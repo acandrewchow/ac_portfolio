@@ -43,7 +43,6 @@ const ProjectCard = ({ project, darkMode }) => (
         <a
           href={project.link}
           target="_blank"
-          rel="noopener noreferrer"
           className={`text-blue-500 ${
             darkMode ? "hover:text-blue-300" : "hover:text-blue-700"
           }`}

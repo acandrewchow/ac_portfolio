@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ProjectCard from "./ProjectCard";
 
 const projects = [
@@ -71,8 +70,8 @@ const projects = [
   },
   // {
   //   title: "BetGenius",
-  //   description: "Description of Project 3...",
-  //   image: "/project3.jpg",
+  //   description: "A model that recommends betslips to users based on their betting hisory",
+  //   image: "/images/projects/BetGenius.png",
   //   tools: [
   //     {
   //       name: "Python",
@@ -90,6 +89,7 @@ const projects = [
   //         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   //     },
   //   ],
+  //   link: "github.com/acandrewchow/BetGenius"
   // },
 ];
 
@@ -103,7 +103,7 @@ const MyWork = ({ darkMode }) => {
     >
       <div className="container mx-auto px-4">
         <h2
-          className={`text-4xl md:text-5xl text-center font-semibold mb-8 ${
+          className={`text-4xl md:text-5xl text-center font-semibold ${
             darkMode ? "text-white" : "text-gray-800"
           }`}
         >
@@ -111,11 +111,15 @@ const MyWork = ({ darkMode }) => {
         </h2>
         <div className={`${darkMode ? "bg-gray-900" : "text-gray-800"}`}>
           <div className="container mx-auto px-4 py-10">
-            <p
-              className={`text-lg ${darkMode ? "text-white" : "text-gray-800"}`}
-            >
-              🛠️ Here are some of the cool things that I've built!
-            </p>
+            <div className="flex justify-center">
+              <p
+                className={`text-lg ${
+                  darkMode ? "text-white" : "text-gray-800"
+                }`}
+              >
+                🛠️ Here are some of the cool things that I have worked on
+              </p>
+            </div>
           </div>
         </div>
         <div

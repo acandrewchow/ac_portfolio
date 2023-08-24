@@ -6,6 +6,7 @@ import Image from "next/image";
 import ParticlesBackground from "@/app/components/ParticlesBackground";
 import Head from "next/head";
 import PipeOperatorExample from "@/app/components/PipeOperatorExample";
+import BackToTopButton from "@/app/components/BackToTopButton";
 
 const skillsData = [
   {
@@ -217,8 +218,7 @@ const TheScoreDev = () => {
                     Kafka
                   </a>{" "}
                   as our message publishing system to consume various types of
-                  messages that can be sent via gRPC, whereas GraphQL is used
-                  for client communication.
+                  messages that can be sent via gRPC.
                 </p>
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">
@@ -257,26 +257,25 @@ const TheScoreDev = () => {
                   time. My previous QA experience had helped me a lot as I
                   already had a solid understanding of the product. To me, it
                   was more of a puzzle to solve where I needed to put the pieces
-                  together in the right place in order to accomplish the task.
-                  Near the end, I was able to open my first pull request! Safe
-                  to say, things went well as staging was still in-tact.
+                  together. In the end, I was able to open my first pull
+                  request! Safe to say, things went well as staging was still
+                  in-tact.
                 </p>
 
                 <p className="mb-4">
                   After the first couple of weeks, I was getting the hang of
                   everything. I had the opportunity to work on various features,
-                  including some of the Promotions gRPCs that we currently
-                  support. Futhermore, I also had the chance to build UI
-                  components using Phoenix! One of the things that I love the
-                  most about being a developer is learning new things. Everyday,
-                  there is always something new to learn, whether it be a new
-                  command or even an entirely fresh concept, there is always
-                  something to look forward to.
+                  including optimizing one of our gRPC endpoints that we
+                  support. Futhermore, I had the chance to build UI components
+                  using Phoenix LiveView! One of the things that I love the most
+                  about being a developer is being able to make an impact by
+                  delivering products to customers. It's extremely rewarding
+                  knowing that my work will impact many users around the world.
                 </p>
 
                 <p className="mb-4">
                   Near the end of my work term, I had the opportunity to
-                  participate in theScore's Summer 2022 Co-op{" "}
+                  participate in theScore's Summer 2023 Co-op{" "}
                   <a
                     href="https://www.linkedin.com/posts/thescore_co-op-hackathon-summer-2023-activity-7095410718916653057-Cf9E?utm_source=share&utm_medium=member_desktop"
                     target="_blank"
@@ -288,7 +287,7 @@ const TheScoreDev = () => {
                   recommend bets to users based on their betting history. To do
                   this, we created a recommendation engine using collaborative
                   based filtering and trained a machine learning model with
-                  existing markets and bets. In the end, it was really fun and a
+                  available markets and bets. In the end, it was really fun and a
                   great experience as we presented our product to the Sr.
                   Leadership team! Shoutout to my team, for the amazing work and
                   effort that was put into the Hackathon.
@@ -315,9 +314,9 @@ const TheScoreDev = () => {
                   Over the last 4 months, my journey as a software developer has
                   been awesome. I was able to develop new features, collaborate
                   with team members, network with others, and learn new
-                  technical skills and best practices. As such, I'm excited what
-                  lies ahead as I continue to grow my career in software
-                  development.
+                  technical skills and best coding practices. As such, I'm
+                  excited what lies ahead as I continue to grow my career in
+                  software development. Cheers to the next adventure. 🍻
                 </p>
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">
@@ -335,8 +334,8 @@ const TheScoreDev = () => {
                   </li>
                   <li className="mb-2">
                     🏆 Thanks to <strong>Michelle</strong> for hosting all of
-                    the fun co-op events, hackathons and activites throughout
-                    the term
+                    the co-op events, hackathons and activites throughout the
+                    term
                   </li>
                 </ul>
                 <div className="flex justify-center">
@@ -353,6 +352,7 @@ const TheScoreDev = () => {
           </div>
         </section>
         <Footer darkMode={darkMode} />
+        <BackToTopButton />
       </main>
     </div>
   );

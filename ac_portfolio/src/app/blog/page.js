@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import BlogPostCard from "../components/BlogPostCard";
 import Link from "next/link";
+import BackToTopButton from "../components/BackToTopButton";
 
 const blogPostData = [
   {
@@ -65,6 +66,7 @@ export default function BlogHome() {
           </div>
         </section>
         <Footer darkMode={darkMode} />
+        <BackToTopButton />
       </main>
     </div>
   );

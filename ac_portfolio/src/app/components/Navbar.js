@@ -55,7 +55,7 @@ const Navbar = ({ toggleDarkMode }) => {
         onClick={toggleMobileMenu}
       />
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-1/2 bg-gray-100 dark:bg-gray-800 transform transition-transform ${
+        className={`md:hidden fixed top-0 right-0 h-full w-full bg-gray-100 dark:bg-gray-800 transform transition-transform ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
