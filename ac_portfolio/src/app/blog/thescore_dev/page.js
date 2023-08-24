@@ -76,13 +76,16 @@ const TheScoreDev = () => {
               </p>
 
               <div className="flex justify-center">
-                <Image
-                  src="/images/blog/thescore_office.jpg"
-                  alt="theScore Office in Toronto"
-                  width={500}
-                  height={500}
-                  className="mb-12"
-                />
+                <div className="max-w-xl">
+                  <Image
+                    src="/images/blog/thescore_office.jpg"
+                    alt="theScore Office in Toronto"
+                    layout="responsive"
+                    width={500}
+                    height={500}
+                    className="mb-12"
+                  />
+                </div>
               </div>
 
               <div className="max-w-3xl mx-auto text-left text-gray-800 dark:text-gray-300">
@@ -287,20 +290,23 @@ const TheScoreDev = () => {
                   recommend bets to users based on their betting history. To do
                   this, we created a recommendation engine using collaborative
                   based filtering and trained a machine learning model with
-                  available markets and bets. In the end, it was really fun and a
-                  great experience as we presented our product to the Sr.
+                  available markets and bets. In the end, it was really fun and
+                  a great experience as we presented our product to the Sr.
                   Leadership team! Shoutout to my team, for the amazing work and
                   effort that was put into the Hackathon.
                 </p>
 
                 <div className="flex justify-center">
-                  <Image
-                    src="/images/blog/hackathon_one.jpg"
-                    alt="co-op hackathon"
-                    width={500}
-                    height={500}
-                    className="mt-4 mb-4"
-                  />
+                  <div className="max-w-xl max-h-xl">
+                    <Image
+                      src="/images/blog/hackathon_one.jpg"
+                      alt="co-op hackathon"
+                      layout="responsive"
+                      width={450}
+                      height={450}
+                      className="mt-4 mb-4"
+                    />
+                  </div>
                 </div>
                 <div className="flex justify-center italic">
                   <span>Team 1: D-Generators</span>
@@ -342,6 +348,7 @@ const TheScoreDev = () => {
                   <Image
                     src="/images/blog/hackathon_two.jpg"
                     alt="co-op students"
+                    layout="responsive"
                     width={750}
                     height={750}
                     className="mt-4 mb-4"
