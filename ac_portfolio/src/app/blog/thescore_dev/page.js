@@ -260,9 +260,7 @@ const TheScoreDev = () => {
                   time. My previous QA experience had helped me a lot as I
                   already had a solid understanding of the product. To me, it
                   was more of a puzzle to solve where I needed to put the pieces
-                  together. In the end, I was able to open my first pull
-                  request! Safe to say, things went well as staging was still
-                  in-tact.
+                  together. In the end, I was able to open and merge my very first pull request! 
                 </p>
 
                 <p className="mb-6">
@@ -343,7 +341,7 @@ const TheScoreDev = () => {
                   <li className="mb-2">
                     🏆 Thanks to <strong>Michelle</strong> for shaping the co-op
                     culture and hosting all of the co-op events, hackathons and
-                    activites throughout the term
+                    activites throughout the term!
                   </li>
                 </ul>
                 <div className="flex justify-center">
