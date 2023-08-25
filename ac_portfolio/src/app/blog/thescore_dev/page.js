@@ -228,8 +228,8 @@ const TheScoreDev = () => {
                   📚 Learning Goals
                 </h3>
                 <p className="mb-4">
-                  Here are a couple of goals I wanted to accomplish over the
-                  next 4 months at theScore
+                  Here are a couple of goals I wanted to accomplish during my
+                  term at theScore
                 </p>
                 <ul class="list-none">
                   <li class="flex items-start">
@@ -251,7 +251,7 @@ const TheScoreDev = () => {
                 <h3 className="text-xl font-semibold mt-8 mb-4">
                   🎒 My Experience
                 </h3>
-                <p className="mb-4">
+                <p className="mb-6">
                   During the first couple of weeks, I spent the time onboarding,
                   configuring my personal development environment, reading
                   documentation and asking questions. Pushkar, my onboarding
@@ -265,18 +265,19 @@ const TheScoreDev = () => {
                   in-tact.
                 </p>
 
-                <p className="mb-4">
+                <p className="mb-6">
                   After the first couple of weeks, I was getting the hang of
                   everything. I had the opportunity to work on various features,
                   including optimizing one of our gRPC endpoints that we
                   support. Futhermore, I had the chance to build UI components
-                  using Phoenix LiveView! One of the things that I love the most
-                  about being a developer is being able to make an impact by
-                  delivering products to customers. It's extremely rewarding
-                  knowing that my work will impact many users around the world.
+                  for the marketing and cx team using Phoenix LiveView! One of
+                  the things that I love the most about being a developer is
+                  being able to make an impact by delivering products to
+                  customers. It's extremely rewarding knowing that my work will
+                  impact many users around the world.
                 </p>
 
-                <p className="mb-4">
+                <p className="mb-6">
                   Near the end of my work term, I had the opportunity to
                   participate in theScore's Summer 2023 Co-op{" "}
                   <a
@@ -318,11 +319,12 @@ const TheScoreDev = () => {
 
                 <p className="mb-4">
                   Over the last 4 months, my journey as a software developer has
-                  been awesome. I was able to develop new features, collaborate
-                  with team members, network with others, and learn new
-                  technical skills and best coding practices. As such, I'm
-                  excited what lies ahead as I continue to grow my career in
-                  software development. Cheers to the next adventure. 🍻
+                  been a great learning experience. I was able to develop new
+                  features, collaborate with team members, network with others,
+                  and learn new technical skills and coding practices. As
+                  always, I'm looking forward to the future as I progress in my
+                  software development career. Here's to embracing the next
+                  exciting journey! 🍻
                 </p>
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">
@@ -339,9 +341,9 @@ const TheScoreDev = () => {
                     team, it's been a pleasure working with all of you again!
                   </li>
                   <li className="mb-2">
-                    🏆 Thanks to <strong>Michelle</strong> for hosting all of
-                    the co-op events, hackathons and activites throughout the
-                    term
+                    🏆 Thanks to <strong>Michelle</strong> for shaping the co-op
+                    culture and hosting all of the co-op events, hackathons and
+                    activites throughout the term
                   </li>
                 </ul>
                 <div className="flex justify-center">
