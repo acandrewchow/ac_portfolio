@@ -58,7 +58,7 @@ const projects = [
     title: "Promotions Tracker",
     description:
       "Product Feature for theScoreBet, presented to Sr. Leadership during the Fall 2022 term",
-    image: "/images/projects/s_bet.png",
+    image: "/images/projects/tsb_logo.png",
     tools: [
       {
         name: "Figma",
@@ -68,29 +68,29 @@ const projects = [
     ],
     link: "/projects/promotions_tracker",
   },
-  // {
-  //   title: "BetGenius",
-  //   description: "A model that recommends betslips to users based on their betting hisory",
-  //   image: "/images/projects/BetGenius.png",
-  //   tools: [
-  //     {
-  //       name: "Python",
-  //       image:
-  //         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
-  //     },
-  //     {
-  //       name: "Tensorflow",
-  //       image:
-  //         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
-  //     },
-  //     {
-  //       name: "Figma",
-  //       image:
-  //         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-  //     },
-  //   ],
-  //   link: "github.com/acandrewchow/BetGenius"
-  // },
+  {
+    title: "BetGenius",
+    description: "A model that recommends betslips to users based on their betting hisory",
+    image: "/images/projects/BetGenius.png",
+    tools: [
+      {
+        name: "Python",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
+      },
+      {
+        name: "Tensorflow",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      },
+      {
+        name: "Figma",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      },
+    ],
+    link: "https://github.com/acandrewchow/BetGenius"
+  },
 ];
 
 const MyWork = ({ darkMode }) => {

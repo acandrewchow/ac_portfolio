@@ -34,8 +34,8 @@ const ProjectCard = ({ project, darkMode }) => (
             key={toolIndex}
             src={tool.image}
             alt={`${tool.name} Icon`}
-            width={30}
-            height={30}
+            width={50}
+            height={50}
           />
         ))}
       </div>
