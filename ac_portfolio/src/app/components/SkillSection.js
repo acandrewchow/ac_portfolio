@@ -90,9 +90,19 @@ const skillsData = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
   },
   {
+    name: "Tailwind CSS",
+    imageSrc:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+  },
+  {
     name: "Figma",
     imageSrc:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+  },
+  {
+    name: "Adobe Premiere Pro",
+    imageSrc:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg",
   },
 ];
 

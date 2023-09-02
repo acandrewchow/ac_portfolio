@@ -7,8 +7,8 @@ const EducationSection = ({ darkMode }) => {
       institutionLogo: "/images/education/Guelph.jpg",
       degree: "Bachelor of Computing",
       institutionName: "University of Guelph",
-      date: "September 2020 - Present",
-      description: "Software Engineering",
+      date: "September 2020 - May 2025 (Expected)",
+      description: "Software Engineering (Co-op)",
     },
     {
       institutionLogo: "/images/education/Brock.jpg",

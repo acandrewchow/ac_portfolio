@@ -68,29 +68,53 @@ const projects = [
     ],
     link: "/projects/promotions_tracker",
   },
-  // {
-  //   title: "BetGenius",
-  //   description: "A model that recommends betslips to users based on their betting hisory",
-  //   image: "/images/projects/BetGenius.png",
-  //   tools: [
-  //     {
-  //       name: "Python",
-  //       image:
-  //         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
-  //     },
-  //     {
-  //       name: "Tensorflow",
-  //       image:
-  //         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
-  //     },
-  //     {
-  //       name: "Figma",
-  //       image:
-  //         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-  //     },
-  //   ],
-  //   link: "https://github.com/acandrewchow/BetGenius"
-  // },
+  {
+    title: "Sports Betting Portfolio",
+    description: "Web App that tracks a user's sports betting portfolio",
+    image: "/images/projects/sports-portfolio.png",
+    tools: [
+      {
+        name: "React",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
+      },
+      {
+        name: "Next.JS",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
+      },
+      {
+        name: "Tailwind",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      },
+    ],
+    link: "https://github.com/acandrewchow/sports-betting-portfolio",
+  },
+  {
+    title: "BetGenius",
+    description:
+      "A model that recommends betslips to users based on their betting hisory",
+    image: "/images/projects/BetGenius.png",
+    tools: [
+      {
+        name: "Python",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
+      },
+      {
+        name: "Tensorflow",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      },
+      {
+        name: "Figma",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      },
+    ],
+    link: "https://github.com/acandrewchow/BetGenius",
+  },
 ];
 
 const MyWork = ({ darkMode }) => {
