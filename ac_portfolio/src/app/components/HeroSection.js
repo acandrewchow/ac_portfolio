@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import ProfilePicture from "../../../public/profile_pic.png";
+import Link from "next/link";
 import Type from "./Type";
 import ResumeLink from "./ResumeLink";
 
@@ -115,9 +116,9 @@ const HeroSection = () => {
             <AiFillGithub />
           </a>
         </motion.div>
-        {/* <motion.div whileHover={{ scale: 1.2 }}>
+        <motion.div whileHover={{ scale: 1.2 }}>
           <ResumeLink />
-        </motion.div> */}
+        </motion.div>
       </div>
     </div>
   );
