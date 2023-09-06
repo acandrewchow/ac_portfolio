@@ -20,16 +20,17 @@ const HeroSection = () => {
           <span class="text-teal-400">I'm Andrew!</span>
         </h2>
 
-        {/* <h3 className="text-xl md:text-3xl py-2 dark:text-white">
-        <Type />
-      </h3> */}
+        {/* <h3 className="text-xl md:text-3xl py-2 text-yellow-400 flex justify-center items-center">
+          <Type />
+        </h3> */}
+
         <div className="mx-auto rounded-full w-60 md:w-80 h-60 md:h-80 overflow-hidden mt-10 md:mt-15 mb-10">
           <Image src={ProfilePicture} alt="profile_pic" />
         </div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
         <p className="text-xl py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
@@ -40,8 +41,8 @@ const HeroSection = () => {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.4 }}
       >
         <p className="text-xl py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
@@ -105,7 +106,7 @@ const HeroSection = () => {
         </div>
       </motion.div>
 
-      <div className="text-2xl md:text-2xl flex justify-center gap-6 py-3 text-gray-600 dark:text-gray-400">
+      <div className="text-3xl md:text-3xl flex justify-center gap-6 py-3 text-gray-600 dark:text-gray-400">
         <motion.div whileHover={{ scale: 1.2 }}>
           <a href="https://linkedin.com/in/acandrewchow" target="_blank">
             <AiFillLinkedin />

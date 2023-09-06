@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+
 const ExperienceSection = ({ darkMode }) => {
   const experiences = [
     {
@@ -46,8 +48,12 @@ const ExperienceSection = ({ darkMode }) => {
         </h2>
         <div className="grid gap-8">
           {experiences.map((experience, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
               className={`flex flex-col md:flex-row p-8 rounded-lg shadow-md mb-8 ${
                 darkMode ? "bg-gray-800 text-white" : "bg-white text-gray-800"
               }`}
@@ -88,7 +94,7 @@ const ExperienceSection = ({ darkMode }) => {
                   {experience.description}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
