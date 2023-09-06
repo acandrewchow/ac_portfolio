@@ -10,7 +10,11 @@ const Navbar = ({ toggleDarkMode }) => {
   };
 
   return (
-    <nav className="py-10 flex justify-between dark:text-white">
+    <nav
+      className={`py-10 flex justify-between dark:text-white ${
+        isMobileMenuOpen ? "bg-gray-100 dark:bg-gray-800" : ""
+      } sticky top-0 z-50`}
+    >
       <h1 className="font-burtons text-3xl">
         <Link href="/">Andrew Chow</Link>
       </h1>
