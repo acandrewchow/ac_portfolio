@@ -36,7 +36,7 @@ const ContactSection = ({ darkMode }) => {
                 id="name"
                 name="name"
                 className={`w-full px-4 py-2 border rounded-md focus:ring ${
-                  darkMode ? "focus:ring-gray-500" : "focus:ring-teal-400"
+                  darkMode ? "focus:ring-blue-500" : "focus:ring-teal-400"
                 } focus:outline-none`}
               />
             </div>
@@ -54,7 +54,7 @@ const ContactSection = ({ darkMode }) => {
                 id="email"
                 name="email"
                 className={`w-full px-4 py-2 border rounded-md focus:ring ${
-                  darkMode ? "focus:ring-gray-500" : "focus:ring-teal-400"
+                  darkMode ? "focus:ring-blue-500" : "focus:ring-teal-400"
                 } focus:outline-none`}
               />
             </div>
@@ -72,16 +72,18 @@ const ContactSection = ({ darkMode }) => {
                 name="message"
                 rows="4"
                 className={`w-full px-4 py-2 border rounded-md focus:ring ${
-                  darkMode ? "focus:ring-gray-500" : "focus:ring-teal-400"
+                  darkMode ? "focus:ring-blue-500" : "focus:ring-teal-400"
                 } focus:outline-none`}
               ></textarea>
             </div>
-            <button
-              type="submit"
-              className={`bg-teal-500 text-white py-2 px-6 rounded-md hover:bg-teal-600 transition duration-300`}
-            >
-              Send Message
-            </button>
+            <div class="flex justify-center">
+              <button
+                type="submit"
+                className={`bg-teal-500 text-white py-2 px-6 rounded-md hover:bg-teal-600 transition duration-300`}
+              >
+                Send Message
+              </button>
+            </div>
           </form>
         </div>
       </div>
