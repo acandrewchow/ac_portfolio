@@ -45,7 +45,7 @@ export default function BlogHome() {
         <section className="min-h-screen">
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
-          <div className="max-w-xl mx-auto space-y-8 px-6">
+          <div className="max-w-xl mx-auto space-y-8 px-6 py-10">
             {blogPostData.map((post, index) => (
               <div key={index}>
                 <Link
