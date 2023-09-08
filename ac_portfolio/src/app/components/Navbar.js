@@ -13,8 +13,8 @@ const Navbar = ({ toggleDarkMode }) => {
     <nav
       className={`md:px-20 lg:px-40 px-10 py-8 flex justify-between ${
         isMobileMenuOpen
-          ? "bg-gray-100 dark:bg-gray-800 dark:text-white"
-          : "bg-gray-800 dark:bg-gray-800 text-white"
+          ? "bg-gray-100 dark:bg-gray-800 text-black"
+          : "bg-gray-100 dark:bg-gray-800 dark:text-white"
       } sticky top-0 z-50`}
     >
       <h1 className="font-burtons text-3xl mt-1">
