@@ -41,7 +41,7 @@ export default function BlogHome() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ParticlesBackground darkMode={darkMode} />
-      <main className="bg-white dark:bg-gray-900 px-10 md:px-20 lg:px-40">
+      <main className="bg-white dark:bg-gray-900">
         <section className="min-h-screen">
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 

@@ -27,7 +27,7 @@ export default function Home() {
         <meta name="description" content="Personal Portfolio" />
         <link rel="icon" href="./favicons/favicon.ico" />
       </Head>
-      <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className=" bg-white dark:bg-gray-900">
         <section className="min-h-screen">
           <ParticlesBackground darkMode={darkMode} />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
