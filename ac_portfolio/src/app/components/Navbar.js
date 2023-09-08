@@ -13,11 +13,11 @@ const Navbar = ({ toggleDarkMode }) => {
     <nav
       className={`md:px-20 lg:px-40 px-10 py-8 flex justify-between ${
         isMobileMenuOpen
-          ? "bg-gray-100 dark:bg-gray-800 text-black"
-          : "bg-gray-100 dark:bg-gray-800 dark:text-white"
+          ? "bg-gray-100 dark:bg-gray-800 dark:text-white"
+          : "bg-gray-100 dark:bg-gray-800"
       } sticky top-0 z-50`}
     >
-      <h1 className="font-burtons text-3xl mt-1">
+      <h1 className="text-black dark:text-white font-burtons text-3xl mt-1">
         <Link href="/">Andrew Chow</Link>
       </h1>
       <div className="md:hidden">
@@ -47,7 +47,7 @@ const Navbar = ({ toggleDarkMode }) => {
         />
         <Link
           href="/blog"
-          className="text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
+          className="text-black dark:text-white text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
         >
           Blog
         </Link>
