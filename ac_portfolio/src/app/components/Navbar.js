@@ -51,7 +51,14 @@ const Navbar = ({ toggleDarkMode }) => {
         >
           Blog
         </Link>
+        <Link
+          href="/gallery"
+          className="text-black dark:text-white text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500 ml-4" // Added margin-left (ml-4)
+        >
+          Gallery
+        </Link>
       </div>
+
       <div
         className={`md:hidden fixed top-0 right-0 h-full w-full bg-opacity-50 bg-black transition-opacity ${
           isMobileMenuOpen
@@ -104,6 +111,14 @@ const Navbar = ({ toggleDarkMode }) => {
               className="text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
             >
               Blog
+            </Link>
+          </li>
+          <li className="mb-8 text-2xl">
+            <Link
+              href="/gallery"
+              className="text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
+            >
+              Gallery
             </Link>
           </li>
         </ul>
