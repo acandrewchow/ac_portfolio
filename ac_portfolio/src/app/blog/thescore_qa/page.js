@@ -26,7 +26,7 @@ const TheScoreQa = () => {
       <main className="bg-white dark:bg-gray-900">
         <section className="min-h-screen">
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-          <div className="max-w-4xl mx-auto py-8">
+          <div className="max-w-4xl mx-auto px-6 py-8">
             <h1
               className={`text-4xl font-extrabold mb-4 text-center ${
                 darkMode ? "text-white" : "text-gray-900"

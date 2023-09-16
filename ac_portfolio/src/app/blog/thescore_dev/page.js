@@ -55,7 +55,7 @@ const TheScoreDev = () => {
       <main className="bg-white dark:bg-gray-900">
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <section className="min-h-screen">
-          <div className="max-w-4xl mx-auto py-8">
+          <div className="max-w-4xl mx-auto px-6 py-8">
             <div className="text-center">
               <h2 className="text-4xl md:text-5xl py-2 font-medium mb-6">
                 <span class="text-blue-400">Life at theScore</span> <br />
