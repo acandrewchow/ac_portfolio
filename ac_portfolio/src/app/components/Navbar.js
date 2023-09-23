@@ -41,22 +41,22 @@ const Navbar = ({ toggleDarkMode }) => {
         </button>
       </div>
       <div className="hidden md:flex items-center">
-        <BsFillMoonStarsFill
-          onClick={toggleDarkMode}
-          className="text-2xl cursor-pointer dark:text-white mr-8"
-        />
         <Link
           href="/blog"
-          className="text-black dark:text-white text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
+          className="text-black dark:text-white mr-4 text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
         >
           Blog
         </Link>
         <Link
           href="/gallery"
-          className="text-black dark:text-white text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500 ml-4" // Added margin-left (ml-4)
+          className="text-black dark:text-white mr-8 text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500 ml-4" // Added margin-left (ml-4)
         >
           Gallery
         </Link>
+        <BsFillMoonStarsFill
+          onClick={toggleDarkMode}
+          className="text-2xl cursor-pointer dark:text-white"
+        />
       </div>
 
       <div
