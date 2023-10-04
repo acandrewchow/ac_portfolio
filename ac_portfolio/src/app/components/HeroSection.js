@@ -33,10 +33,17 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <p className="text-xl py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
+        <p className="text-xl text-center py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
           I'm Andrew, a Software Engineering student at the University of Guelph
           who loves to solve problems! I have a passion for building new
           products and applications through the world of technology.
+        </p>
+
+        <p className="text-xl text-center py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
+          Most recently, I interned at theScore, where I developed features for
+          the Promotions team. During my internship, I had the opportunity to
+          work with Elixir and Phoenix, contributing to the various microservices
+          within theScoreBet
         </p>
       </motion.div>
 
@@ -45,7 +52,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.4 }}
       >
-        <p className="text-xl py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
+        <p className="text-xl text-center py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
           If you're interested in learning more about me, feel free to read my{" "}
           <a
             href="/blog"
