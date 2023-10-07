@@ -33,17 +33,17 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <p className="text-xl text-center py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
+        <p className="text-left py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
           I'm Andrew, a Software Engineering student at the University of Guelph
           who loves to solve problems! I have a passion for building new
           products and applications through the world of technology.
         </p>
 
-        <p className="text-xl text-center py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
-          Most recently, I interned at theScore, where I developed features for
-          the Promotions team. During my internship, I had the opportunity to
-          work with Elixir and Phoenix, contributing to the various microservices
-          within theScoreBet
+        <p className="text-left py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
+          Most recently, I interned at theScore as a Software Developer where I
+          developed features for the Promotions team. During my internship, I
+          had the opportunity to work with Elixir and Phoenix, contributing to
+          the various microservices within theScoreBet
         </p>
       </motion.div>
 
@@ -52,7 +52,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.4 }}
       >
-        <p className="text-xl text-center py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-2xl">
+        <p className="text-left py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
           If you're interested in learning more about me, feel free to read my{" "}
           <a
             href="/blog"
@@ -76,7 +76,7 @@ const HeroSection = () => {
           <div className="bg-teal-100 dark:bg-blue-700 p-4 rounded-full my-4 flex items-center justify-center md:justify-start">
             <div className="rounded-full bg-white dark:bg-gray-800 p-8">
               <h4 className="text-xl md:text-2xl py-6 text-black font-medium dark:text-white">
-                🧑‍💻 What I'm up to at the moment
+                🧑‍💻 At the moment I am..
               </h4>
               <ul className="list-none list-inside">
                 <li className="text-gray-800 dark:text-white">
@@ -86,7 +86,7 @@ const HeroSection = () => {
                   🚢 Learning about product management
                 </li>
                 <li className="text-gray-800 dark:text-white">
-                  📸 Enhancing my photography skills
+                  📸 Capturing the world around me
                 </li>
               </ul>
             </div>

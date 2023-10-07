@@ -6,7 +6,7 @@ const ProjectCard = ({ project, darkMode }) => (
   <div
     className={`mb-8 ${
       darkMode ? "bg-gray-800" : "bg-white"
-    } rounded-lg shadow-md overflow-hidden md:flex`}
+    } rounded-lg shadow-md overflow-hidden md:flex transition-transform hover:scale-105`}
   >
     <div className="md:w-1/2">
       <Image

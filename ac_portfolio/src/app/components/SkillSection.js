@@ -121,7 +121,7 @@ const SkillsSection = ({ darkMode }) => {
       <div className="container mx-auto px-4">
         <h2
           className={`text-4xl md:text-5xl text-center font-semibold mb-8 py-1 ${
-            darkMode ? "text-white" : "dark:text-white"
+            darkMode ? "text-blue-400" : "dark:text-white"
           } mb-8`}
         >
           Skills
@@ -130,6 +130,7 @@ const SkillsSection = ({ darkMode }) => {
           <AnimatePresence>
             {skillsData.map((skill) => (
               <motion.div
+                whileHover={{ scale: 1.2 }}
                 key={skill.name}
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}

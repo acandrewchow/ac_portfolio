@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
 import { motion } from "framer-motion";
 
 const ExperienceSection = ({ darkMode }) => {
@@ -38,10 +37,10 @@ const ExperienceSection = ({ darkMode }) => {
         darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
       }`}
     >
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-lg mx-auto px-4">
         <h2
           className={`text-4xl md:text-5xl text-center font-semibold mb-8 ${
-            darkMode ? "text-white" : "text-gray-800"
+            darkMode ? "text-blue-400" : "text-gray-800"
           }`}
         >
           Experience
@@ -54,11 +53,11 @@ const ExperienceSection = ({ darkMode }) => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className={`flex flex-col md:flex-row p-8 rounded-lg shadow-md mb-8 ${
+              className={`flex flex-col rounded-lg p-4 shadow-md mb-8 text-left ${
                 darkMode ? "bg-gray-800 text-white" : "bg-white text-gray-800"
               }`}
             >
-              <div className="md:w-1/3 pr-6 mb-4 md:mb-0 md:pr-12">
+              <div className="mb-4">
                 <Image
                   src={experience.companyLogo}
                   alt={`${experience.companyName} Logo`}
@@ -68,7 +67,7 @@ const ExperienceSection = ({ darkMode }) => {
                   height={100}
                 />
               </div>
-              <div className="md:w-2/3">
+              <div>
                 <h3
                   className={`text-xl md:text-2xl font-semibold mb-2 ${
                     darkMode ? "text-white" : "text-gray-800"

@@ -15,7 +15,7 @@ const EducationSection = ({ darkMode }) => {
       degree: "Bachelor of Science, Bachelor of Education",
       institutionName: "Brock University",
       date: "September 2019 - April 2020",
-      description: "Concurrent Education (I/S)",
+      description: "Concurrent Education Intermediate/Senior",
     },
   ];
 
@@ -26,10 +26,10 @@ const EducationSection = ({ darkMode }) => {
         darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
       }`}
     >
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-lg mx-auto px-4">
         <h2
           className={`text-4xl md:text-5xl text-center font-semibold mb-8 ${
-            darkMode ? "text-white" : "text-gray-800"
+            darkMode ? "text-blue-400" : "text-gray-800"
           }`}
         >
           Education
@@ -38,11 +38,11 @@ const EducationSection = ({ darkMode }) => {
           {education.map((edu, index) => (
             <div
               key={index}
-              className={`flex flex-col md:flex-row p-8 rounded-lg shadow-md mb-8 ${
+              className={`flex flex-col rounded-lg p-4 shadow-md mb-8 text-left ${
                 darkMode ? "bg-gray-800 text-white" : "bg-white text-gray-800"
               }`}
             >
-              <div className="md:w-1/3 pr-6 mb-4 md:mb-0 md:pr-12">
+              <div className="mb-4">
                 <Image
                   src={edu.institutionLogo}
                   alt={`${edu.institutionName} Logo`}
@@ -52,7 +52,7 @@ const EducationSection = ({ darkMode }) => {
                   height={100}
                 />
               </div>
-              <div className="md:w-2/3">
+              <div>
                 <h3
                   className={`text-xl md:text-2xl font-semibold mb-2 ${
                     darkMode ? "text-white" : "text-gray-800"

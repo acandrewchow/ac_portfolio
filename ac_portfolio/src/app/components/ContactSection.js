@@ -4,7 +4,7 @@ const ContactSection = ({ darkMode }) => {
       <div className="container mx-auto px-4">
         <h2
           className={`text-3xl text-center py-1 ${
-            darkMode ? "text-white" : "dark:text-white"
+            darkMode ? "text-blue-400" : "dark:text-white"
           } mb-4`}
         >
           Contact Me
