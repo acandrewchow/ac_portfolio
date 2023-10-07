@@ -3,7 +3,7 @@ const ContactSection = ({ darkMode }) => {
     <section className={`py-16 ${darkMode ? "bg-gray-900" : "bg-white"}`}>
       <div className="container mx-auto px-4">
         <h2
-          className={`text-3xl text-center py-1 ${
+          className={`text-4xl font-semibold  text-center py-1 ${
             darkMode ? "text-blue-400" : "dark:text-white"
           } mb-4`}
         >
@@ -26,7 +26,7 @@ const ContactSection = ({ darkMode }) => {
               <label
                 htmlFor="name"
                 className={`block ${
-                  darkMode ? "text-gray-400" : "text-gray-600"
+                  darkMode ? "text-white" : "text-gray-600"
                 } mb-1`}
               >
                 Name
@@ -44,7 +44,7 @@ const ContactSection = ({ darkMode }) => {
               <label
                 htmlFor="email"
                 className={`block ${
-                  darkMode ? "text-gray-400" : "text-gray-600"
+                  darkMode ? "text-white" : "text-gray-600"
                 } mb-1`}
               >
                 Email
@@ -62,7 +62,7 @@ const ContactSection = ({ darkMode }) => {
               <label
                 htmlFor="message"
                 className={`block ${
-                  darkMode ? "text-gray-400" : "text-gray-600"
+                  darkMode ? "text-white" : "text-gray-600"
                 } mb-1`}
               >
                 Message
@@ -72,14 +72,14 @@ const ContactSection = ({ darkMode }) => {
                 name="message"
                 rows="4"
                 className={`w-full px-4 py-2 border rounded-md focus:ring ${
-                  darkMode ? "focus:ring-blue-500" : "focus:ring-teal-400"
+                  darkMode ? "focus:ring-blue-500" : "focus:ring-blue-400"
                 } focus:outline-none`}
               ></textarea>
             </div>
             <div class="flex justify-center">
               <button
                 type="submit"
-                className={`bg-teal-500 text-white py-2 px-6 rounded-md hover:bg-teal-600 transition duration-300`}
+                className={`bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-300`}
               >
                 Send Message
               </button>

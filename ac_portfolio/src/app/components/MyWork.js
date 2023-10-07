@@ -148,7 +148,7 @@ const MyWork = ({ darkMode }) => {
         </div>
         <div
           className={`flex flex-wrap -mx-4 ${
-            darkMode ? "text-white" : "text-gray-800"
+            darkMode ? "text-blue-400" : "text-gray-800"
           }`}
         >
           {projects.map((project, index) => (
