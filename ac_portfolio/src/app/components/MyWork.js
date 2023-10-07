@@ -128,7 +128,7 @@ const MyWork = ({ darkMode }) => {
       <div className="container mx-auto px-4">
         <h2
           className={`text-4xl md:text-5xl text-center font-semibold ${
-            darkMode ? "text-white" : "text-gray-800"
+            darkMode ? "text-blue-400" : "text-gray-800"
           }`}
         >
           My Work
