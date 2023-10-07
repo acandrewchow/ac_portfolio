@@ -24,7 +24,7 @@ const HeroSection = () => {
           <Type />
         </h3> */}
 
-        <div className="mx-auto rounded-full w-60 md:w-80 h-60 md:h-80 overflow-hidden mt-10 md:mt-15 mb-10">
+        <div className="mx-auto rounded-full w-60 md:w-80 h-60 md:h-80 overflow-hidden mt-10 md:mt-15 mb-10 hover:scale-110">
           <Image src={ProfilePicture} alt="profile_pic" />
         </div>
       </motion.div>
