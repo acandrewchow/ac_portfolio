@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import Link from "next/link";
+import ResumeLink from "./ResumeLink";
 
 const Navbar = ({ toggleDarkMode }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,10 +12,10 @@ const Navbar = ({ toggleDarkMode }) => {
 
   return (
     <nav
-      className={`md:px-20 lg:px-40 px-10 py-8 flex justify-between ${
+      className={`px-14 py-4 flex justify-between ${
         isMobileMenuOpen
-          ? "bg-gray-100 dark:bg-gray-800 dark:text-white"
-          : "bg-gray-100 dark:bg-gray-800"
+          ? "bg-white dark:bg-gray-900 dark:text-white"
+          : "bg-white dark:bg-gray-900"
       } sticky top-0 z-50`}
     >
       <h1 className="text-black dark:text-white font-burtons text-3xl mt-1">
@@ -41,17 +42,18 @@ const Navbar = ({ toggleDarkMode }) => {
         </button>
       </div>
       <div className="hidden md:flex items-center">
+        <ResumeLink/>
         <Link
           href="/blog"
-          className="text-black dark:text-white mr-4 text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
+          className="text-black dark:text-white mr-4 text-xl hover:scale-105 transform transition duration-300 ml-8"
         >
-          Blog
+          blog
         </Link>
         <Link
           href="/gallery"
-          className="text-black dark:text-white mr-8 text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500 ml-4" // Added margin-left (ml-4)
+          className="text-black dark:text-white mr-8 text-xl hover:scale-105 transform transition duration-300 ml-4"
         >
-          Gallery
+          gallery
         </Link>
         <BsFillMoonStarsFill
           onClick={toggleDarkMode}
@@ -74,7 +76,7 @@ const Navbar = ({ toggleDarkMode }) => {
       >
         <button
           onClick={toggleMobileMenu}
-          className="absolute top-4 right-4 focus:outline-none"
+          className="absolute top-4 right-4 focus:outline-none hover:scale-105"
         >
           <svg
             className="w-8 h-8"
@@ -91,34 +93,39 @@ const Navbar = ({ toggleDarkMode }) => {
           </svg>
         </button>
         <ul className="flex flex-col items-center justify-center h-full">
-          <li className="mb-8 text-2xl">
+          <li className="mb-8 text-2xl hover:scale-105 ">
             <BsFillMoonStarsFill
               onClick={toggleDarkMode}
               className="cursor-pointer"
             />
           </li>
-          <li className="mb-8 text-2xl">
+          <li className="mb-8 text-xl hover:scale-105 ">
             <Link
               href="/"
-              className="text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
             >
-              Home
+              home
             </Link>
           </li>
-          <li className="mb-8 text-2xl">
+          <li className="mb-8 text-xl hover:scale-105 ">
             <Link
               href="/blog"
-              className="text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
             >
-              Blog
+              blog
             </Link>
           </li>
-          <li className="mb-8 text-2xl">
+          <li className="mb-8 text-xl hover:scale-105 ">
             <Link
               href="/gallery"
-              className="text-2xl hover:text-blue-500 relative hover:after:block hover:after:w-full hover:after:h-1 hover:after:bg-blue-500"
             >
-              Gallery
+              gallery
+            </Link>
+          </li>
+          <li className="mb-8 text-xl hover:scale-105 ">
+            <Link 
+              href="https://docs.google.com/gview?url=https://github.com/acandrewchow/resume/raw/main/Chow_Andrew-Resume.pdf&embedded=true"
+              target="_blank"
+            >
+              resume
             </Link>
           </li>
         </ul>
