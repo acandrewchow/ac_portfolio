@@ -26,7 +26,7 @@ const ContactSection = ({ darkMode }) => {
               <label
                 htmlFor="name"
                 className={`block ${
-                  darkMode ? "text-white" : "text-gray-600"
+                  darkMode ? "text-white" : "text-black"
                 } mb-1`}
               >
                 Name
@@ -36,7 +36,7 @@ const ContactSection = ({ darkMode }) => {
                 id="name"
                 name="name"
                 className={`w-full px-4 py-2 border rounded-md focus:ring ${
-                  darkMode ? "focus:ring-blue-500" : "focus:ring-teal-400"
+                  darkMode ? "focus:ring-blue-500" : "focus:ring-blue-400"
                 } focus:outline-none`}
               />
             </div>
@@ -44,7 +44,7 @@ const ContactSection = ({ darkMode }) => {
               <label
                 htmlFor="email"
                 className={`block ${
-                  darkMode ? "text-white" : "text-gray-600"
+                  darkMode ? "text-white" : "text-black"
                 } mb-1`}
               >
                 Email
@@ -54,7 +54,7 @@ const ContactSection = ({ darkMode }) => {
                 id="email"
                 name="email"
                 className={`w-full px-4 py-2 border rounded-md focus:ring ${
-                  darkMode ? "focus:ring-blue-500" : "focus:ring-teal-400"
+                  darkMode ? "focus:ring-blue-500" : "focus:ring-blue-400"
                 } focus:outline-none`}
               />
             </div>
@@ -62,7 +62,7 @@ const ContactSection = ({ darkMode }) => {
               <label
                 htmlFor="message"
                 className={`block ${
-                  darkMode ? "text-white" : "text-gray-600"
+                  darkMode ? "text-white" : "text-black"
                 } mb-1`}
               >
                 Message
