@@ -12,13 +12,13 @@ const Navbar = ({ toggleDarkMode }) => {
 
   return (
     <nav
-      className={`px-52 py-6 flex justify-between ${
+      className={`px-4 md:px-52 py-6 flex justify-between ${
         isMobileMenuOpen
           ? "bg-white dark:bg-gray-900 dark:text-white"
           : "bg-white dark:bg-gray-900"
       } sticky top-0 z-50`}
     >
-      <h1 className="text-black dark:text-white font-yuji text-3xl mt-1">
+      <h1 className="text-black dark:text-white font-yuji text-3xl">
         <Link href="/">AC</Link>
       </h1>
       <div className="md:hidden">
