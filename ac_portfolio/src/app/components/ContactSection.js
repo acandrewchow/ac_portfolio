@@ -4,7 +4,7 @@ const ContactSection = ({ darkMode }) => {
       <div className="container mx-auto px-4">
         <h2
           className={`text-4xl font-semibold  text-center py-1 ${
-            darkMode ? "text-blue-400" : "dark:text-white"
+            darkMode ? "text-white" : "dark:text-white"
           } mb-4`}
         >
           Contact Me
@@ -81,7 +81,7 @@ const ContactSection = ({ darkMode }) => {
                 type="submit"
                 className={`bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-300`}
               >
-                Send Message
+                Send
               </button>
             </div>
           </form>

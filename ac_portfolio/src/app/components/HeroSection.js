@@ -16,8 +16,8 @@ const HeroSection = () => {
         transition={{ duration: 1, delay: 0.2 }}
       >
         <h2 className="text-4xl md:text-5xl font-medium">
-          <span class="dark:text-blue-400 text-black">Hello,</span>{" "}
-          <span class="dark:text-teal-400 text-black">I'm Andrew</span>
+          <span class="dark:text-white text-black">Hello,</span>{" "}
+          <span class="dark:text-white text-black">I'm Andrew</span>
         </h2>
 
         {/* <h3 className="text-xl md:text-3xl py-2 text-yellow-400 flex justify-center items-center">
