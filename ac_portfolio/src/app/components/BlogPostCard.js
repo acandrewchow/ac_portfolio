@@ -6,7 +6,7 @@ const BlogPostCard = ({ title, date, role, imageUrl, darkMode }) => {
       className={`bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden`}
     >
       <img
-        src={imageUrl || "/placeholder-image.jpg"}
+        src={imageUrl}
         alt={`${title}`}
         className="w-full h-56 object-cover"
       />

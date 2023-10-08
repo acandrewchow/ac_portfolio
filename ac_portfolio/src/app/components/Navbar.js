@@ -12,14 +12,14 @@ const Navbar = ({ toggleDarkMode }) => {
 
   return (
     <nav
-      className={`px-14 py-4 flex justify-between ${
+      className={`px-52 py-6 flex justify-between ${
         isMobileMenuOpen
           ? "bg-white dark:bg-gray-900 dark:text-white"
           : "bg-white dark:bg-gray-900"
       } sticky top-0 z-50`}
     >
-      <h1 className="text-black dark:text-white font-burtons text-3xl mt-1">
-        <Link href="/">Andrew Chow</Link>
+      <h1 className="text-black dark:text-white font-yuji text-3xl mt-1">
+        <Link href="/">AC</Link>
       </h1>
       <div className="md:hidden">
         <button
@@ -42,22 +42,22 @@ const Navbar = ({ toggleDarkMode }) => {
         </button>
       </div>
       <div className="hidden md:flex items-center">
-        <ResumeLink/>
+        <ResumeLink />
         <Link
           href="/blog"
-          className="text-black dark:text-white mr-4 text-xl hover:scale-105 transform transition duration-300 ml-8"
+          className="text-black dark:text-white mr-4 text-lg hover:scale-105 transform transition duration-300 ml-8"
         >
           blog
         </Link>
         <Link
           href="/gallery"
-          className="text-black dark:text-white mr-8 text-xl hover:scale-105 transform transition duration-300 ml-4"
+          className="text-black dark:text-white mr-8 text-lg hover:scale-105 transform transition duration-300 ml-4"
         >
           gallery
         </Link>
         <BsFillMoonStarsFill
           onClick={toggleDarkMode}
-          className="text-2xl cursor-pointer dark:text-white"
+          className="text-2xl cursor-pointer dark:text-white hover:scale-105 transform transition duration-300"
         />
       </div>
 
@@ -100,28 +100,16 @@ const Navbar = ({ toggleDarkMode }) => {
             />
           </li>
           <li className="mb-8 text-xl hover:scale-105 ">
-            <Link
-              href="/"
-            >
-              home
-            </Link>
+            <Link href="/">home</Link>
+          </li>
+          <li className="mb-8 text-xl hover:scale-105 ">
+            <Link href="/blog">blog</Link>
+          </li>
+          <li className="mb-8 text-xl hover:scale-105 ">
+            <Link href="/gallery">gallery</Link>
           </li>
           <li className="mb-8 text-xl hover:scale-105 ">
             <Link
-              href="/blog"
-            >
-              blog
-            </Link>
-          </li>
-          <li className="mb-8 text-xl hover:scale-105 ">
-            <Link
-              href="/gallery"
-            >
-              gallery
-            </Link>
-          </li>
-          <li className="mb-8 text-xl hover:scale-105 ">
-            <Link 
               href="https://docs.google.com/gview?url=https://github.com/acandrewchow/resume/raw/main/Chow_Andrew-Resume.pdf&embedded=true"
               target="_blank"
             >

@@ -7,5 +7,10 @@
   src: url('../../public/Burtons.otf');
 }
 
+@font-face{
+  font-family: "yuji";
+  src: url('../../public/YujiHentaiganaAkari-Regular.ttf')
+}
+
 
 
