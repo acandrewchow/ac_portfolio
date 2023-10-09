@@ -37,7 +37,7 @@ const ExperienceSection = ({ darkMode }) => {
         darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
       }`}
     >
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <h2
           className={`text-4xl md:text-5xl text-center font-semibold mb-8 ${
             darkMode ? "text-white" : "text-gray-800"
@@ -45,7 +45,7 @@ const ExperienceSection = ({ darkMode }) => {
         >
           Experience
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {experiences.map((experience, index) => (
             <motion.div
               key={index}
