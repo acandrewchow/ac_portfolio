@@ -50,10 +50,10 @@ const Navbar = ({ toggleDarkMode }) => {
           blog
         </Link>
         <Link
-          href="/gallery"
+          href="/photography"
           className="text-black dark:text-white mr-8 text-lg hover:scale-105 transform transition duration-300 ml-4"
         >
-          gallery
+          photography
         </Link>
         <BsFillMoonStarsFill
           onClick={toggleDarkMode}
@@ -106,7 +106,7 @@ const Navbar = ({ toggleDarkMode }) => {
             <Link href="/blog">blog</Link>
           </li>
           <li className="mb-8 text-xl hover:scale-105 ">
-            <Link href="/gallery">gallery</Link>
+            <Link href="/photography">photography</Link>
           </li>
           <li className="mb-8 text-xl hover:scale-105 ">
             <Link

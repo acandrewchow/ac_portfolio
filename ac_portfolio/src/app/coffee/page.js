@@ -34,7 +34,7 @@ const CoffeeTracker = () => {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>Andrew Chow's Gallery</title>
+        <title>Andrew Chow's Photography</title>
         <meta name="description" content="Trying all sorts of coffee!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
