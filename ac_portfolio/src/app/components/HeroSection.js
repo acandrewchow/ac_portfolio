@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import ProfilePicture from "../../../public/profile_pic.png";
+import ProfilePicture from "../../../public/profile_pic.jpg";
 import Link from "next/link";
 import Type from "./Type";
 import ResumeLink from "./ResumeLink";
@@ -24,7 +24,7 @@ const HeroSection = () => {
           <Type />
         </h3> */}
 
-        <div className="mx-auto rounded-full w-60 md:w-80 h-60 md:h-80 overflow-hidden mt-10 md:mt-15 mb-10 hover:scale-110">
+        <div className="mx-auto rounded-full w-60 md:w-100 h-90 md:h-100 overflow-hidden mt-10 md:mt-15 mb-10">
           <Image src={ProfilePicture} alt="profile_pic" />
         </div>
       </motion.div>
