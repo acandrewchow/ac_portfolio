@@ -42,10 +42,9 @@ const HeroSection = () => {
         </p>
 
         <p className="text-left py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
-          Most recently, I interned at theScore as a Software Developer where I
-          developed features for the Promotions team. During my internship, I
-          had the opportunity to work with Elixir and Phoenix, contributing to
-          the various microservices within theScoreBet
+          This winter, I am interning at theScore as a Software Developer where
+          I will continue building new features for theScoreBet/ESPN Bet within
+          the Promotions Team
         </p>
 
         <p className="text-left leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">

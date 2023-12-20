@@ -8,6 +8,14 @@ const ExperienceSection = ({ darkMode }) => {
       companyLogo: "/images/experience/theScore.jpg",
       role: "Software Developer",
       companyName: "theScore",
+      date: "January 2024 - April 2024",
+      description:
+        "theScore, a wholly-owned subsidiary of PENN Entertainment, empowers millions of sports fans through its digital media and sports betting products. Worked on the Promotions team for theScoreBet. A team responsible for creating dynamic marketing campaigns",
+    },
+    {
+      companyLogo: "/images/experience/theScore.jpg",
+      role: "Software Developer",
+      companyName: "theScore",
       date: "May 2023 - August 2023",
       description:
         "theScore, a wholly-owned subsidiary of PENN Entertainment, empowers millions of sports fans through its digital media and sports betting products. Worked on the Promotions team for theScoreBet. A team responsible for creating dynamic marketing campaigns",
