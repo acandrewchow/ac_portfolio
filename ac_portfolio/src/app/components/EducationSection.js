@@ -28,7 +28,7 @@ const EducationSection = ({ darkMode }) => {
     >
       <div className="max-w-4xl mx-auto px-4">
         <h2
-          className={`text-4xl md:text-5xl text-center font-semibold mb-8 ${
+          className={`text-4xl md:text-5xl text-center font-firacode font-semibold mb-8 ${
             darkMode ? "text-white" : "text-gray-800"
           }`}
         >
