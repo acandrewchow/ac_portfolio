@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         burtons: "burtons",
         yuji: "yuji",
+        firacode: "firacode"
       }
     },
   },

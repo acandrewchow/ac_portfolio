@@ -34,7 +34,7 @@ const EducationSection = ({ darkMode }) => {
         >
           Education
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="font-firacode grid grid-cols-1 md:grid-cols-2 gap-8">
           {education.map((edu, index) => (
             <div
               key={index}

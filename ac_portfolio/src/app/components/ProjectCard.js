@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ProjectCard = ({ project, darkMode }) => (
   <div
-    className={`mb-8 ${
+    className={`font-firacode mb-8 ${
       darkMode ? "bg-gray-800" : "bg-white"
     } rounded-lg shadow-md overflow-hidden md:flex transition-transform hover:scale-105`}
   >

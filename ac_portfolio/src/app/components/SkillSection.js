@@ -120,7 +120,7 @@ const SkillsSection = ({ darkMode }) => {
     >
       <div className="container mx-auto px-4">
         <h2
-          className={`text-4xl md:text-5xl text-center font-semibold mb-8 py-1 ${
+          className={`text-4xl md:text-5xl text-center font-firacode font-semibold mb-8 py-1 ${
             darkMode ? "text-white" : "dark:text-white"
           } mb-8`}
         >

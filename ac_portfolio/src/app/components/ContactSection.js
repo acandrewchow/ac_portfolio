@@ -1,6 +1,6 @@
 const ContactSection = ({ darkMode }) => {
   return (
-    <section className={`py-16 ${darkMode ? "bg-gray-900" : "bg-white"}`}>
+    <section className={`font-firacode py-16 ${darkMode ? "bg-gray-900" : "bg-white"}`}>
       <div className="container mx-auto px-4">
         <h2
           className={`text-4xl font-semibold  text-center py-1 ${

@@ -35,7 +35,7 @@ export default function PhotographyHome() {
         <section className="min-h-screen">
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
-          <section className="container mx-auto p-4">
+          <section className="font-firacode container mx-auto p-4">
             <div className="text-center">
               <h2 className="text-lefttext-black text-3xl font-semibold mb-4 p-4 dark:text-white">
                 My Gear

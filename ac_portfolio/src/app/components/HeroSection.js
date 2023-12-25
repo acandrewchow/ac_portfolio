@@ -15,7 +15,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <h2 className="text-4xl md:text-5xl font-medium">
+        <h2 className="text-3xl font-firacode md:text-5xl font-medium">
           <span class="dark:text-white text-black">Hello,</span>{" "}
           <span class="dark:text-white text-black">I'm Andrew</span>
         </h2>
@@ -33,21 +33,20 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <p className="text-left leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
-          I'm Andrew, a Software Engineering student at the University of Guelph
-          who loves to solve problems! I have a passion for building new
-          products and applications through the world of technology. During my
-          free time, I enjoy going to the gym, taking photos and tutoring other
-          students programming.
+        <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
+          I'm Andrew, a Software Engineering student at the University of
+          Guelph. I have a passion for building innovative products designed to
+          deliver value to customers. During my free time, I enjoy going to the
+          gym, taking photos and teaching other students programming concepts.
         </p>
 
-        <p className="text-left py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
+        <p className="text-left font-firacode py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
           This Winter, I am interning at theScore as a Software Developer where
           I will continue building new features for theScoreBet/ESPN Bet within
           the Promotions Team.
         </p>
 
-        <p className="text-left leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
+        <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg mb-8">
           If you're interested in learning more about me, feel free to read my{" "}
           <a
             href="/blog"
