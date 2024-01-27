@@ -15,7 +15,7 @@ const ContactSection = ({ darkMode }) => {
               darkMode ? "text-white" : "dark:text-white"
             }`}
           >
-            ☕ Let's connect! Feel free to leave a message. 📩
+            ☕ Let's connect! Feel free to leave a message
           </p>
           <form
             className="space-y-4"
