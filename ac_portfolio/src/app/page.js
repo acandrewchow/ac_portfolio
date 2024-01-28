@@ -11,7 +11,6 @@ import EducationSection from "./components/EducationSection";
 import Footer from "./components/Footer";
 import ProjectSection from "./components/MyWork";
 import BackToTopButton from "./components/BackToTopButton";
-import TestCodeComponent from "./components/TestCodeComponent";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);

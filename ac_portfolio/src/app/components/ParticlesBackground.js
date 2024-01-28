@@ -34,14 +34,14 @@ const ParticlesBackground = ({ darkMode }) => {
             value: 80,
             density: {
               enable: true,
-              value_area: 800,
+              value_area: 3000,
             },
           },
           color: {
             value: darkMode ? "#ffffff" : "#000000",
           },
           shape: {
-            type: "circle",
+            type: "star",
             stroke: {
               width: 0,
               color: "#000000",
