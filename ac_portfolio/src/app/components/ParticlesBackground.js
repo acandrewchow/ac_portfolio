@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 const ParticlesBackground = ({ darkMode }) => {
   const [particleSize, setParticleSize] = useState(4);
   const [lineDistance, setLineDistance] = useState(600);
+  const [density, setDensity] = useState(2000);
 
   const particlesInit = async (main) => {
     console.log(main);
@@ -14,8 +15,9 @@ const ParticlesBackground = ({ darkMode }) => {
 
   const handleResize = () => {
     const isMobile = window.innerWidth <= 768;
-    setParticleSize(isMobile ? 3 : 6);
+    setParticleSize(isMobile ? 6 : 8);
     setLineDistance(isMobile ? 300 : 600);
+    setDensity(isMobile ? 1500 : 2000);
   };
 
   useEffect(() => {
@@ -34,7 +36,7 @@ const ParticlesBackground = ({ darkMode }) => {
             value: 80,
             density: {
               enable: true,
-              value_area: 3000,
+              value_area: density,
             },
           },
           color: {
