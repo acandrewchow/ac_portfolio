@@ -92,7 +92,7 @@ const skillsData = [
   {
     name: "Tailwind CSS",
     imageSrc:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
   {
     name: "Figma",
