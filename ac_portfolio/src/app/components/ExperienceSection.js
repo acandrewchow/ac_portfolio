@@ -1,24 +1,21 @@
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const ExperienceSection = ({ darkMode }) => {
   const experiences = [
     {
       companyLogo: "/images/experience/theScore.jpg",
-      role: "Software Developer",
+      role: "Software Developer Intern",
       companyName: "theScore",
       date: "January 2024 - April 2024",
-      description:
-        "theScore, a wholly-owned subsidiary of PENN Entertainment, empowers millions of sports fans through its digital media and sports betting products. Worked on the Promotions team for theScoreBet. A team responsible for creating dynamic marketing campaigns",
+      description: "",
     },
     {
       companyLogo: "/images/experience/theScore.jpg",
-      role: "Software Developer",
+      role: "Software Developer Intern",
       companyName: "theScore",
       date: "May 2023 - August 2023",
-      description:
-        "theScore, a wholly-owned subsidiary of PENN Entertainment, empowers millions of sports fans through its digital media and sports betting products. Worked on the Promotions team for theScoreBet. A team responsible for creating dynamic marketing campaigns",
+      description: "",
     },
     {
       companyLogo: "/images/experience/Guelph.jpg",
@@ -26,15 +23,14 @@ const ExperienceSection = ({ darkMode }) => {
       companyName: "University of Guelph",
       date: "January 2023 - May 2023",
       description:
-        "Teaching Assistant for CIS*2170 - User Interface Design for Winter 2023. Teaching students about UI/UX, Design practices and prototyping",
+        "Teaching Assistant for CIS*2170 - User Interface Design for Winter 2023",
     },
     {
       companyLogo: "/images/experience/theScore.jpg",
-      role: "QA Analyst",
+      role: "QA Analyst Intern",
       companyName: "theScore",
       date: "May 2022 - December 2022",
-      description:
-        "theScore, a wholly-owned subsidiary of PENN Entertainment, empowers millions of sports fans through its digital media and sports betting products. Worked on the Promotions team for theScoreBet. A team responsible for creating dynamic marketing campaigns",
+      description: "",
     },
   ];
 
@@ -53,7 +49,7 @@ const ExperienceSection = ({ darkMode }) => {
         >
           Experience
         </h2>
-        <div className="font-firacode grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {experiences.map((experience, index) => (
             <motion.div
               key={index}
@@ -61,46 +57,28 @@ const ExperienceSection = ({ darkMode }) => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className={`flex flex-col rounded-lg p-4 shadow-md mb-8 text-left ${
-                darkMode ? "bg-gray-800 text-white" : "bg-white text-gray-800"
-              }`}
+              className={`relative rounded-lg overflow-hidden shadow-md mb-8`}
+              style={{ height: "300px" }}
             >
-              <div className="mb-4">
-                <Image
-                  src={experience.companyLogo}
-                  alt={`${experience.companyName} Logo`}
-                  className="w-full h-auto object-contain"
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                />
-              </div>
-              <div>
-                <h3
-                  className={`text-xl md:text-2xl font-semibold mb-2 ${
-                    darkMode ? "text-white" : "text-gray-800"
-                  }`}
-                >
-                  {experience.role}
-                </h3>
-                <p className={`text-gray-600 ${darkMode ? "text-white" : ""}`}>
-                  {experience.companyName}
-                </p>
-                <p
-                  className={`text-gray-600 mt-1 ${
-                    darkMode ? "text-white" : ""
-                  }`}
-                >
-                  {experience.date}
-                </p>
-                <p
-                  className={`mt-4 text-base ${
-                    darkMode ? "text-gray-400" : "text-gray-800"
-                  }`}
-                >
-                  {experience.description}
-                </p>
-              </div>
+              <img
+                src={experience.companyLogo}
+                alt={`${experience.companyName} Logo`}
+                className="w-full h-full object-cover transition-opacity duration-300"
+                style={{ height: "100%" }}
+              />
+              <motion.div
+                className="absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-start justify-end text-white opacity-0 transition-opacity duration-300 p-4"
+                whileHover={{ opacity: 1 }}
+              >
+                <div className="text-left">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-2">
+                    {experience.companyName}
+                  </h3>
+                  <p className="text-base">{experience.role}</p>
+                  <p className="text-base">{experience.date}</p>
+                  <p className="text-base">{experience.description}</p>
+                </div>
+              </motion.div>
             </motion.div>
           ))}
         </div>

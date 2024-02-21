@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const EducationSection = ({ darkMode }) => {
@@ -7,7 +8,7 @@ const EducationSection = ({ darkMode }) => {
       institutionLogo: "/images/education/Guelph.jpg",
       degree: "Bachelor of Computing",
       institutionName: "University of Guelph",
-      date: "September 2020 - May 2025 (Expected)",
+      date: "September 2020 - May 2025",
       description: "Software Engineering (Co-op)",
     },
     {
@@ -34,51 +35,39 @@ const EducationSection = ({ darkMode }) => {
         >
           Education
         </h2>
-        <div className="font-firacode grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {education.map((edu, index) => (
-            <div
+            <motion.div
               key={index}
-              className={`flex flex-col rounded-lg p-4 shadow-md mb-8 text-left ${
-                darkMode ? "bg-gray-800 text-white" : "bg-white text-gray-800"
-              }`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              className={`relative rounded-lg overflow-hidden shadow-md mb-8`}
             >
-              <div className="mb-4">
-                <Image
-                  src={edu.institutionLogo}
-                  alt={`${edu.institutionName} Logo`}
-                  className="w-full h-auto object-contain"
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                />
-              </div>
-              <div>
-                <h3
-                  className={`text-xl md:text-2xl font-semibold mb-2 ${
-                    darkMode ? "text-white" : "text-gray-800"
-                  }`}
-                >
-                  {edu.institutionName}
-                </h3>
-                <p className={`text-gray-600 ${darkMode ? "text-white" : ""}`}>
-                  {edu.degree}
-                </p>
-                <p
-                  className={`text-gray-600 mt-1 ${
-                    darkMode ? "text-white" : ""
-                  }`}
-                >
-                  {edu.date}
-                </p>
-                <p
-                  className={`mt-4 text-base ${
-                    darkMode ? "text-gray-400" : "text-gray-800"
-                  }`}
-                >
-                  {edu.description}
-                </p>
-              </div>
-            </div>
+              <img
+                src={edu.institutionLogo}
+                alt={`${edu.institutionName} Logo`}
+                layout="responsive"
+                width={100}
+                height={100}
+                className="w-full h-full object-cover transition-opacity duration-300"
+                style={{ height: "100%" }}
+              />
+              <motion.div
+                className="absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-start justify-end text-white opacity-0 transition-opacity duration-300 p-4"
+                whileHover={{ opacity: 1 }}
+              >
+                <div className="text-left">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-2">
+                    {edu.institutionName}
+                  </h3>
+                  <p className="text-base">{edu.degree}</p>
+                  <p className="text-base">{edu.date}</p>
+                  <p className="text-base">{edu.description}</p>
+                </div>
+              </motion.div>
+            </motion.div>
           ))}
         </div>
       </div>
