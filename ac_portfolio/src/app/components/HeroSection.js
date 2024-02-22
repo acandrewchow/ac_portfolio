@@ -7,12 +7,6 @@ import ProfilePicture from "../../../public/profile_pic.jpg";
 import BookImage from "../../../public/images/books/design_everyday.jpg";
 
 const HeroSection = () => {
-  const [currentBook, setCurrentBook] = useState({
-    title: "The Design of Everyday Things",
-    author: "Don Norman",
-    imageUrl: BookImage,
-  });
-
   return (
     <div id="About" className="text-center p-6 md:p-10 py-10">
       <motion.div
@@ -63,18 +57,6 @@ const HeroSection = () => {
           </a>{" "}
           where I document my adventures in the world of software!
         </p>
-
-        <div className="flex flex-col items-center">
-          <h3 className="text-2xl font-firacode mb-3 text-gray-600 dark:text-gray-400">
-            Currently Reading
-          </h3>
-          <div className="mx-auto w-36 h-56 overflow-hidden mb-5">
-            <Image src={currentBook.imageUrl} alt="book_cover" />
-          </div>
-          <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg mb-8">
-            <strong>{currentBook.title}</strong> by {currentBook.author}
-          </p>
-        </div>
       </motion.div>
     </div>
   );
