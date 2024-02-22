@@ -1,10 +1,7 @@
 import React from "react";
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import ProfilePicture from "../../../public/profile_pic.jpg";
-import BookImage from "../../../public/images/books/design_everyday.jpg";
 
 const HeroSection = () => {
   return (
@@ -19,10 +16,6 @@ const HeroSection = () => {
           <span class="dark:text-white text-black">I'm Andrew</span>
         </h2>
 
-        {/* <h3 className="text-xl md:text-3xl py-2 text-yellow-400 flex justify-center items-center">
-          <Type />
-        </h3> */}
-
         <div className="mx-auto rounded-full w-60 md:w-100 h-90 md:h-100 overflow-hidden mt-10 md:mt-15 mb-10">
           <Image src={ProfilePicture} alt="profile_pic" />
         </div>
@@ -32,20 +25,13 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
-          I'm Andrew, a Software Engineering student at the University of
-          Guelph. I have a passion for building innovative products designed to
-          deliver value to customers. During my free time, I enjoy going to the
-          gym, taking photos and teaching other students programming concepts.
-        </p>
-
-        <p className="text-left font-firacode py-5 leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
-          This Winter, I am interning at theScore as a Software Developer where
-          I will continue building new features for theScoreBet/ESPN Bet within
-          the Promotions Team.
-        </p>
-
         <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg mb-8">
+          I'm Andrew, a Software Engineering student at the University of
+          Guelph. Passionate about business, technology and design, I thrive on exploring
+          the intersections between these fields within software development and product.
+        </p>
+
+        <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
           If you're interested in learning more about me, feel free to read my{" "}
           <a
             href="/blog"
