@@ -16,7 +16,7 @@ const HeroSection = () => {
           <span class="dark:text-white text-black">I'm Andrew</span>
         </h2>
 
-        <div className="mx-auto rounded-full w-60 md:w-100 h-90 md:h-100 overflow-hidden mt-10 md:mt-15 mb-10">
+        <div className="mx-auto rounded-xl w-60 md:w-100 h-90 md:h-100 overflow-hidden mt-10 md:mt-15 mb-10">
           <Image src={ProfilePicture} alt="profile_pic" />
         </div>
       </motion.div>
@@ -27,8 +27,8 @@ const HeroSection = () => {
       >
         <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg mb-8">
           I'm Andrew, a Software Engineering student at the University of
-          Guelph. Passionate about business, technology and design, I thrive on exploring
-          the intersections between these fields within software development and product.
+          Guelph who is passionate about business, technology and design. I enjoy
+          building innovative products for users.
         </p>
 
         <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
