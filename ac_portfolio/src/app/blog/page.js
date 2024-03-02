@@ -12,6 +12,13 @@ import BackToTopButton from "../components/BackToTopButton";
 const blogPostData = [
   {
     title: "theScore",
+    date: "Jan 2024 - April 2024",
+    role: "Software Developer on Promotions",
+    imageUrl: "./images/blog/theScore.jpg",
+    link: "/blog/thescore_dev",
+  },
+  {
+    title: "theScore",
     date: "May 2023 - August 2023",
     role: "Software Developer on Promotions",
     imageUrl: "./images/blog/theScore.jpg",
