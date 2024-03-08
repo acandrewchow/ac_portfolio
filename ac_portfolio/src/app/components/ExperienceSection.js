@@ -36,14 +36,20 @@ const ExperienceSection = ({ darkMode }) => {
     },
   ];
 
-  const handleTouchStart = (index) => {
+  const handleMouseEnter = (index) => {
     setHoveredIndex(index);
   };
 
-  const handleTouchEnd = () => {
+  const handleMouseLeave = () => {
     setHoveredIndex(null);
   };
 
+  const handleClick = (index) => {
+    if (hoveredIndex !== null) {
+      return;
+    }
+    setHoveredIndex(index);
+  };
 
   return (
     <section
@@ -68,10 +74,9 @@ const ExperienceSection = ({ darkMode }) => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className={`relative rounded-lg overflow-hidden shadow-md mb-8`}
               style={{ height: "300px" }}
-              onTouchStart={() => handleTouchStart(index)}
-              onTouchEnd={handleTouchEnd}
-              onMouseEnter={() => handleTouchStart(index)} 
-              onMouseLeave={handleTouchEnd} 
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(index)}
             >
               <img
                 src={experience.companyLogo}

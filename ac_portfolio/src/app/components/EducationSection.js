@@ -21,12 +21,19 @@ const education = [
 const EducationSection = ({ darkMode }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  const handleTouchStart = (index) => {
+  const handleMouseEnter = (index) => {
     setHoveredIndex(index);
   };
 
-  const handleTouchEnd = () => {
+  const handleMouseLeave = () => {
     setHoveredIndex(null);
+  };
+
+  const handleClick = (index) => {
+    if (hoveredIndex !== null) {
+      return;
+    }
+    setHoveredIndex(index);
   };
 
   return (
@@ -51,10 +58,9 @@ const EducationSection = ({ darkMode }) => {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className={`relative rounded-lg overflow-hidden shadow-md mb-8`}
-              onTouchStart={() => handleTouchStart(index)}
-              onTouchEnd={handleTouchEnd}
-              onMouseEnter={() => handleTouchStart(index)} 
-              onMouseLeave={handleTouchEnd} 
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(index)}
             >
               <img
                 src={edu.institutionLogo}
