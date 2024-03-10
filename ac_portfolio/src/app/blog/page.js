@@ -15,21 +15,21 @@ const blogPostData = [
     date: "Jan 2024 - April 2024",
     role: "Software Developer on Promotions",
     imageUrl: "./images/blog/theScore.jpg",
-    link: "/blog/thescore_dev",
+    link: "",
   },
   {
     title: "theScore",
     date: "May 2023 - August 2023",
     role: "Software Developer on Promotions",
     imageUrl: "./images/blog/theScore.jpg",
-    link: "/blog/thescore_dev",
+    link: "/blog/thescore_dev_wt2",
   },
   {
     title: "theScore",
     date: "May 2022 - December 2022",
     role: "QA Analyst on Promotions",
     imageUrl: "./images/blog/theScore.jpg",
-    link: "/blog/thescore_qa",
+    link: "/blog/thescore_qa_wt1",
   },
 ];
 
