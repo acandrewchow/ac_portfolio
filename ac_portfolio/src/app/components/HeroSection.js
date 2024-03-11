@@ -26,9 +26,10 @@ const HeroSection = () => {
         transition={{ duration: 1, delay: 0.2 }}
       >
         <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg mb-8">
-          I'm Andrew, a Software Engineering student at the University of
-          Guelph who is passionate about business, technology and design. I enjoy
-          building innovative products for users.
+          I am Andrew, a Software Engineering student at the University of
+          Guelph, passionate about business, technology, and design. I enjoy
+          building innovative products for users. In my free time, I take
+          pictures, go to the gym, and teach students programming concepts.
         </p>
 
         <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">

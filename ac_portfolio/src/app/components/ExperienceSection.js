@@ -6,6 +6,13 @@ const ExperienceSection = ({ darkMode }) => {
 
   const experiences = [
     {
+      companyLogo: "/images/experience/tutoring.jpg",
+      role: "Tutor",
+      companyName: "Self-employed",
+      date: "Nov 2023 - Present",
+      description: "Teaching students computer science and programming concepts"
+    },
+    {
       companyLogo: "/images/experience/theScore.jpg",
       role: "Software Developer Intern",
       companyName: "theScore",
