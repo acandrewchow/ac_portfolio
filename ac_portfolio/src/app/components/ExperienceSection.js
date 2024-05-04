@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 const ExperienceSection = ({ darkMode }) => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
   const experiences = [
     {
       companyLogo: "/images/experience/theScore.jpg",
@@ -17,7 +15,8 @@ const ExperienceSection = ({ darkMode }) => {
       role: "Tutor",
       companyName: "Self-employed",
       date: "Nov 2023 - Present",
-      description: "Teaching students computer science and programming concepts"
+      description:
+        "Teaching students computer science and programming concepts",
     },
     {
       companyLogo: "/images/experience/theScore.jpg",
@@ -43,31 +42,18 @@ const ExperienceSection = ({ darkMode }) => {
     },
   ];
 
-  const handleMouseEnter = (index) => {
-    setHoveredIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredIndex(null);
-  };
-
-  const handleClick = (index) => {
-    if (hoveredIndex !== null) {
-      return;
-    }
-    setHoveredIndex(index);
-  };
-
   return (
     <section
       id="Experience"
-      className={`py-10 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
-        }`}
+      className={`py-10 ${
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
+      }`}
     >
       <div className="max-w-4xl mx-auto px-4">
         <h2
-          className={`text-4xl md:text-5xl text-center font-firacode font-semibold mb-8 ${darkMode ? "text-white" : "text-gray-800"
-            }`}
+          className={`text-4xl md:text-5xl text-center font-firacode font-semibold mb-8 ${
+            darkMode ? "text-white" : "text-gray-800"
+          }`}
         >
           Experience
         </h2>
@@ -75,38 +61,25 @@ const ExperienceSection = ({ darkMode }) => {
           {experiences.map((experience, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className={`relative rounded-lg overflow-hidden shadow-md mb-8`}
-              style={{ height: "300px" }}
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => handleClick(index)}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`rounded-lg overflow-hidden shadow-md mb-8 ${
+                darkMode ? "bg-gray-800 text-white" : "bg-white text-gray-800"
+              }`}
             >
               <img
                 src={experience.companyLogo}
                 alt={`${experience.companyName} Logo`}
-                className="w-full h-full object-cover transition-opacity duration-300"
-                style={{ height: "100%" }}
+                className="w-full h-60 object-cover"
               />
-              {hoveredIndex === index && (
-                <motion.div
-                  className="absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-start justify-end text-white opacity-0 transition-opacity duration-300 p-4"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                >
-                  <div className="text-left">
-                    <h3 className="text-xl md:text-2xl font-semibold mb-2">
-                      {experience.companyName}
-                    </h3>
-                    <p className="text-base">{experience.role}</p>
-                    <p className="text-base">{experience.date}</p>
-                    <p className="text-base">{experience.description}</p>
-                  </div>
-                </motion.div>
-              )}
+              <div className="p-4">
+                <h3 className="text-xl md:text-2xl font-semibold mb-2">
+                  {experience.companyName}
+                </h3>
+                <p className="text-lg">{experience.role}</p>
+                <p className="text-sm text-gray-600">{experience.date}</p>
+                <p className="mt-2 text-sm">{experience.description}</p>
+              </div>
             </motion.div>
           ))}
         </div>
