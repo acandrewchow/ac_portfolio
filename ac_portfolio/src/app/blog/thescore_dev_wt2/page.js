@@ -65,7 +65,7 @@ const TheScoreDev = () => {
               <p
                 className={`mb-2 ${darkMode ? "text-white" : "text-black-600"}`}
               >
-                August 2023
+                Summer 2023
               </p>
               <p
                 className={`mb-10 ${
