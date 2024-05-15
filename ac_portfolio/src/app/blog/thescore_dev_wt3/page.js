@@ -148,13 +148,21 @@ const TheScoreDev = () => {
 
                 <ul class="list-none">
                   <li class="flex items-start">
-                    <span class="mr-2 text-primary">&#8226;</span>
+                    <span class="mr-2 text-primary">
+                      &#8226; Continue learning new skills while contributing to
+                      new product features
+                    </span>
                   </li>
                   <li class="flex items-start">
-                    <span class="mr-2 text-primary">&#8226;</span>
+                    <span class="mr-2 text-primary">
+                      &#8226; Start participating in code reviews
+                    </span>
                   </li>
                   <li class="flex items-start">
-                    <span class="mr-2 text-primary">&#8226;</span>
+                    <span class="mr-2 text-primary">
+                      &#8226; Seeking new leadership opportunities, learnings,
+                      etc
+                    </span>
                   </li>
                 </ul>
                 <h3 className="text-xl font-semibold mt-8 mb-4">
@@ -162,16 +170,37 @@ const TheScoreDev = () => {
                 </h3>
                 <p className="mb-6">
                   I spent the first couple of weeks starting where I had left
-                  off previously. 
+                  off previously, getting caught up to speed with the projects
+                  that were on-going.
                 </p>
 
                 <p className="mb-6">
+                  For the next couple of months, the team was going to be
+                  working on a large feature aimed towards driving user
+                  engagement and acquisition. The product scope was fairly large
+                  as the work required was across various services. I had the
+                  opportunity to partake in the planning meetings, which
+                  included the breakdown of various stories into their
+                  respective components.
+                </p>
 
+                <p className="mb-6">
+                  During my time, I had the chance to work on new components and
+                  features that taught me new development skills. In addition, I
+                  started participating in code reviews where I had the chance
+                  to understand new coding conventions and code quality
                 </p>
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">
                   📘 Reflection
                 </h3>
+
+                <p className="mb-6">
+                  Overall, the last four months have been filled with new
+                  learnings and excitement. Since this is the end of my first 4
+                  months, I'm going to be continue working on the same project
+                  for the same 4 months till the end of my last term in August
+                </p>
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">
                   🎖️ Highlights
