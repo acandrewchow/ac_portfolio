@@ -28,7 +28,7 @@ const HeroSection = () => {
         <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg mb-8">
           I am Andrew, a Software Engineering student at the University of
           Guelph, passionate about business, technology, and design. I enjoy
-          building innovative products for users. In my free time, I take
+          building innovative products for users. During my free time, I take
           pictures, go to the gym, and teach students programming concepts.
         </p>
 

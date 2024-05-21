@@ -197,9 +197,12 @@ const TheScoreDev = () => {
 
                 <p className="mb-6">
                   Overall, the last four months have been filled with new
-                  learnings and excitement. Since this is the end of my first 4
+                  learnings and excitement. I had the opportunity to work on new
+                  projects, allowing me tackle new problems and partake in more
+                  leadership opportunities. Since this is the end of my first 4
                   months, I'm going to be continue working on the same project
-                  for the same 4 months till the end of my last term in August
+                  for the same 4 months till the end of my term in August. Stay
+                  tuned for more!
                 </p>
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">
