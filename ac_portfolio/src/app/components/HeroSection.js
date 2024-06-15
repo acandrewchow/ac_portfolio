@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import ProfilePicture from "../../../public/profile_pic.jpg";
+import ProfilePicture from "../../../public/profile_pic_2024.jpg";
 
 const HeroSection = () => {
   return (
@@ -16,7 +16,7 @@ const HeroSection = () => {
           <span class="dark:text-white text-black">I'm Andrew</span>
         </h2>
 
-        <div className="mx-auto rounded-xl w-60 md:w-100 h-90 md:h-100 overflow-hidden mt-10 md:mt-15 mb-10">
+        <div className="mx-auto rounded-xl w-80 md:w-100 h-90 md:h-100 overflow-hidden mt-10 md:mt-15 mb-10">
           <Image src={ProfilePicture} alt="profile_pic" />
         </div>
       </motion.div>
