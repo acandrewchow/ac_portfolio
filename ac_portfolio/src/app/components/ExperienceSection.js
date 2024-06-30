@@ -8,7 +8,8 @@ const ExperienceSection = ({ darkMode }) => {
       role: "Software Developer Intern",
       companyName: "theScore",
       date: "January 2024 - Present",
-      description: "Building new features with Elixir!",
+      description:
+        "Core contributor on the Promotions team, responsible for designing and implementing reward-based experiences to drive user engagement and acquisition across theScoreBet/ESPN Bet platforms.",
     },
     {
       companyLogo: "/images/experience/tutoring.jpg",
@@ -23,7 +24,8 @@ const ExperienceSection = ({ darkMode }) => {
       role: "Software Developer Intern",
       companyName: "theScore",
       date: "May 2023 - August 2023",
-      description: "",
+      description:
+        "Core contributor on the Promotions team, responsible for designing and implementing reward-based experiences to drive user engagement and acquisition across theScoreBet/ESPN Bet platforms.",
     },
     {
       companyLogo: "/images/experience/Guelph.jpg",
@@ -31,14 +33,15 @@ const ExperienceSection = ({ darkMode }) => {
       companyName: "University of Guelph",
       date: "January 2023 - May 2023",
       description:
-        "Teaching Assistant for CIS*2170 - User Interface Design for Winter 2023",
+        "Teaching Assistant for CIS*2170 - User Interface Design for Winter 2023. Educating students on the foundations of UI/UXCIS",
     },
     {
       companyLogo: "/images/experience/theScore.jpg",
       role: "QA Analyst Intern",
       companyName: "theScore",
       date: "May 2022 - December 2022",
-      description: "",
+      description:
+        "Contributed to the release of theScore's proprietary in-house risk and trading platform and other promotional features, including Parlay+, Leg Grading and Opt-In",
     },
   ];
 
@@ -77,7 +80,7 @@ const ExperienceSection = ({ darkMode }) => {
                   {experience.companyName}
                 </h3>
                 <p className="text-lg">{experience.role}</p>
-                <p className="text-sm text-gray-600">{experience.date}</p>
+                <p className="text-sm">{experience.date}</p>
                 <p className="mt-2 text-sm">{experience.description}</p>
               </div>
             </motion.div>
