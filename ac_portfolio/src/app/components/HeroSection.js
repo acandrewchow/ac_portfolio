@@ -11,7 +11,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <h2 className="text-3xl font-firacode md:text-5xl font-medium">
+        <h2 className="text-3xl font-firacode md:text-4xl font-medium">
           <span class="dark:text-white text-black">Hello,</span>{" "}
           <span class="dark:text-white text-black">I'm Andrew</span>
         </h2>
@@ -25,12 +25,13 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg mb-8">
-          I am Andrew, a Software Engineering student at the University of
-          Guelph, passionate about business, technology, and design. I enjoy
-          building innovative products for users. During my free time, I take
-          pictures, go to the gym, and teach students programming concepts.
-        </p>
+        <div className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg mb-8">
+          <p>Software Engineering student at the University of Guelph.</p>
+          <p className="mt-4">
+            Passionate about building innovative products with a strong interest
+            in software development and product management.
+          </p>
+        </div>
       </motion.div>
     </div>
   );
