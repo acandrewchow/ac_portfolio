@@ -31,19 +31,6 @@ const HeroSection = () => {
           building innovative products for users. During my free time, I take
           pictures, go to the gym, and teach students programming concepts.
         </p>
-
-        <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
-          If you're interested in learning more about me, feel free to read my{" "}
-          <a
-            href="/blog"
-            target="_blank"
-            className="text-blue-700 dark:text-blue-200"
-          >
-            {" "}
-            personal blog
-          </a>{" "}
-          where I document my adventures in the world of software!
-        </p>
       </motion.div>
     </div>
   );

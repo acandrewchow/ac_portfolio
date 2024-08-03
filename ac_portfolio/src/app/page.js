@@ -5,7 +5,6 @@ import ParticlesBackground from "./components/ParticlesBackground";
 import HeroSection from "./components/HeroSection";
 import ContactSection from "./components/ContactSection";
 import Navbar from "./components/Navbar";
-import SkillSection from "./components/SkillSection";
 import ExperienceSection from "./components/ExperienceSection";
 import EducationSection from "./components/EducationSection";
 import Footer from "./components/Footer";
@@ -31,7 +30,6 @@ export default function Home() {
           <ParticlesBackground darkMode={darkMode} />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <HeroSection darkMode={darkMode} />
-          <SkillSection darkMode={darkMode} />
           <ExperienceSection darkMode={darkMode} />
           <EducationSection darkMode={darkMode} />
           <ProjectSection darkMode={darkMode} />
