@@ -110,7 +110,7 @@ const Navbar = ({ toggleDarkMode }) => {
           </li>
           <li className="mb-8 text-xl hover:scale-105 ">
             <Link
-              href="https://docs.google.com/gview?url=https://github.com/acandrewchow/resume/raw/main/Chow_Andrew-Resume.pdf&embedded=true"
+              href="/resume.pdf"
               target="_blank"
             >
               resume
