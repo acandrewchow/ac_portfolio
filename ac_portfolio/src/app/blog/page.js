@@ -28,6 +28,12 @@ const blogPostData = [
     role: "QA Analyst on Promotions",
     link: "/blog/thescore_qa_wt1",
   },
+  {
+    title: "theScore (WIP)",
+    date: "May 2024 - August 2024",
+    role: "Software Developer on Promotions",
+    link: "/blog/thescore_dev_wt4",
+  }
 ];
 
 export default function BlogHome() {
