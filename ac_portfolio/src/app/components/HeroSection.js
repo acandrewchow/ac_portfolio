@@ -11,7 +11,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <h2 className="text-3xl font-firacode md:text-5xl font-medium">
+        <h2 className="text-2xl font-firacode md:text-3xl font-medium">
           <span class="dark:text-white text-black">Hello,</span>{" "}
           <span class="dark:text-white text-black">I'm Andrew</span>
         </h2>
@@ -25,25 +25,30 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg mb-8">
-          I am Andrew, a Software Engineering student at the University of
-          Guelph, passionate about business, technology, and design. I enjoy
-          building innovative products for users. During my free time, I take
-          pictures, go to the gym, and teach students programming concepts.
-        </p>
+        <div className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-md mb-8">
+          <p className="mb-4">
+            Software Engineering student at the University of Guelph with
+            experience in developing scalable applications
+          </p>
+          <p className="mb-4">
+            Currently building new features in Elixir for  over 5+ million users across theScore Bet and ESPN
+            Bet platforms
+          </p>
+          <p className="mb-4">
+            Interested in software and product 2025 New Grad Opportunities
+          </p>
 
-        <p className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
-          If you're interested in learning more about me, feel free to read my{" "}
-          <a
-            href="/blog"
-            target="_blank"
-            className="text-blue-700 dark:text-blue-200"
-          >
-            {" "}
-            personal blog
-          </a>{" "}
-          where I document my adventures in the world of software!
-        </p>
+          <p className="mb-4">
+            Feel free to reach out at{" "}
+            <a
+              href="mailto:ac.andrewchow@gmail.com"
+              className="text-blue-500 hover:underline"
+            >
+              ac.andrewchow@gmail.com
+            </a>{" "}
+            if you want to chat :)
+          </p>
+        </div>
       </motion.div>
     </div>
   );

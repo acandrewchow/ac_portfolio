@@ -14,21 +14,18 @@ const blogPostData = [
     title: "theScore",
     date: "Jan 2024 - Apr 2024",
     role: "Software Developer on Promotions",
-    imageUrl: "./images/blog/theScore.jpg",
     link: "/blog/thescore_dev_wt3",
   },
   {
     title: "theScore",
     date: "May 2023 - August 2023",
     role: "Software Developer on Promotions",
-    imageUrl: "./images/blog/theScore.jpg",
     link: "/blog/thescore_dev_wt2",
   },
   {
     title: "theScore",
     date: "May 2022 - December 2022",
     role: "QA Analyst on Promotions",
-    imageUrl: "./images/blog/theScore.jpg",
     link: "/blog/thescore_qa_wt1",
   },
 ];
@@ -52,6 +49,23 @@ export default function BlogHome() {
         <section className="min-h-screen">
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
+          <div className="pt-10 pb-5 px-6 max-w-xl mx-auto">
+            <h1
+              className={`text-3xl font-bold ${
+                darkMode ? "text-white" : "text-gray-900"
+              }`}
+            >
+              Blog
+            </h1>
+            <p
+              className={`mt-2 ${
+                darkMode ? "text-gray-300" : "text-gray-600"
+              }`}
+            >
+              Documenting my adventures in the world of software
+            </p>
+          </div>
+
           <div className="max-w-xl mx-auto space-y-8 px-6 py-10">
             {blogPostData.map((post, index) => (
               <div key={index}>
@@ -64,7 +78,6 @@ export default function BlogHome() {
                     title={post.title}
                     date={post.date}
                     role={post.role}
-                    imageUrl={post.imageUrl}
                     darkMode={darkMode}
                   />
                 </Link>
