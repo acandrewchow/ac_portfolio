@@ -3,12 +3,8 @@ import Head from "next/head";
 import { useState } from "react";
 import ParticlesBackground from "./components/ParticlesBackground";
 import HeroSection from "./components/HeroSection";
-import ContactSection from "./components/ContactSection";
 import Navbar from "./components/Navbar";
-import ExperienceSection from "./components/ExperienceSection";
-import EducationSection from "./components/EducationSection";
 import Footer from "./components/Footer";
-import ProjectSection from "./components/MyWork";
 import BackToTopButton from "./components/BackToTopButton";
 
 export default function Home() {
@@ -30,13 +26,9 @@ export default function Home() {
           <ParticlesBackground darkMode={darkMode} />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <HeroSection darkMode={darkMode} />
-          <ExperienceSection darkMode={darkMode} />
-          <EducationSection darkMode={darkMode} />
-          <ProjectSection darkMode={darkMode} />
-          <ContactSection darkMode={darkMode} />
-          <Footer darkMode={darkMode} />
-          <BackToTopButton />
         </section>
+        <Footer darkMode={darkMode} />
+        <BackToTopButton />
       </main>
     </div>
   );
