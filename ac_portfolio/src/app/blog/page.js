@@ -88,7 +88,7 @@ export default function BlogHome() {
                   <BlogPostCard
                     title={post.title}
                     date={post.date}
-                    role={post.role}
+                    description={post.description}
                     tags={post.tags}
                     darkMode={darkMode}
                   />
