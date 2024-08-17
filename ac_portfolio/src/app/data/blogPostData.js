@@ -3,7 +3,7 @@ export const blogPostData = [
         title: "theScore",
         date: "May 2024 - August 2024",
         description: "Software Developer on Promotions",
-        link: "/blog/thescore_dev_wt4",
+        link: "",
         tags: ["Work Term"],
       },
       {
