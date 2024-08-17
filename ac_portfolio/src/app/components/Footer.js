@@ -9,7 +9,7 @@ const Footer = ({ darkMode }) => {
         darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
       }`}
     >
-      <div className="text-3xl md:text-3xl flex justify-center gap-4 text-gray-600 dark:text-gray-400 mb-2">
+      <div className="text-3xl md:text-3xl flex justify-center gap-4 text-gray-600 dark:text-gray-400 mb-2 mt-10">
         <motion.div whileHover={{ scale: 1.2 }}>
           <a href="https://linkedin.com/in/acandrewchow" target="_blank">
             <AiFillLinkedin />

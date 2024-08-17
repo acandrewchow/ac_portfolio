@@ -1,50 +1,33 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
-import { useState } from "react";
 import ParticlesBackground from "../components/ParticlesBackground";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import BlogPostCard from "../components/BlogPostCard";
 import Link from "next/link";
 import BackToTopButton from "../components/BackToTopButton";
+import { blogPostData } from "../data/blogPostData";
 
-const blogPostData = [
-  {
-    title: "theScore (WIP)",
-    date: "May 2024 - August 2024",
-    role: "Software Developer on Promotions",
-    link: "/blog/thescore_dev_wt4",
-    tags: ["Work Term"],
-  },
-  {
-    title: "theScore",
-    date: "Jan 2024 - Apr 2024",
-    role: "Software Developer on Promotions",
-    link: "/blog/thescore_dev_wt3",
-    tags: ["Work Term"],
-  },
-  {
-    title: "theScore",
-    date: "May 2023 - August 2023",
-    role: "Software Developer on Promotions",
-    link: "/blog/thescore_dev_wt2",
-    tags: ["Work Term"],
-  },
-  {
-    title: "theScore",
-    date: "May 2022 - December 2022",
-    role: "QA Analyst on Promotions",
-    link: "/blog/thescore_qa_wt1",
-    tags: ["Work Term"],
-  },
-];
 
 export default function BlogHome() {
   const [darkMode, setDarkMode] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+  };
+
+  const postsPerPage = 5;
+  const totalPages = Math.ceil(blogPostData.length / postsPerPage);
+
+  const currentPosts = blogPostData.slice(
+    (currentPage - 1) * postsPerPage,
+    currentPage * postsPerPage
+  );
+
+  const goToPage = (pageNumber) => {
+    setCurrentPage(pageNumber);
   };
 
   return (
@@ -77,7 +60,7 @@ export default function BlogHome() {
           </div>
 
           <div className="max-w-xl mx-auto space-y-8 px-6 py-10">
-            {blogPostData.map((post, index) => (
+            {currentPosts.map((post, index) => (
               <div key={index}>
                 <Link
                   href={post.link}
@@ -87,7 +70,7 @@ export default function BlogHome() {
                   <BlogPostCard
                     title={post.title}
                     date={post.date}
-                    role={post.role}
+                    description={post.description}
                     tags={post.tags}
                     darkMode={darkMode}
                   />
@@ -95,6 +78,23 @@ export default function BlogHome() {
               </div>
             ))}
           </div>
+
+          <div className="flex justify-center px-6 max-w-xl mx-auto">
+            {Array.from({ length: totalPages }, (_, index) => (
+              <button
+                key={index}
+                onClick={() => goToPage(index + 1)}
+                className={`mx-1 px-4 py-2 rounded-full ${
+                  currentPage === index + 1
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 dark:bg-gray-700 dark:text-gray-300 text-gray-800"
+                }`}
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
+
         </section>
         <Footer darkMode={darkMode} />
         <BackToTopButton />
