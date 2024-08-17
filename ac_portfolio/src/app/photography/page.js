@@ -13,7 +13,7 @@ export default function PhotographyHome() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const photosPerPage = 6;
-  const totalPages = Math.ceil(photos.length / photosPerPage); 
+  const totalPages = Math.ceil(photos.length / photosPerPage);
 
   const indexOfLastPhoto = currentPage * photosPerPage;
   const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
@@ -60,23 +60,21 @@ export default function PhotographyHome() {
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
           <section className="font-firacode container mx-auto p-4">
-            <div className="text-center">
-              <h2 className="text-left text-black text-3xl font-semibold mb-4 p-4 dark:text-white">
-                My Gear
-              </h2>
-              <div className="text-black dark:text-white flex flex-col items-center text-xl">
-                <div className="flex items-center">
-                  <span className="mr-2">
-                    <FaCamera />
-                  </span>
-                  <p>Sony a6100</p>
-                </div>
-                <div className="flex items-center">
-                  <span className="mr-2">
-                    <FaSearch />
-                  </span>
-                  <p>Sony 16-50mm f/3.5-5.6</p>
-                </div>
+            <h2 className="text-center text-black text-3xl font-semibold mb-4 p-4 dark:text-white">
+              My Gear
+            </h2>
+            <div className="text-black dark:text-white flex flex-col items-center text-xl">
+              <div className="flex items-center">
+                <span className="mr-2">
+                  <FaCamera />
+                </span>
+                <p>Sony a6100</p>
+              </div>
+              <div className="flex items-center">
+                <span className="mr-2">
+                  <FaSearch />
+                </span>
+                <p>Sony 16-50mm f/3.5-5.6</p>
               </div>
             </div>
           </section>
