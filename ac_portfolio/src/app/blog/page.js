@@ -7,27 +7,45 @@ import Footer from "../components/Footer";
 import BlogPostCard from "../components/BlogPostCard";
 import Link from "next/link";
 import BackToTopButton from "../components/BackToTopButton";
-import { blogPostData } from "../data/blogPostData";
-
+import { blogPostData } from "../data/blogPostData"; 
 
 export default function BlogHome() {
   const [darkMode, setDarkMode] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
 
+  const postsPerPage = 5; 
+  const totalPages = Math.ceil(blogPostData.length / postsPerPage); 
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = blogPostData.slice(indexOfFirstPost, indexOfLastPost);
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
-  const postsPerPage = 5;
-  const totalPages = Math.ceil(blogPostData.length / postsPerPage);
-
-  const currentPosts = blogPostData.slice(
-    (currentPage - 1) * postsPerPage,
-    currentPage * postsPerPage
-  );
-
-  const goToPage = (pageNumber) => {
-    setCurrentPage(pageNumber);
+  const renderPageNumbers = () => {
+    const pageNumbers = [];
+    for (let i = 1; i <= totalPages; i++) {
+      pageNumbers.push(
+        <button
+          key={i}
+          onClick={() => setCurrentPage(i)}
+          className={`mx-1 px-3 py-1 rounded ${
+            darkMode
+              ? i === currentPage
+                ? "bg-gray-700 text-white"
+                : "bg-gray-800 text-gray-400"
+              : i === currentPage
+              ? "bg-gray-200 text-black"
+              : "bg-gray-300 text-gray-700"
+          }`}
+        >
+          {i}
+        </button>
+      );
+    }
+    return pageNumbers;
   };
 
   return (
@@ -70,7 +88,7 @@ export default function BlogHome() {
                   <BlogPostCard
                     title={post.title}
                     date={post.date}
-                    description={post.description}
+                    role={post.role}
                     tags={post.tags}
                     darkMode={darkMode}
                   />
@@ -78,23 +96,9 @@ export default function BlogHome() {
               </div>
             ))}
           </div>
-
-          <div className="flex justify-center px-6 max-w-xl mx-auto">
-            {Array.from({ length: totalPages }, (_, index) => (
-              <button
-                key={index}
-                onClick={() => goToPage(index + 1)}
-                className={`mx-1 px-4 py-2 rounded-full ${
-                  currentPage === index + 1
-                    ? "bg-blue-500 text-white"
-                    : "bg-gray-200 dark:bg-gray-700 dark:text-gray-300 text-gray-800"
-                }`}
-              >
-                {index + 1}
-              </button>
-            ))}
+          <div className="flex justify-center mt-8">
+            {renderPageNumbers()}
           </div>
-
         </section>
         <Footer darkMode={darkMode} />
         <BackToTopButton />

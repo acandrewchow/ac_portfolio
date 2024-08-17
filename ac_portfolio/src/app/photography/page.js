@@ -6,22 +6,46 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import BackToTopButton from "../components/BackToTopButton";
 import { FaCamera, FaSearch } from "react-icons/fa";
+import { photos } from "../data/photos";
 
 export default function PhotographyHome() {
   const [darkMode, setDarkMode] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const photosPerPage = 6;
+  const totalPages = Math.ceil(photos.length / photosPerPage); 
+
+  const indexOfLastPhoto = currentPage * photosPerPage;
+  const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
+  const currentPhotos = photos.slice(indexOfFirstPhoto, indexOfLastPhoto);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
-  const photos = [
-    "/images/photography_photos/flower.jpg",
-    "/images/photography_photos/lights.jpg",
-    "/images/photography_photos/squirrel.jpg",
-    "/images/photography_photos/nyc.jpg",
-    "/images/photography_photos/leafs.jpg",
-    "/images/photography_photos/park.jpg",
-  ];
+  const renderPageNumbers = () => {
+    const pageNumbers = [];
+    for (let i = 1; i <= totalPages; i++) {
+      pageNumbers.push(
+        <button
+          key={i}
+          onClick={() => setCurrentPage(i)}
+          className={`mx-1 px-3 py-1 rounded ${
+            darkMode
+              ? i === currentPage
+                ? "bg-gray-700 text-white"
+                : "bg-gray-800 text-gray-400"
+              : i === currentPage
+              ? "bg-gray-200 text-black"
+              : "bg-gray-300 text-gray-700"
+          }`}
+        >
+          {i}
+        </button>
+      );
+    }
+    return pageNumbers;
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -37,7 +61,7 @@ export default function PhotographyHome() {
 
           <section className="font-firacode container mx-auto p-4">
             <div className="text-center">
-              <h2 className="text-lefttext-black text-3xl font-semibold mb-4 p-4 dark:text-white">
+              <h2 className="text-left text-black text-3xl font-semibold mb-4 p-4 dark:text-white">
                 My Gear
               </h2>
               <div className="text-black dark:text-white flex flex-col items-center text-xl">
@@ -59,14 +83,17 @@ export default function PhotographyHome() {
 
           <section className="container mx-auto p-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {photos.map((photos, index) => (
+              {currentPhotos.map((photo, index) => (
                 <img
                   key={index}
-                  src={photos}
+                  src={photo}
                   alt={`Photo ${index + 1}`}
                   className="w-full h-auto rounded-lg"
                 />
               ))}
+            </div>
+            <div className="flex justify-center mt-8">
+              {renderPageNumbers()}
             </div>
           </section>
         </section>
