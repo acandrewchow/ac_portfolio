@@ -19,6 +19,12 @@ export default function Home() {
       <Head>
         <title>Andrew Chow</title>
         <meta name="description" content="Personal Portfolio" />
+        <meta property="og:title" content="Andrew Chow's Blogs" />
+        <meta property="og:description" content="Andrew Chow's Personal Website" />
+        <meta property="og:image" content="../../../public/profile_pic_2024.jpg" />
+        <meta property="og:url" content="https://andrewchow.ca" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Andrew Chow's Site" />
         <link rel="icon" href="./favicons/favicon.ico" />
       </Head>
       <main className=" bg-white dark:bg-gray-900">
