@@ -94,7 +94,6 @@ const TheScoreDev = () => {
                     Software Developer on the Promotions team.
                   </p>
                 </div>
-
                 <h3 className="text-xl font-semibold mt-4 mb-4">
                   What is theScore?
                 </h3>
@@ -112,11 +111,9 @@ const TheScoreDev = () => {
                   distributes innovative digital content through its web, social
                   and esports platforms.
                 </p>
-
                 <h3 className="text-xl font-semibold mt-4 mb-4">
                   💻 Technologies Used
                 </h3>
-
                 <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
                   {skillsData.map((skill) => (
                     <div
@@ -141,24 +138,93 @@ const TheScoreDev = () => {
                     </div>
                   ))}
                 </div>
-
                 <h3 className="text-xl font-semibold mt-8 mb-4">
                   📚 Learning Goals
                 </h3>
 
+                <p>
+                  My learning goals for this term were fairly simple: Contiue to
+                  do what I was doing and push myself further to grow as a developer
+                </p>
                 <h3 className="text-xl font-semibold mt-8 mb-4">
                   🎒 My Experience
                 </h3>
-                <p className="mb-6"></p>
+                <p className="mb-6">
+                  {" "}
+                  During the last 4 months of my work term, I've had the
+                  opportunity to work on the largest project the Promotions team
+                  has worked on, the Refer-A-Friend program. The Referral
+                  program is an important feature for any Sportsbook. It's
+                  ability to drive user engagement is extremely important for
+                  acquiring new users and retaining existing ones, provoding
+                  business great value.
+                </p>
+
+                <p className="mb-6">
+                  The project was extremely large as it impacted various back
+                  end services and required a lot of new client changes,
+                  introducing new user flows. I've had the chance to work on a
+                  variety of tasks to contribute to the Referral project. Here
+                  are some of my highlights:
+                </p>
+
+                <ul class="list-none">
+                  <li class="flex items-start">
+                    <span class="mr-2 text-primary mb-2">
+                      &#8226; Developed a new service that generated
+                      personalized referral codes for users upon consuming user
+                      registration and login events
+                    </span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2 text-primary mb-2">
+                      &#8226; Created a new API end point that displays a
+                      interstitial modal, allowing users to interact and sign up
+                      as a new patron to be enrolled in the referral program
+                    </span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2 text-primary mb-2">
+                      &#8226; Created a new end point which includes a progress
+                      page that enables users to track their progress throughout
+                      the referral program, including the steps required in
+                      order to receive their rewards (i.e placing a deposit,
+                      sportsbook bet, casino wager, etc)
+                    </span>
+                  </li>
+
+                  <li class="flex items-start">
+                    <span class="mr-2 text-primary mb-2">
+                      &#8226; Implemented a new cron job that runs yearly,
+                      querying thousands of records from theScore's internal
+                      data platforms that replenishes their annual limit status,
+                      publishing the existing records to Kafka, allowing
+                      in-eligible users to be enrolled in the Referral Program
+                      once again
+                    </span>
+                  </li>
+
+                  <li class="flex items-start">
+                    <span class="mr-2 text-primary mb-4">
+                      &#8226; Added a new Oban worker that enqueues millions
+                      users to be added to the audience of a referral promotion,
+                      upon promotion creation, allowing users to see the
+                      referral program in-app across all clients
+                    </span>
+                  </li>
+                </ul>
+
+                <p className="mb-6">
+                  After 6 months of hard work, we finally launched the product
+                  in early August. It was such a great experience to witness
+                  this project launch just in time for the upcoming 2024-2025
+                  NFL season.
+                </p>
 
                 <p className="mb-6"></p>
-
-                <p className="mb-6"></p>
-
                 <h3 className="text-xl font-semibold mt-8 mb-4">
                   📘 Reflection
                 </h3>
-
                 <p className="mb-6">
                   The last four months is definitely going down in the books as
                   one of the most unforgettable experiences I've had at
@@ -166,17 +232,17 @@ const TheScoreDev = () => {
                   same team for a total of 5 work terms (20 months), dating back
                   to May 2022.
                 </p>
-
                 <p className="mb-6">
                   When I look back, it's amazing to see how much I have grown
-                  personally, professionally and all of the connections and memories
-                  I've made with everybody at theScore.
+                  personally, professionally and all of the connections and
+                  memories I've made with everybody at theScore. I couldn't
+                  have done it without the support from the Promotions team. This team
+                  felt like home and I'm really going to miss everyone. Although this chapter
+                  comes to an end, I'm excited for the next one begin.
                 </p>
-
                 {/* <h3 className="text-xl font-semibold mt-8 mb-4">
                   🎖️ Highlights
                 </h3> */}
-
                 {/* <div className="flex justify-center">
                   <Image
                     src="/images/blog/raptors_for_research.jpg"
