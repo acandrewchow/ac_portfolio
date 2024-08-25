@@ -37,12 +37,12 @@ export default function BlogHome() {
                 ? "bg-gray-700 text-white"
                 : "bg-gray-800 text-gray-400"
               : i === currentPage
-              ? "bg-gray-200 text-black"
-              : "bg-gray-300 text-gray-700"
+                ? "bg-gray-200 text-black"
+                : "bg-gray-300 text-gray-700"
           }`}
         >
           {i}
-        </button>
+        </button>,
       );
     }
     return pageNumbers;

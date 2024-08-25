@@ -260,7 +260,8 @@ const TheScoreDev = () => {
                   time. My previous QA experience had helped me a lot as I
                   already had a solid understanding of the product. To me, it
                   was more of a puzzle to solve where I needed to put the pieces
-                  together. In the end, I was able to open and merge my very first pull request! 
+                  together. In the end, I was able to open and merge my very
+                  first pull request!
                 </p>
 
                 <p className="mb-6">

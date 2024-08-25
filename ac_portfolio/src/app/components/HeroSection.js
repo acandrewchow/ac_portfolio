@@ -37,7 +37,9 @@ const HeroSection = () => {
           <p className="mb-4">
             Currently interested in software and product 2025 Winter
             Internships, feel free to take a look at my resume{" "}
-            <a href="resume.pdf"className="text-blue-500 hover:underline" >here!</a>
+            <a href="resume.pdf" className="text-blue-500 hover:underline">
+              here!
+            </a>
           </p>
 
           <p className="mb-4">

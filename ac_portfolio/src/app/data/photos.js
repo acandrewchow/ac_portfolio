@@ -1,8 +1,15 @@
 export const photos = [
-    "/images/photography_photos/flower.jpg",
-    "/images/photography_photos/lights.jpg",
-    "/images/photography_photos/squirrel.jpg",
-    "/images/photography_photos/nyc.jpg",
-    "/images/photography_photos/leafs.jpg",
-    "/images/photography_photos/park.jpg",
-  ];
+  "/images/photography_photos/flower.jpg",
+  "/images/photography_photos/lights.jpg",
+  "/images/photography_photos/squirrel.jpg",
+  "/images/photography_photos/nyc.jpg",
+  "/images/photography_photos/leafs.jpg",
+  "/images/photography_photos/park.jpg",
+  "/images/photography_photos/nhl_all_star.jpg",
+  "/images/photography_photos/thescore/coop.jpg",
+  "/images/photography_photos/thescore/jays.jpg",
+  "/images/photography_photos/thescore/office.jpg",
+  "/images/photography_photos/thescore/raptors_for_research.jpg",
+  "/images/photography_photos/thescore/super_bowl.jpg",
+  "/images/photography_photos/thescore/raptors_for_research_two.jpg",
+];

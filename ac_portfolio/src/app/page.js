@@ -20,8 +20,14 @@ export default function Home() {
         <title>Andrew Chow</title>
         <meta name="description" content="Personal Portfolio" />
         <meta property="og:title" content="Andrew Chow" />
-        <meta property="og:description" content="Andrew Chow's Personal Website" />
-        <meta property="og:image" content="https://andrewchow.ca/profile_pic_2024.jpg" />
+        <meta
+          property="og:description"
+          content="Andrew Chow's Personal Website"
+        />
+        <meta
+          property="og:image"
+          content="https://andrewchow.ca/profile_pic_2024.jpg"
+        />
         <meta property="og:url" content="https://andrewchow.ca" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Andrew Chow's Site" />

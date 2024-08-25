@@ -144,7 +144,8 @@ const TheScoreDev = () => {
 
                 <p>
                   My learning goals for this term were fairly simple: Contiue to
-                  do what I was doing and push myself further to grow as a developer
+                  do what I was doing and push myself further to grow as a
+                  developer
                 </p>
                 <h3 className="text-xl font-semibold mt-8 mb-4">
                   🎒 My Experience
@@ -235,10 +236,11 @@ const TheScoreDev = () => {
                 <p className="mb-6">
                   When I look back, it's amazing to see how much I have grown
                   personally, professionally and all of the connections and
-                  memories I've made with everybody at theScore. I couldn't
-                  have done it without the support from the Promotions team. This team
-                  felt like home and I'm really going to miss everyone. Although this chapter
-                  comes to an end, I'm excited for the next one begin.
+                  memories I've made with everybody at theScore. I couldn't have
+                  done it without the support from the Promotions team. This
+                  team felt like home and I'm really going to miss everyone.
+                  Although this chapter comes to an end, I'm excited for the
+                  next one begin.
                 </p>
                 {/* <h3 className="text-xl font-semibold mt-8 mb-4">
                   🎖️ Highlights

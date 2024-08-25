@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face{
+@font-face {
   font-family: "yuji";
-  src: url('../../public/YujiHentaiganaAkari-Regular.ttf')
+  src: url("../../public/YujiHentaiganaAkari-Regular.ttf");
 }
 
 @font-face {
   font-family: "firacode";
-  src: url('../../public/FiraCode-VariableFont_wght.ttf')
+  src: url("../../public/FiraCode-VariableFont_wght.ttf");
 }
-
-
-

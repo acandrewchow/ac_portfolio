@@ -1,23 +1,18 @@
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 My personal portfolio where I document my adventures through software, including the various places I have worked at during my undergrad :)
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Tailwind][Tailwind CSS]][Tailwind-url]
-
-
-
-
-
-
-
+- [![Next][Next.js]][Next-url]
+- [![React][React.js]][React-url]
+- [![Tailwind][Tailwind CSS]][Tailwind-url]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
