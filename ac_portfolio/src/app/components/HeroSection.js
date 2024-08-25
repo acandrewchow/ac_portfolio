@@ -31,11 +31,13 @@ const HeroSection = () => {
             experience in developing scalable applications
           </p>
           <p className="mb-4">
-            Currently building new features in Elixir for  over 5+ million users across theScore Bet and ESPN
-            Bet platforms
+            Previously at theScore where I built features in Elixir for over 5
+            million users across theScore Bet and ESPN Bet platforms
           </p>
           <p className="mb-4">
-            Interested in software and product 2025 New Grad Opportunities
+            Currently interested in software and product 2025 Winter
+            Internships, feel free to take a look at my resume{" "}
+            <a href="resume.pdf"className="text-blue-500 hover:underline" >here!</a>
           </p>
 
           <p className="mb-4">
