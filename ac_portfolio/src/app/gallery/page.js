@@ -71,9 +71,8 @@ export default function GalleryHome() {
       </Head>
       <ParticlesBackground darkMode={darkMode} />
       <main className="bg-white dark:bg-gray-900 min-h-screen">
+        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <section className="container mx-auto p-4">
-          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-
           <h2 className="text-center text-black text-3xl font-semibold mb-4 p-4 dark:text-white">
             My Gear
           </h2>
