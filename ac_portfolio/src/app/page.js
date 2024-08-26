@@ -33,7 +33,7 @@ export default function Home() {
         <meta property="og:site_name" content="Andrew Chow's Site" />
         <link rel="icon" href="./favicons/favicon.ico" />
       </Head>
-      <main className=" bg-white dark:bg-gray-900">
+      <main className=" bg-white dark:bg-zinc-900">
         <section className="min-h-screen">
           <ParticlesBackground darkMode={darkMode} />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />

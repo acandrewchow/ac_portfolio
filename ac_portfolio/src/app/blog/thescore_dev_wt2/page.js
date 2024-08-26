@@ -52,7 +52,7 @@ const TheScoreDev = () => {
       </Head>
       <ParticlesBackground darkMode={darkMode} />
 
-      <main className="bg-white dark:bg-gray-900">
+      <main className="bg-white dark:bg-zinc-900">
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <section className="min-h-screen">
           <div className="max-w-4xl mx-auto px-6 py-8">
@@ -139,7 +139,7 @@ const TheScoreDev = () => {
                       key={skill.name}
                       className={`flex flex-col items-center p-2 sm:p-4 border-2 ${
                         darkMode
-                          ? "border-gray-700 bg-gray-800"
+                          ? "border-zinc-700 bg-zinc-800"
                           : "border-white-100"
                       } rounded-lg transition-transform hover:scale-105 mb-10`}
                     >

@@ -3,7 +3,7 @@ import React from "react";
 function BlogPostCard({ title, date, description, tags, darkMode }) {
   return (
     <div
-      className={`p-4 border rounded-lg ${darkMode ? "border-gray-700" : "border-gray-300"} bg-white dark:bg-gray-800`}
+      className={`p-4 border rounded-lg ${darkMode ? "border-gray-700" : "border-gray-300"} bg-white dark:bg-zinc-800`}
     >
       <h2
         className={`text-xl font-bold ${darkMode ? "text-white" : "text-gray-900"}`}
@@ -20,7 +20,7 @@ function BlogPostCard({ title, date, description, tags, darkMode }) {
         {tags.map((tag, index) => (
           <span
             key={index}
-            className={`text-xs font-semibold py-1 px-2 rounded-full ${darkMode ? "bg-gray-700 text-gray-300" : "bg-gray-200 text-gray-800"}`}
+            className={`text-xs font-semibold py-1 px-2 rounded-full ${darkMode ? "bg-zinc-700 text-gray-300" : "bg-zinc-200 text-gray-800"}`}
           >
             {tag}
           </span>

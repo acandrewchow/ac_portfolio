@@ -28,12 +28,12 @@ const BackToTopButton = () => {
 
   return (
     <div
-      className={`fixed bottom-10 right-10 p-2 bg-gray-800 dark:bg-gray-300 rounded-full ${
+      className={`fixed bottom-10 right-10 p-2 bg-zinc-800 dark:bg-zinc-300 rounded-full ${
         isVisible ? "visible" : "invisible"
-      } hover:scale-110 hover:bg-gray-900 dark:hover:bg-gray-400 transition-transform`}
+      } hover:scale-110 hover:bg-zinc-900 dark:hover:bg-zinc-400 transition-transform`}
       onClick={scrollToTop}
     >
-      <FaArrowUp className="text-white dark:text-gray-800 text-xl" />
+      <FaArrowUp className="text-white dark:text-zinc-800 text-xl" />
     </div>
   );
 };

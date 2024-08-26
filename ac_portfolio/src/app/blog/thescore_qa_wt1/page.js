@@ -23,7 +23,7 @@ const TheScoreQa = () => {
       </Head>
       <ParticlesBackground darkMode={darkMode} />
 
-      <main className="bg-white dark:bg-gray-900">
+      <main className="bg-white dark:bg-zinc-900">
         <section className="min-h-screen">
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <div className="max-w-4xl mx-auto px-6 py-8">
@@ -226,7 +226,7 @@ const TheScoreQa = () => {
                     width={500}
                     height={300}
                   />
-                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm italic">
+                  <p className="text-center bg-zinc-800 bg-opacity-75 text-white py-2 sm:text-sm italic">
                     theScore Co-op Project Summer 2022
                   </p>
                 </div>
@@ -241,7 +241,7 @@ const TheScoreQa = () => {
                     width={500}
                     height={300}
                   />
-                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm italic">
+                  <p className="text-center bg-zinc-800 bg-opacity-75 text-white py-2 sm:text-sm italic">
                     National Jamboree '22 - Blue Jays Foundation
                   </p>
                 </div>
@@ -256,7 +256,7 @@ const TheScoreQa = () => {
                     width={500}
                     height={300}
                   />
-                  <p className="text-center bg-gray-800 bg-opacity-75 text-white py-2 sm:text-sm italic">
+                  <p className="text-center bg-zinc-800 bg-opacity-75 text-white py-2 sm:text-sm italic">
                     Promotions Team Event
                   </p>
                 </div>

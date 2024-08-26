@@ -6,7 +6,7 @@ const Footer = ({ darkMode }) => {
   return (
     <footer
       className={`font-firacode text-center py-4 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
+        darkMode ? "bg-zinc-900 text-white" : "bg-white text-gray-800"
       }`}
     >
       <div className="text-3xl md:text-3xl flex justify-center gap-4 text-gray-600 dark:text-gray-400 mb-2 mt-10">

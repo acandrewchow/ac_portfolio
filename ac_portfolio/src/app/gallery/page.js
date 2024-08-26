@@ -48,11 +48,11 @@ export default function GalleryHome() {
           className={`mx-1 px-3 py-1 rounded ${
             darkMode
               ? i === currentPage
-                ? "bg-gray-700 text-white"
-                : "bg-gray-800 text-gray-400"
+                ? "bg-zinc-700 text-white"
+                : "bg-zinc-800 text-gray-400"
               : i === currentPage
-                ? "bg-gray-200 text-black"
-                : "bg-gray-300 text-gray-700"
+                ? "bg-zinc-200 text-black"
+                : "bg-zinc-300 text-gray-700"
           }`}
         >
           {i}
@@ -70,7 +70,7 @@ export default function GalleryHome() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ParticlesBackground darkMode={darkMode} />
-      <main className="bg-white dark:bg-gray-900 min-h-screen">
+      <main className="bg-white dark:bg-zinc-900 min-h-screen">
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <section className="container mx-auto p-4">
           <h2 className="text-center text-black text-3xl font-semibold mb-4 p-4 dark:text-white">

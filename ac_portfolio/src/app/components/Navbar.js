@@ -14,8 +14,8 @@ const Navbar = ({ toggleDarkMode }) => {
     <nav
       className={`font-firacode px-4 md:px-52 py-6 flex justify-between ${
         isMobileMenuOpen
-          ? "bg-white dark:bg-gray-900 dark:text-white"
-          : "bg-white dark:bg-gray-900"
+          ? "bg-white dark:bg-zinc-900 dark:text-white"
+          : "bg-white dark:bg-zinc-900"
       } sticky top-0 z-50`}
     >
       <h1 className="text-black dark:text-white font-yuji text-3xl">
@@ -70,7 +70,7 @@ const Navbar = ({ toggleDarkMode }) => {
         onClick={toggleMobileMenu}
       />
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-full bg-gray-100 dark:bg-gray-800 transform transition-transform ${
+        className={`md:hidden fixed top-0 right-0 h-full w-full bg-zinc-100 dark:bg-zinc-800 transform transition-transform ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
