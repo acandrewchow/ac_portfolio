@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import ParticlesBackground from "../components/ParticlesBackground";
 import Navbar from "../components/Navbar";
@@ -10,10 +10,26 @@ import { photos } from "../data/photos";
 export default function GalleryHome() {
   const [darkMode, setDarkMode] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
+  const [photosPerPage, setPhotosPerPage] = useState(20);
 
-  const photosPerPage = 100; // Change later
+  useEffect(() => {
+    const updatePhotosPerPage = () => {
+      if (window.innerWidth < 640) {
+        setPhotosPerPage(5); // Mobile Devices
+      } else if (window.innerWidth < 1024) {
+        setPhotosPerPage(12); // Tablets
+      } else {
+        setPhotosPerPage(20); // Desktop
+      }
+    };
+
+    updatePhotosPerPage();
+    window.addEventListener("resize", updatePhotosPerPage);
+
+    return () => window.removeEventListener("resize", updatePhotosPerPage);
+  }, []);
+
   const totalPages = Math.ceil(photos.length / photosPerPage);
-
   const indexOfLastPhoto = currentPage * photosPerPage;
   const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
   const currentPhotos = photos.slice(indexOfFirstPhoto, indexOfLastPhoto);
