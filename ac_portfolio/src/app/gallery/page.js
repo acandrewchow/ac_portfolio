@@ -11,6 +11,7 @@ export default function GalleryHome() {
   const [darkMode, setDarkMode] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [photosPerPage, setPhotosPerPage] = useState(20);
+  const [selectedTags, setSelectedTags] = useState([]);
 
   useEffect(() => {
     const updatePhotosPerPage = () => {
@@ -29,13 +30,52 @@ export default function GalleryHome() {
     return () => window.removeEventListener("resize", updatePhotosPerPage);
   }, []);
 
-  const totalPages = Math.ceil(photos.length / photosPerPage);
+  const filteredPhotos = selectedTags.length
+    ? photos.filter((photo) =>
+        selectedTags.every((tag) => photo.tags.includes(tag)),
+      )
+    : photos;
+
+  const totalPages = Math.ceil(filteredPhotos.length / photosPerPage);
   const indexOfLastPhoto = currentPage * photosPerPage;
   const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
-  const currentPhotos = photos.slice(indexOfFirstPhoto, indexOfLastPhoto);
+  const currentPhotos = filteredPhotos.slice(
+    indexOfFirstPhoto,
+    indexOfLastPhoto,
+  );
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+  };
+
+  const toggleTag = (tag) => {
+    if (selectedTags.includes(tag)) {
+      setSelectedTags(selectedTags.filter((t) => t !== tag));
+    } else {
+      setSelectedTags([...selectedTags, tag]);
+    }
+    setCurrentPage(1);
+  };
+
+  const renderTags = () => {
+    const allTags = Array.from(new Set(photos.flatMap((photo) => photo.tags)));
+    return allTags.map((tag) => (
+      <button
+        key={tag}
+        onClick={() => toggleTag(tag)}
+        className={`mx-1 my-1 px-3 py-1 rounded-lg ${
+          darkMode
+            ? selectedTags.includes(tag)
+              ? "bg-zinc-700 text-white"
+              : "bg-zinc-800 text-gray-400"
+            : selectedTags.includes(tag)
+              ? "bg-gray-200 text-black"
+              : "bg-gray-300 text-gray-700"
+        }`}
+      >
+        {tag}
+      </button>
+    ));
   };
 
   const renderPageNumbers = () => {
@@ -87,14 +127,22 @@ export default function GalleryHome() {
             </div>
           </div>
 
+          <div className="flex justify-center mb-8">{renderTags()}</div>
+
           <div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
             {currentPhotos.map((photo, index) => (
-              <img
-                key={index}
-                src={photo}
-                alt={`Photo ${index + 1}`}
-                className="w-full mb-2 rounded-lg transform transition-transform duration-200 hover:scale-105 hover:opacity-90"
-              />
+              <div key={index} className="relative group">
+                <img
+                  src={photo.src}
+                  alt={`Photo ${index + 1}`}
+                  className="w-full mb-2 rounded-lg transform transition-transform duration-200 hover:scale-105 hover:opacity-90"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-lg">
+                  <span className="text-white text-center text-sm">
+                    {photo.caption}
+                  </span>
+                </div>
+              </div>
             ))}
           </div>
 
