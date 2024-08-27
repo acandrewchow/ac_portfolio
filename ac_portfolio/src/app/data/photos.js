@@ -58,4 +58,25 @@ export const photos = [
     tags: ["Coop", "Sports"],
     caption: "Raptors for Research 2024",
   },
+  {
+    src: "/images/blog/coop_2.jpg",
+    tags: ["Coop"],
+    caption: "Summer 2022 Cohort"
+  },
+  {
+    src: "/images/blog/hackathon_one.jpg",
+    tags: ["Coop"],
+    caption: "Summer 2023 Hackathon"
+  },
+  {
+    src: "/images/blog/hackathon_two.jpg",
+    tags: ["Coop"],
+    caption: "Summer 2023 Cohort"
+  },
+  {
+    src: "/images/blog/jayscare.jpg",
+    tags: ["Coop", "Sports"],
+    caption: "Jays Care Foundation 2022"
+  }
+
 ];
