@@ -62,28 +62,23 @@ const photos = [
 const skillsData = [
   {
     name: "Elixir",
-    src:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original-wordmark.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original-wordmark.svg",
   },
   {
     name: "Phoenix",
-    src:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phoenix/phoenix-original-wordmark.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phoenix/phoenix-original-wordmark.svg",
   },
   {
     name: "PostgreSQL",
-    src:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg",
   },
   {
     name: "Apache Kafka",
-    src:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original-wordmark.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original-wordmark.svg",
   },
   {
     name: "GraphQl",
-    src:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg",
   },
 ];
 
@@ -138,8 +133,8 @@ const TheScoreDev = () => {
                 <div className="text-center">
                   <p className="mb-10 italic">
                     During my 4th and 5th work terms, I continued my journey
-                    with theScore, serving as a Software Developer on the
-                    Promotions team.
+                    with theScore as a Software Developer on the Promotions
+                    team.
                   </p>
                 </div>
                 <h3 className="text-xl font-semibold mt-4 mb-4">
@@ -164,8 +159,8 @@ const TheScoreDev = () => {
                   What is the Promotions Service Responsible For?
                 </h3>
                 <p className="mb-4">
-                  The Promotions service is responsible for granting users
-                  awards on theScoreBet and ESPN Bet platforms upon completing
+                  The Promotions service is responsible for granting awards to
+                  users on theScoreBet and ESPN Bet platforms upon completing
                   dynamic marketing campaigns. Each promotional campaign
                   includes an audience of users that are available to
                   participate in the promotion, allowing patrons to complete
@@ -228,9 +223,9 @@ const TheScoreDev = () => {
 
                 <p className="mb-6">
                   The project was extensive, impacting multiple backend services
-                  and necessitating significant client-side changes, including
-                  new user flows. I contributed to various aspects of the
-                  Referral project, such as developing new APIs, services, and
+                  and requiring significant client-side changes, including new
+                  user flows. I contributed to various aspects of the Referral
+                  project, such as developing new APIs, services, and
                   asynchronous jobs. I also played a key role in triaging and
                   resolving various bugs.
                 </p>
@@ -286,7 +281,7 @@ const TheScoreDev = () => {
                     hosting all of the co-op events and activites throughout the
                     term!
                   </li>
-                </ul> 
+                </ul>
                 <h3 className="text-xl text-center font-semibold mt-8 mb-8">
                   Highlights
                 </h3>
