@@ -19,18 +19,12 @@ export default function Slideshow({ photos, darkMode }) {
 
   return (
     <div className={`${darkMode ? "bg-zinc-900" : "bg-white"}`}>
-      <div className="relative flex justify-center items-center max-w-3xl mx-auto">
-        <button
-          className={`absolute top-1/2 left-0 transform -translate-y-1/2 ${
-            darkMode
-              ? "bg-transparent text-white border border-white"
-              : "bg-transparent text-black border border-black"
-          } px-2 py-1 rounded-full`}
-          onClick={prevSlide}
+      <div className="relative flex flex-col items-center max-w-3xl mx-auto">
+        <div
+          className={`w-full h-96 flex flex-col justify-center items-center ${
+            darkMode ? "bg-zinc-900" : "bg-white"
+          }`}
         >
-          &#10094;
-        </button>
-        <div className={`w-full h-96 flex flex-col justify-center items-center ${darkMode ? "bg-zinc-900" : "bg-white"}`}>
           {photos.map((photo, index) => (
             <div
               key={index}
@@ -56,16 +50,29 @@ export default function Slideshow({ photos, darkMode }) {
             </div>
           ))}
         </div>
-        <button
-          className={`absolute top-1/2 right-0 transform -translate-y-1/2 ${
-            darkMode
-              ? "bg-transparent text-white border border-white"
-              : "bg-transparent text-black border border-black"
-          } px-2 py-1 rounded-full`}
-          onClick={nextSlide}
-        >
-          &#10095;
-        </button>
+
+        <div className="flex justify-between w-full mt-4 px-4">
+          <button
+            className={`${
+              darkMode
+                ? "bg-transparent text-white border border-white"
+                : "bg-transparent text-black border border-black"
+            } px-4 py-2 rounded-full`}
+            onClick={prevSlide}
+          >
+            &#10094;
+          </button>
+          <button
+            className={`${
+              darkMode
+                ? "bg-transparent text-white border border-white"
+                : "bg-transparent text-black border border-black"
+            } px-4 py-2 rounded-full`}
+            onClick={nextSlide}
+          >
+            &#10095;
+          </button>
+        </div>
       </div>
     </div>
   );

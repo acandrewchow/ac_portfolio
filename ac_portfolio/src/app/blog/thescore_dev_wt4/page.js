@@ -280,18 +280,13 @@ const TheScoreDev = () => {
                     🏆 Shoutout to everyone on the <strong>Promotions</strong>{" "}
                     team, it's been a pleasure working with all of you again!
                   </li>
-                  <li className="mb-2">
+                  <li className="mb-12">
                     🏆 Thanks to <strong>Michelle</strong> and{" "}
                     <strong>Nadia</strong> for shaping the co-op culture and
                     hosting all of the co-op events and activites throughout the
                     term!
                   </li>
-                </ul>
-
-                <p className="mt-12 text-center">
-                  Here are a couple of memorable moments from my time at
-                  theScore
-                </p>
+                </ul> 
                 <h3 className="text-xl text-center font-semibold mt-8 mb-8">
                   Highlights
                 </h3>
