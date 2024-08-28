@@ -32,7 +32,7 @@ export default function GalleryHome() {
 
   const filteredPhotos = selectedTags.length
     ? photos.filter((photo) =>
-        selectedTags.every((tag) => photo.tags.includes(tag)),
+        selectedTags.every((tag) => photo.tags.includes(tag))
       )
     : photos;
 
@@ -41,7 +41,7 @@ export default function GalleryHome() {
   const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
   const currentPhotos = filteredPhotos.slice(
     indexOfFirstPhoto,
-    indexOfLastPhoto,
+    indexOfLastPhoto
   );
 
   const toggleDarkMode = () => {
@@ -69,8 +69,8 @@ export default function GalleryHome() {
               ? "bg-zinc-700 text-white"
               : "bg-zinc-800 text-gray-400"
             : selectedTags.includes(tag)
-              ? "bg-gray-200 text-black"
-              : "bg-gray-300 text-gray-700"
+            ? "bg-gray-200 text-black"
+            : "bg-gray-300 text-gray-700"
         }`}
       >
         {tag}
@@ -91,12 +91,12 @@ export default function GalleryHome() {
                 ? "bg-zinc-700 text-white"
                 : "bg-zinc-800 text-gray-400"
               : i === currentPage
-                ? "bg-zinc-200 text-black"
-                : "bg-zinc-300 text-gray-700"
+              ? "bg-zinc-200 text-black"
+              : "bg-zinc-300 text-gray-700"
           }`}
         >
           {i}
-        </button>,
+        </button>
       );
     }
     return pageNumbers;
@@ -121,10 +121,15 @@ export default function GalleryHome() {
               <span className="mr-2">📷</span>
               <p>Sony a6100</p>
             </div>
-            <div className="flex items-center">
-              <span className="mr-2">🔍</span>
-              <p>Sony 16-50mm f/3.5-5.6</p>
-            </div>
+            {[
+              { icon: "🔍", description: "Sony 16-50mm f/3.5-5.6" },
+              { icon: "🔍", description: "Sony 18-135mm f/3.5-5.6" },
+            ].map((lens, index) => (
+              <div key={index} className="flex items-center mb-2">
+                <span className="mr-2">{lens.icon}</span>
+                <p>{lens.description}</p>
+              </div>
+            ))}
           </div>
 
           <div className="flex justify-center mb-8">{renderTags()}</div>
