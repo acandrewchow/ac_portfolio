@@ -28,22 +28,24 @@ const HeroSection = () => {
         <div className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-md mb-8">
           <p className="mb-4">
             Software Engineering student at the University of Guelph with
-            experience in developing scalable applications
+            experience in developing scalable applications. My interests
+            lie within software development and product management
           </p>
           <p className="mb-4">
-            Previously at theScore where I built features in Elixir for over 5
+            I was previously at theScore where I built promotional features in Elixir for over 5
             million users across theScore Bet and ESPN Bet platforms
           </p>
           <p className="mb-4">
-            Currently interested in software and product 2025 Winter
+            Right now I am currently interested in software and product 2025 Winter
             Internships, feel free to take a look at my resume{" "}
             <a href="resume.pdf" className="text-blue-500 hover:underline">
-              here!
+              here
             </a>
+            
           </p>
 
           <p className="mb-4">
-            Feel free to reach out at{" "}
+            I can be reached at {" "}
             <a
               href="mailto:ac.andrewchow@gmail.com"
               className="text-blue-500 hover:underline"
