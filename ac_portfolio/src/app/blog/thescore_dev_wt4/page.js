@@ -181,7 +181,7 @@ const TheScoreDev = () => {
                       key={skill.name}
                       className={`flex flex-col items-center p-2 sm:p-4 border-2 ${
                         darkMode
-                          ? "border-zinc-600 bg-zinc-800"
+                          ? "border-zinc-600 bg-zinc-500"
                           : "border-white-100"
                       } rounded-lg transition-transform hover:scale-105 mb-10`}
                     >

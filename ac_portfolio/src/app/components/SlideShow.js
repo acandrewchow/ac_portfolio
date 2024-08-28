@@ -18,61 +18,58 @@ export default function Slideshow({ photos, darkMode }) {
   }
 
   return (
-    <div className={`${darkMode ? "bg-zinc-900" : "bg-white"}`}>
-      <div className="relative flex flex-col items-center max-w-3xl mx-auto">
-        <div
-          className={`w-full h-96 flex flex-col justify-center items-center ${
-            darkMode ? "bg-zinc-900" : "bg-white"
-          }`}
+    <div className={`${darkMode ? "bg-zinc-900" : "bg-white"} relative`}>
+      <div
+        className={`relative w-full h-96 flex flex-col justify-center items-center ${
+          darkMode ? "bg-zinc-900" : "bg-white"
+        }`}
+      >
+        {photos.map((photo, index) => (
+          <div
+            key={index}
+            className={`absolute transition-opacity duration-1000 ${
+              index === current ? "opacity-100" : "opacity-0"
+            } flex flex-col items-center`}
+          >
+            <img
+              src={photo.src}
+              alt={`Slide ${index}`}
+              className="w-full h-full object-cover rounded-lg"
+              style={{ maxHeight: "400px", maxWidth: "100%" }}
+            />
+            {photo.caption && (
+              <p
+                className={`mt-2 text-center text-sm ${
+                  darkMode ? "text-gray-300" : "text-gray-700"
+                }`}
+              >
+                {photo.caption}
+              </p>
+            )}
+          </div>
+        ))}
+        <button
+          className={`absolute left-4 top-1/2 transform -translate-y-1/2 ${
+            darkMode
+              ? "bg-transparent text-white border border-white"
+              : "bg-transparent text-black border border-black"
+          } px-4 py-2 rounded-full z-10`}
+          onClick={prevSlide}
+          aria-label="Previous slide"
         >
-          {photos.map((photo, index) => (
-            <div
-              key={index}
-              className={`absolute transition-opacity duration-1000 ${
-                index === current ? "opacity-100" : "opacity-0"
-              } flex flex-col items-center`}
-            >
-              <img
-                src={photo.src}
-                alt={`Slide ${index}`}
-                className="w-full h-full object-cover rounded-lg"
-                style={{ maxHeight: "400px", maxWidth: "100%" }}
-              />
-              {photo.caption && (
-                <p
-                  className={`mt-2 text-center text-sm ${
-                    darkMode ? "text-gray-300" : "text-gray-700"
-                  }`}
-                >
-                  {photo.caption}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div className="flex justify-between w-full mt-4 px-4">
-          <button
-            className={`${
-              darkMode
-                ? "bg-transparent text-white border border-white"
-                : "bg-transparent text-black border border-black"
-            } px-4 py-2 rounded-full`}
-            onClick={prevSlide}
-          >
-            &#10094;
-          </button>
-          <button
-            className={`${
-              darkMode
-                ? "bg-transparent text-white border border-white"
-                : "bg-transparent text-black border border-black"
-            } px-4 py-2 rounded-full`}
-            onClick={nextSlide}
-          >
-            &#10095;
-          </button>
-        </div>
+          &#10094;
+        </button>
+        <button
+          className={`absolute right-4 top-1/2 transform -translate-y-1/2 ${
+            darkMode
+              ? "bg-transparent text-white border border-white"
+              : "bg-transparent text-black border border-black"
+          } px-4 py-2 rounded-full z-10`}
+          onClick={nextSlide}
+          aria-label="Next slide"
+        >
+          &#10095;
+        </button>
       </div>
     </div>
   );
