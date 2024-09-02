@@ -77,6 +77,36 @@ export const photos = [
     src: "/images/blog/jayscare.jpg",
     tags: ["Coop", "Sports"],
     caption: "Jays Care Foundation 2022"
+  },
+  {
+    src: "/images/photography_photos/banff/lake_louise.jpg",
+    tags: ["Banff", "Nature"],
+    caption: "Lake Louise"
+  },
+  {
+    src: "/images/photography_photos/banff/lake_louise_two.jpg",
+    tags: ["Banff", "Nature"],
+    caption: "Lake Louise"
+  },
+  {
+    src: "/images/photography_photos/banff/banff.jpg",
+    tags: ["Banff", "Nature"],
+    caption: "City of Banff"
+  },
+  {
+    src: "/images/photography_photos/banff/lake_minnewanka.jpg",
+    tags: ["Banff", "Nature"],
+    caption: "Lake Minnewanka"
+  },
+  {
+    src: "/images/photography_photos/banff/louise_hike.jpg",
+    tags: ["Banff", "Nature"],
+    caption: "Lake Louise Trails"
+  },
+  {
+    src: "/images/photography_photos/banff/mirror_lake.jpg",
+    tags: ["Banff", "Nature"],
+    caption: "Mirror Lake"
   }
 
 ];
