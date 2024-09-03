@@ -107,6 +107,16 @@ export const photos = [
     src: "/images/photography_photos/banff/mirror_lake.jpg",
     tags: ["Banff", "Nature"],
     caption: "Mirror Lake"
-  }
+  },
+  {
+    src: "/images/photography_photos/banff/mountain.jpg",
+    tags: ["Banff", "Nature"],
+    caption: "Lake Louise Tea House Mountain"
+  },
+  {
+    src: "/images/photography_photos/banff/bird.jpg",
+    tags: ["Banff", "Nature"],
+    caption: "Some sort of Bird"
+  },
 
 ];
