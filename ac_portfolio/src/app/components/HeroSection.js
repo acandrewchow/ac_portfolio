@@ -36,23 +36,9 @@ const HeroSection = () => {
             million users across theScore Bet and ESPN Bet platforms
           </p>
           <p className="mb-4">
-            Right now I am currently interested in software and product 2025 Winter
-            Internships, feel free to take a look at my resume{" "}
-            <a href="resume.pdf" className="text-blue-500 hover:underline">
-              here
-            </a>
+            Right now I am currently looking for software and product 2025 Winter
+            internships. Feel free to reach out if you'd like to chat! :)
             
-          </p>
-
-          <p className="mb-4">
-            I can be reached at {" "}
-            <a
-              href="mailto:ac.andrewchow@gmail.com"
-              className="text-blue-500 hover:underline"
-            >
-              ac.andrewchow@gmail.com
-            </a>{" "}
-            if you want to chat :)
           </p>
         </div>
       </motion.div>
