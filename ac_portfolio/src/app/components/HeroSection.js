@@ -28,17 +28,18 @@ const HeroSection = () => {
         <div className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-md mb-8">
           <p className="mb-4">
             Software Engineering student at the University of Guelph with
-            experience in developing scalable applications. My interests
-            lie within software development and product management
+            experience in developing scalable applications. My interests lie
+            within software development and product management.
           </p>
           <p className="mb-4">
-            I was previously at theScore where I built promotional features in Elixir for over 5
-            million users across theScore Bet and ESPN Bet platforms
+            I was previously at theScore where I built promotional features in
+            Elixir for over 5 million users across theScore Bet and ESPN Bet
+            platforms. Outside of school, I enjoy teaching students programming
+            and taking pictures with my camera.
           </p>
           <p className="mb-4">
-            Right now I am currently looking for software and product 2025 Winter
-            internships. Feel free to reach out if you'd like to chat! :)
-            
+            Right now I am currently looking for software and product 2025
+            Winter internships. Feel free to reach out if you'd like to chat! :)
           </p>
         </div>
       </motion.div>
