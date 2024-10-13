@@ -7,8 +7,11 @@ const Experience = () => {
       role: "Teaching Assistant",
       company: "University of Guelph",
       duration: "Jan 2023 - Present",
-      description:
-        "CIS*2170 (W23) - User Interface Design, CIS*1200 (F24) - Introduction to Computing, CIS*1300 (F24) - Introduction to Programming",
+      description: [
+        "CIS*2170 (W23) - User Interface Design",
+        "CIS*1200 (F24) - Introduction to Computing",
+        "CIS*1300 (F24) - Introduction to Programming",
+      ],
       image: "../../images/misc/guelph.jpg", 
     },
     {
@@ -37,10 +40,14 @@ const Experience = () => {
     },
     {
       role: "Mentor",
-      company: "Various Hackathons",
+      company: "Hackathons",
       duration: "",
-      description:
-        "Deer Hacks III (2024), GDSC Hacks (2024), Hack the North (2024)",
+      description: [
+        "Providing mentorship for students at various Hackathons",
+        "Deer Hacks III (2024)",
+        "GDSC Hacks (2024)",
+        "Hack the North (2024)",
+      ],
       image: "../../images/misc/code.jpg", 
     },
   ];
@@ -68,7 +75,6 @@ const Experience = () => {
                   index % 2 === 0 ? "md:justify-self-end" : "md:justify-self-start"
                 }`}
               >
-                {/* Image */}
                 <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-4">
                   <img
                     src={experience.image}
@@ -84,9 +90,19 @@ const Experience = () => {
                   <p className="text-sm font-firacode text-gray-500 dark:text-gray-400 mb-2">
                     {experience.duration}
                   </p>
-                  <p className="font-firacode text-gray-800 dark:text-gray-300">
-                    {experience.description}
-                  </p>
+                  {Array.isArray(experience.description) ? (
+                    <ul className="list-disc ml-6 font-firacode text-gray-800 dark:text-gray-300">
+                      {experience.description.map((item, idx) => (
+                        <li key={idx} className="mb-1">
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="font-firacode text-gray-800 dark:text-gray-300">
+                      {experience.description}
+                    </p>
+                  )}
                 </div>
               </motion.div>
             ))}
