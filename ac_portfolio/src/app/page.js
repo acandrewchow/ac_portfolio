@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import BackToTopButton from "./components/BackToTopButton";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -40,6 +41,7 @@ export default function Home() {
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <HeroSection darkMode={darkMode} />
           <Experience darkMode={darkMode} />
+          <Projects darkMod={darkMode} />
         </section>
         <Footer darkMode={darkMode} />
         <BackToTopButton />
