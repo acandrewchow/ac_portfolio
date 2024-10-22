@@ -38,8 +38,8 @@ const HeroSection = () => {
             and taking pictures with my camera.
           </p>
           <p className="mb-4">
-            Right now I am currently looking for software and product 2025
-            Winter internships. Feel free to reach out if you'd like to chat! :)
+            Right now I am currently looking for new grad software and product
+            roles. Feel free to reach out if you'd like to chat! :)
           </p>
         </div>
       </motion.div>
