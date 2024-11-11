@@ -1,6 +1,6 @@
 "use client";
+import { useEffect, useState } from "react";
 import Head from "next/head";
-import { useState } from "react";
 import ParticlesBackground from "./components/ParticlesBackground";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
@@ -13,6 +13,22 @@ export default function Home() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-504QE7Y45C";
+    script.async = true;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-504QE7Y45C");
+    };
+  }, []);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -32,17 +48,6 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Andrew Chow's Site" />
         <link rel="icon" href="./favicons/favicon.ico" />
-        
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-504QE7Y45C"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-504QE7Y45C');
-          `}
-        </script>
       </Head>
       <main className="bg-white dark:bg-zinc-900">
         <section className="min-h-screen">
