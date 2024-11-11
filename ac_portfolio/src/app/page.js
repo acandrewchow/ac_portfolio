@@ -32,8 +32,19 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Andrew Chow's Site" />
         <link rel="icon" href="./favicons/favicon.ico" />
+        
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-504QE7Y45C"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-504QE7Y45C');
+          `}
+        </script>
       </Head>
-      <main className=" bg-white dark:bg-zinc-900">
+      <main className="bg-white dark:bg-zinc-900">
         <section className="min-h-screen">
           <ParticlesBackground darkMode={darkMode} />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
