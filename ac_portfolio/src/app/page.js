@@ -56,7 +56,7 @@ export default function Home() {
           <HeroSection darkMode={darkMode} />
         </section>
         <Footer darkMode={darkMode} />
-        <BackToTopButton />
+        {/* <BackToTopButton /> */}
       </main>
     </div>
   );
