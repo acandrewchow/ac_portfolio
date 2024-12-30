@@ -152,7 +152,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 0.5,
-                  delay: index < 4 ? index * 0.5 : 0.5, // Longer delay for initial messages, shorter delay for new ones
+                  delay: index < 4 ? index * 1 : 0.5, // Longer delay for initial messages, shorter delay for new ones
                 }}
                 className={`flex items-start ${
                   msg.isSender ? "justify-end" : "justify-start"
