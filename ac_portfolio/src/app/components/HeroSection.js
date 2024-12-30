@@ -5,22 +5,41 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import ProfilePicture from "../../../public/profile_pic_banff.jpg";
 
 const HeroSection = () => {
+  const getPlatform = () => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/Android/.test(userAgent)) {
+      return "Android";
+    } else if (
+      /iPad|iPhone|iPod/.test(userAgent) ||
+      navigator.platform === "Mac"
+    ) {
+      return "iOS";
+    } else if (/Win/.test(navigator.platform)) {
+      return "Windows";
+    } else {
+      return "Unknown";
+    }
+  };
+
+  const [platform, setPlatform] = useState("");
+
   const [messages, setMessages] = useState([
     {
       text: "Hello, I'm Andrew, a 5th-year Software Engineering student at the University of Guelph, set to graduate in May 2025. Feel free to take a look around my website!",
-      isSender: false, 
+      isSender: false,
     },
     {
       text: "I am currently looking for New Grad Opportunities for Spring 2025 :)",
-      isSender: false, 
+      isSender: false,
     },
     {
       text: "Can I ask you more questions?",
-      isSender: true, 
+      isSender: true,
     },
     {
       text: "Sure thing! Ask away :)",
-      isSender: false, 
+      isSender: false,
     },
   ]);
 
@@ -114,6 +133,10 @@ const HeroSection = () => {
     }
   }, [messages]);
 
+  useEffect(() => {
+    setPlatform(getPlatform());
+  }, []);
+
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       handleSendMessage();
@@ -161,7 +184,9 @@ const HeroSection = () => {
                 <div
                   className={`max-w-xs p-3 rounded-3xl text-sm break-words ${
                     msg.isSender
-                      ? "bg-blue-500 text-white ml-auto"
+                      ? platform === "iOS" || platform === "Mac"
+                        ? "bg-blue-500 text-white ml-auto"
+                        : "bg-green-500 text-white ml-auto"
                       : "bg-zinc-700 text-white"
                   }`}
                 >
