@@ -209,7 +209,13 @@ const HeroSection = () => {
             />
             <button
               onClick={handleSendMessage}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600"
+              className={`absolute right-2 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full ${
+                platform === "iOS" || platform === "Mac"
+                  ? "bg-blue-500 hover:bg-blue-600"
+                  : platform === "Windows"
+                  ? "bg-green-500 hover:bg-green-600"
+                  : "bg-gray-500 hover:bg-gray-600"
+              }`}
             >
               <AiOutlineArrowUp size={16} />
             </button>
