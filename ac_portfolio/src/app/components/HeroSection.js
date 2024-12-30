@@ -12,7 +12,7 @@ const HeroSection = () => {
       return "Android";
     } else if (
       /iPad|iPhone|iPod/.test(userAgent) ||
-      navigator.platform === "Mac"
+      navigator.platform === "MacIntel"
     ) {
       return "iOS";
     } else if (/Win/.test(navigator.platform)) {
@@ -184,7 +184,7 @@ const HeroSection = () => {
                 <div
                   className={`max-w-xs p-3 rounded-3xl text-sm break-words ${
                     msg.isSender
-                      ? platform === "iOS" || platform === "Mac"
+                      ? platform === "iOS" || platform === "MacIntel"
                         ? "bg-blue-500 text-white ml-auto"
                         : "bg-green-500 text-white ml-auto"
                       : "bg-zinc-700 text-white"
