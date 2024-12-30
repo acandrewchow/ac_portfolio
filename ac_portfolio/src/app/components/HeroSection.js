@@ -7,25 +7,24 @@ import ProfilePicture from "../../../public/profile_pic_banff.jpg";
 const HeroSection = () => {
   const [messages, setMessages] = useState([
     {
-      text: "Hello, I'm Andrew a 5th-year Software Engineering student at the University of Guelph, set to graduate in May 2025.",
-      isSender: true,
+      text: "Hello, I'm Andrew, a 5th-year Software Engineering student at the University of Guelph, set to graduate in May 2025. Feel free to take a look around my website!",
+      isSender: false, 
     },
     {
       text: "I am currently looking for New Grad Opportunities for Spring 2025 :)",
-      isSender: true,
+      isSender: false, 
     },
     {
       text: "Can I ask you more questions?",
-      isSender: false,
+      isSender: true, 
     },
     {
       text: "Sure thing! Ask away :)",
-      isSender: true,
+      isSender: false, 
     },
   ]);
 
   const [newMessage, setNewMessage] = useState("");
-
   const chatContainerRef = useRef(null);
 
   const handleSendMessage = () => {
@@ -47,6 +46,15 @@ const HeroSection = () => {
     } else if (userMessage.toLowerCase().includes("about")) {
       reply =
         "I'm a Software Engineering student at the University of Guelph, and I enjoy working on challenging technical problems.";
+    } else if (userMessage.toLowerCase().includes("github")) {
+      reply = (
+        <span>
+          You can find my GitHub profile{" "}
+          <a href="github.com/acandrewchow" className="text-blue-500">
+            here
+          </a>{" "}
+        </span>
+      );
     } else if (userMessage.toLowerCase().includes("contact")) {
       reply = (
         <span>
@@ -84,6 +92,9 @@ const HeroSection = () => {
       userMessage.toLowerCase().includes("hi")
     ) {
       reply = "Hi there! How can I help you today?";
+    } else {
+      reply =
+        "I'm sorry, I don't understand that question. Please ask me something else!";
     }
 
     // Delay the reply
@@ -110,8 +121,8 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-zinc-900">
-      <div className="relative bg-black w-96 h-[700px] rounded-3xl shadow-xl flex flex-col">
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="relative bg-black w-full max-w-full sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl h-[750px] rounded-3xl shadow-xl flex flex-col">
         <div className="absolute left-0 right-0 h-16 bg-zinc-800 rounded-t-3xl"></div>
         <div className="absolute left-1/2 transform -translate-x-1/2 text-white font-semibold text-xs top-12">
           Andrew Chow
@@ -130,8 +141,8 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
           className="p-6 pt-20 pb-6 flex-grow overflow-y-auto space-y-4 text-white"
-          ref={chatContainerRef} 
-          style={{ maxHeight: "calc(100% - 160px)", overflowY: "auto" }} 
+          ref={chatContainerRef}
+          style={{ maxHeight: "calc(100% - 160px)", overflowY: "auto" }}
         >
           <div className="space-y-4">
             {messages.map((msg, index) => (
@@ -161,13 +172,13 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        <div className="absolute bottom-0 left-0 right-0 p-4 bg-zinc-800 rounded-b-3xl flex items-center space-x-3">
-          <div className="flex-grow relative">
+        <div className="absolute bottom-0 left-0 right-0 p-4 bg-zinc-800 rounded-b-3xl flex flex-col items-center">
+          <div className="flex-grow relative w-full">
             <input
               type="text"
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
-              onKeyDown={handleKeyDown} 
+              onKeyDown={handleKeyDown}
               placeholder="Ask me anything!"
               className="w-full p-2 rounded-lg bg-zinc-700 text-white text-sm focus:outline-none pr-12"
             />
