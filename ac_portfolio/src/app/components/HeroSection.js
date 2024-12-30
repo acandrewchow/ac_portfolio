@@ -26,12 +26,18 @@ const HeroSection = () => {
 
   const [messages, setMessages] = useState([
     {
-      text: "Hello, I'm Andrew, a 5th-year Software Engineering student at the University of Guelph, set to graduate in May 2025. Feel free to take a look around my website!",
+      text: "Hello, I'm Andrew, a 5th-year Software Engineering student at the University of Guelph, set to graduate in May 2025. I am currently looking for New Grad Opportunities for Spring 2025. Feel free to take a look around my website!",
       isSender: false,
     },
     {
-      text: "I am currently looking for New Grad Opportunities for Spring 2025 :)",
+      text: "You can visit my blog where I talk about my internship experiences",
       isSender: false,
+      link: "https://andrewchow.ca/blog",
+    },
+    {
+      text: "Otherwise, feel free to take a sneak peek at my gallery",
+      isSender: false,
+      link: "https://andrewchow.ca/gallery",
     },
     {
       text: "Can I ask you more questions?",
@@ -175,7 +181,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 0.5,
-                  delay: index < 4 ? index * 1 : 0.5, // Longer delay for initial messages, shorter delay for new ones
+                  delay: index < 5 ? index * 1 : 0.5,
                 }}
                 className={`flex items-start ${
                   msg.isSender ? "justify-end" : "justify-start"
@@ -184,13 +190,27 @@ const HeroSection = () => {
                 <div
                   className={`max-w-xs p-3 rounded-3xl text-sm break-words ${
                     msg.isSender
-                      ? platform === "iOS" || platform === "MacIntel"
+                      ? platform === "iOS" || platform === "Mac"
                         ? "bg-blue-500 text-white ml-auto"
                         : "bg-green-500 text-white ml-auto"
                       : "bg-zinc-700 text-white"
                   }`}
                 >
-                  {msg.text}
+                  {msg.link ? (
+                    <>
+                      {msg.text}{" "}
+                      <a
+                        href={msg.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 underline"
+                      >
+                        {msg.link}
+                      </a>
+                    </>
+                  ) : (
+                    msg.text
+                  )}
                 </div>
               </motion.div>
             ))}
