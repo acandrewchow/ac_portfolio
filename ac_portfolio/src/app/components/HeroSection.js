@@ -15,12 +15,12 @@ const HeroSection = () => {
     {
       text: "You can visit my blog where I talk about my co-op experiences -",
       isSender: false,
-      link: "andrewchow.ca/blog",
+      link: "https://andrewchow.ca/blog",
     },
     {
       text: "Otherwise, feel free to take a sneak peek at my gallery",
       isSender: false,
-      link: "andrewchow.ca/gallery",
+      link: "https://andrewchow.ca/gallery",
     },
     {
       text: "Can I ask you more questions?",
