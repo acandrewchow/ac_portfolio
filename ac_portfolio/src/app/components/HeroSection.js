@@ -7,18 +7,18 @@ import ProfilePicture from "../../../public/profile_pic_banff.jpg";
 const HeroSection = () => {
   const [messages, setMessages] = useState([
     {
-      text: "Hello, I'm Andrew, a 5th-year Software Engineering student at the University of Guelph, set to graduate in May 2025. I am currently looking for New Grad roles for Spring 2025",
+      text: "👋 Hi! I’m Andrew, a Software Engineering student graduating in May 2025. I’m excited to connect and explore New Grad opportunities for Spring 2025. Let’s chat! 😊",
       // image: "/profile_pic_banff.jpg",
       altText: "Andrew's Profile Picture",
       isSender: false,
     },
     {
-      text: "You can visit my blog where I talk about my co-op experiences -",
+      text: "📝 Check out my blog, where I share insights from my co-op experiences! 🚀",
       isSender: false,
       link: "https://andrewchow.ca/blog",
     },
     {
-      text: "Otherwise, feel free to take a sneak peek at my gallery",
+      text: "🎨 Explore my gallery for a glimpse into my photography and adventures! 🌟",
       isSender: false,
       link: "https://andrewchow.ca/gallery",
     },
@@ -48,7 +48,10 @@ const HeroSection = () => {
 
     if (userMessage.toLowerCase().includes("experience")) {
       reply =
-        "I have experience in developing scalable applications and working with multiple languages and frameworks, ranging from Elixir to React! In addition, I'm a teaching assistant for various computer science courses, including UI Design, Intro/Intermediate Programming and Web Development";
+        "🔧 I’ve worked on scalable apps using technologies like Elixir and React! 👩‍🏫 I also teach UI Design, Web Development, and Programming courses as a TA. Let me know if you’d like to learn more!";
+    } else if (userMessage.toLowerCase().includes("skills")) {
+      reply =
+        "🚀 I’m skilled in Back-end Development and UI/UX Design. I’m also familiar with technologies like React, Node.js, Elixir, and Python! 💻";
     } else if (userMessage.toLowerCase().includes("about")) {
       reply =
         "I'm a Software Engineering student at the University of Guelph, and I enjoy working on challenging technical problems.";
@@ -111,7 +114,7 @@ const HeroSection = () => {
       reply = "Hi there! How can I help you today?";
     } else {
       reply =
-        "I'm sorry, I don't understand that question. Please ask me something else!";
+        "🤔 Hmm, I’m not sure about that! Try asking about my skills, experience, or even for my resume";
     }
 
     // Delay the reply
