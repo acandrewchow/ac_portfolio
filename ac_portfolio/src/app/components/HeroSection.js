@@ -8,7 +8,7 @@ const HeroSection = () => {
   const [messages, setMessages] = useState([
     {
       text: "Hello, I'm Andrew, a 5th-year Software Engineering student at the University of Guelph, set to graduate in May 2025. I am currently looking for New Grad roles for Spring 2025",
-      image: "/profile_pic_banff.jpg",
+      // image: "/profile_pic_banff.jpg",
       altText: "Andrew's Profile Picture",
       isSender: false,
     },
