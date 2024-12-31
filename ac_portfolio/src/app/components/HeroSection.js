@@ -140,7 +140,7 @@ const HeroSection = () => {
   return (
     <div className="flex justify-center items-center min-h-screen">
       <div className="relative bg-black w-full max-w-full sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl h-[750px] rounded-3xl shadow-xl flex flex-col">
-        <div className="absolute left-0 right-0 h-16 bg-zinc-800 rounded-t-3xl"></div>
+        <div className="absolute left-0 right-0 h-16 bg-zinc-800 filter blur-lg"></div>
         <div className="absolute left-1/2 transform -translate-x-1/2 text-white font-semibold text-xs top-12">
           Andrew Chow
         </div>
@@ -179,7 +179,7 @@ const HeroSection = () => {
                   className={`max-w-xs p-3 rounded-3xl text-sm break-words ${
                     msg.isSender
                       ? "bg-blue-500 text-white ml-auto"
-                      : "bg-zinc-700 text-white"
+                      : "bg-zinc-800 text-white"
                   }`}
                 >
                   {msg.link ? (
