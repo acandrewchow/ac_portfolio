@@ -7,9 +7,13 @@ import ProfilePicture from "../../../public/profile_pic_banff.jpg";
 const HeroSection = () => {
   const [messages, setMessages] = useState([
     {
-      text: "👋 Hi! I’m Andrew, a Software Engineering student graduating in May 2025. I’m excited to connect and explore New Grad opportunities for Spring 2025. Let’s chat! 😊",
+      text: "👋 Hi! I’m Andrew, a Software Engineering student at the University of Guelph, set to graduate in May 2025.",
       // image: "/profile_pic_banff.jpg",
       altText: "Andrew's Profile Picture",
+      isSender: false,
+    },
+    {
+      text: "💻 I've previously worked at theScore as a Software Engineer, where I built 🎉 promotional features for over 5️⃣ million users across theScoreBet and 🏀 ESPN Bet platforms!",
       isSender: false,
     },
     {
@@ -23,11 +27,7 @@ const HeroSection = () => {
       link: "https://andrewchow.ca/gallery",
     },
     {
-      text: "Can I ask you more questions?",
-      isSender: true,
-    },
-    {
-      text: "Sure thing, Ask me anything! 🙂",
+      text: "Otherwise, feel free to ask me anything!",
       isSender: false,
     },
   ]);
