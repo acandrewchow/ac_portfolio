@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import ParticlesBackground from "./components/ParticlesBackground";
 import HeroSection from "./components/HeroSection";
+import OldHeroSection from "./components/OldHeroSection";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import BackToTopButton from "./components/BackToTopButton";
@@ -52,11 +53,12 @@ export default function Home() {
       <main className="bg-white dark:bg-zinc-900">
         <section className="min-h-screen">
           <ParticlesBackground darkMode={darkMode} />
-          {/* <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> */}
-          <HeroSection darkMode={darkMode} />
+          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          {/* <HeroSection darkMode={darkMode} /> */}
+          <OldHeroSection />
         </section>
-        {/* <Footer darkMode={darkMode} /> */}
-        {/* <BackToTopButton /> */}
+        <Footer darkMode={darkMode} />
+        <BackToTopButton />
       </main>
     </div>
   );
