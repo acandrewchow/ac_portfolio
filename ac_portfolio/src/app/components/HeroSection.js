@@ -27,7 +27,7 @@ const HeroSection = () => {
         transition={{ duration: 1, delay: 0.2 }}
       >
         <div className="text-left font-firacode leading-7 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-md mb-8">
-          {aboutData.map(([paragraph]) => (
+          {aboutData.map((paragraph) => (
             <p key={paragraph.id} className="mb-4">
               {paragraph.text}
             </p>
