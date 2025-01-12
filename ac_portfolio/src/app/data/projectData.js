@@ -28,7 +28,7 @@ export const projectsData = [
     name: "Cannon Housing Scraper",
     description:
       "An app, hosted on an EC2 instance that scrapes listings off Cannon hourly via cron, notifying students via SMS with the latest house rentals within the area",
-    skills: ["Next.js", "Tailwind CSS", "React", "Twilio"],
+    skills: ["Python", "SQLite3", "AWS", "Twilio", "Streamlit"],
     github: "https://github.com/acandrewchow/cannon-housing-scraper",
   },
   {
