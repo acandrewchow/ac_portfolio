@@ -55,7 +55,7 @@ export default function Home() {
           <ParticlesBackground darkMode={darkMode} />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <HeroSection />
-          <ProjectSection />
+          {/* <ProjectSection /> */}
         </section>
         <Footer darkMode={darkMode} />
         <BackToTopButton />
