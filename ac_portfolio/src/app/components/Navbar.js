@@ -49,6 +49,13 @@ const Navbar = ({ toggleDarkMode }) => {
         >
           blog
         </Link>
+
+        <Link
+          href="/projects"
+          className="text-black dark:text-white mr-4 text-lg hover:scale-105 transform transition duration-300 ml-8"
+        >
+          projects
+        </Link>
         <Link
           href="/gallery"
           className="text-black dark:text-white mr-8 text-lg hover:scale-105 transform transition duration-300 ml-4"
@@ -104,6 +111,9 @@ const Navbar = ({ toggleDarkMode }) => {
           </li>
           <li className="mb-8 text-xl hover:scale-105 ">
             <Link href="/blog">blog</Link>
+          </li>
+          <li className="mb-8 text-xl hover:scale-105 ">
+            <Link href="/projects">projects</Link>
           </li>
           <li className="mb-8 text-xl hover:scale-105 ">
             <Link href="/gallery">gallery</Link>
