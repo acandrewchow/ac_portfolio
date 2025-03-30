@@ -12,7 +12,7 @@ const Navbar = ({ toggleDarkMode }) => {
 
   return (
     <nav
-      className={`font-firacode px-4 md:px-52 py-6 flex justify-between ${
+      className={`px-4 md:px-52 py-6 flex justify-between ${
         isMobileMenuOpen
           ? "bg-white dark:bg-zinc-900 dark:text-white"
           : "bg-white dark:bg-zinc-900"

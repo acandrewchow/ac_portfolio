@@ -15,6 +15,7 @@ import {
   SiFigma,
   SiExpress,
   SiNestjs,
+  SiTypescript,
 } from "react-icons/si";
 
 export const skillsData = [
@@ -24,10 +25,11 @@ export const skillsData = [
   { name: "Elixir", icon: SiElixir, delay: 0.5 },
   { name: "C", icon: SiC, delay: 0.6 },
   { name: "Javascript", icon: SiJavascript, delay: 0.7 },
-  { name: "HTML", icon: SiHtml5, delay: 0.8 },
-  { name: "CSS", icon: SiCss3, delay: 0.9 },
-  { name: "GraphQL", icon: SiGraphql, delay: 1.0 },
-  { name: "Next.js", icon: SiNodedotjs, delay: 1.1 },
+  { name: "Typescript", icon: SiTypescript, delay: 0.8 },
+  { name: "HTML", icon: SiHtml5, delay: 0.9 },
+  { name: "CSS", icon: SiCss3, delay: 1.0 },
+  { name: "GraphQL", icon: SiGraphql, delay: 1.1 },
+  { name: "Next.js", icon: SiNodedotjs, delay: 1.2 },
   { name: "Node.js", icon: SiNextdotjs, delay: 1.3 },
   { name: "Nest.js", icon: SiNestjs, delay: 1.4 },
   { name: "Express.js", icon: SiExpress, delay: 1.5 },
