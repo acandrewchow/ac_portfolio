@@ -142,18 +142,23 @@ const HeroSection = () => {
                     transition={{ duration: 0.5, delay: 1.2 + index * 0.2 }}
                     className="group p-6 rounded-xl bg-white/50 dark:bg-zinc-800/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20 dark:border-zinc-700/20"
                   >
-                    <div className="flex items-start gap-4">
+                    <div className="flex flex-col sm:flex-row items-start gap-4">
                       <div className="p-3 rounded-lg bg-blue-100 dark:bg-blue-900/30">
                         <experience.icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                       </div>
                       <div className="flex-1">
-                        <div className="flex justify-between items-start mb-2">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-2">
                           <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
                             {experience.role}
                           </h4>
-                          <span className="text-sm text-gray-500 dark:text-gray-400">
-                            {experience.period}
-                          </span>
+                          <div className="flex flex-col items-start sm:items-end">
+                            <span className="text-sm text-gray-500 dark:text-gray-400">
+                              {experience.period}
+                            </span>
+                            <span className="text-sm text-gray-500 dark:text-gray-400">
+                              {experience.location}
+                            </span>
+                          </div>
                         </div>
                         <p className="text-gray-700 dark:text-gray-300 mb-3">
                           {experience.company}

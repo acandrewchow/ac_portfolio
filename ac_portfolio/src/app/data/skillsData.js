@@ -37,5 +37,6 @@ export const skillsData = [
   { name: "Tailwind", icon: SiTailwindcss, delay: 1.7 },
   { name: "Kubernetes", icon: SiKubernetes, delay: 1.8 },
   { name: "PostgreSQL", icon: SiPostgresql, delay: 1.9 },
-  { name: "Figma", icon: SiFigma, delay: 2.0 },
+  { name: "Docker", icon: FaDocker, delay: 2.0 },
+  { name: "Figma", icon: SiFigma, delay: 2.1 },
 ];

@@ -6,6 +6,7 @@ export const experienceData = [
     company: "University of Guelph",
     role: "Teaching Assistant",
     period: "January 2023 - April 2025",
+    location: "Guelph, ON",
     description:
       "Led tutorials and labs for the following courses: CIS*1050, CIS*1200, CIS*1300, CIS*2170, CIS*2500",
     skills: [
@@ -24,6 +25,7 @@ export const experienceData = [
     company: "theScore",
     role: "Software Developer Intern",
     period: "January 2024 - August 2024",
+    location: "Toronto, ON",
     description:
       "Contributed to the development of theScoreBet/ESPN Bet's Refer-A-Friend Program for over 5 million users across North America, allowing users to refer others to participate and earn rewards, increasing user engagement and reducing customer acquisition costs significantly",
     skills: ["Elixir", "Phoenix", "PostgreSQL", "gRPC", "Kafka", "DataDog"],
@@ -34,6 +36,7 @@ export const experienceData = [
     company: "theScore",
     role: "Software Developer Intern",
     period: "May 2023 - August 2023",
+    location: "Toronto, ON",
     description:
       "Building reward-based user experiences for patrons across North America. Contributed to the development of Promotional Credits, a playable award that is used by users within theScoreBet/ESPN Bet",
     skills: ["Elixir", "Phoenix", "PostgreSQL", "gRPC", "Kafka", "DataDog"],
@@ -44,6 +47,7 @@ export const experienceData = [
     company: "theScore",
     role: "QA Analyst Intern",
     period: "May 2022 - December 2022",
+    location: "Toronto, ON",
     description:
       "Contributed to the release of theScore's proprietary in-house risk and trading platform and other promotional features, including Parlay+, Leg Grading and Opt-In",
     skills: [
