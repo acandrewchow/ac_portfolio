@@ -43,7 +43,7 @@ export const experienceData = [
     id: 4,
     company: "theScore",
     role: "QA Analyst Intern",
-    period: "May 2022 - August 2022",
+    period: "May 2022 - December 2022",
     description:
       "Contributed to the release of theScore's proprietary in-house risk and trading platform and other promotional features, including Parlay+, Leg Grading and Opt-In",
     skills: [
