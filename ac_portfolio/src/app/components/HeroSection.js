@@ -12,7 +12,6 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-zinc-900 dark:to-zinc-900 opacity-50" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.1),transparent_50%)]" />
 
       <div className="relative max-w-7xl mx-auto w-full">
         <motion.div
