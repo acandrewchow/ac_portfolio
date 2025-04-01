@@ -30,7 +30,7 @@ const HeroSection = () => {
   return (
     <div
       id="About"
-      className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden bg-white dark:bg-zinc-900"
+      className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden"
     >
       <div className="relative max-w-7xl mx-auto w-full">
         <motion.div
