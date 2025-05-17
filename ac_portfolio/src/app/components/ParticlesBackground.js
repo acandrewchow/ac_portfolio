@@ -2,7 +2,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useState, useEffect } from "react";
 
-const ParticlesBackground = ({ darkMode }) => {
+const ParticlesBackground = () => {
   const [particleSize, setParticleSize] = useState(4);
   const [lineDistance, setLineDistance] = useState(600);
   const [density, setDensity] = useState(2000);
@@ -40,7 +40,7 @@ const ParticlesBackground = ({ darkMode }) => {
             },
           },
           color: {
-            value: darkMode ? "#ffffff" : "#000000",
+            value: "#ffffff",
           },
           shape: {
             type: "star",
@@ -81,7 +81,7 @@ const ParticlesBackground = ({ darkMode }) => {
             enable: true,
             distance: 150,
             color: {
-              value: darkMode ? "#ffffff" : "#000000",
+              value: "#ffffff",
             },
             opacity: 0.2,
             width: 1,
@@ -144,4 +144,4 @@ const ParticlesBackground = ({ darkMode }) => {
   );
 };
 
-export default ParticlesBackground;
+export default ParticlesBackground; 

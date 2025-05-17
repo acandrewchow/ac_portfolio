@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import Link from "next/link";
 import ResumeLink from "./ResumeLink";
 
-const Navbar = ({ toggleDarkMode }) => {
+const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -14,17 +13,17 @@ const Navbar = ({ toggleDarkMode }) => {
     <nav
       className={`px-4 md:px-52 py-6 flex justify-between ${
         isMobileMenuOpen
-          ? "bg-white dark:bg-zinc-900 dark:text-white"
-          : "bg-white dark:bg-zinc-900"
+          ? "bg-zinc-900 text-white"
+          : "bg-zinc-900"
       } sticky top-0 z-50`}
     >
-      <h1 className="text-black dark:text-white font-yuji text-3xl">
+      <h1 className="text-white font-yuji text-3xl">
         <Link href="/">AC</Link>
       </h1>
       <div className="md:hidden">
         <button
           onClick={toggleMobileMenu}
-          className="dark:text-white focus:outline-none"
+          className="text-white focus:outline-none"
         >
           <svg
             className="w-10 h-10"
@@ -45,27 +44,23 @@ const Navbar = ({ toggleDarkMode }) => {
         <ResumeLink />
         <Link
           href="/blog"
-          className="text-black dark:text-white mr-4 text-lg hover:scale-105 transform transition duration-300 ml-8"
+          className="text-white mr-4 text-lg hover:scale-105 transform transition duration-300 ml-8"
         >
           blog
         </Link>
 
         <Link
           href="/projects"
-          className="text-black dark:text-white mr-4 text-lg hover:scale-105 transform transition duration-300 ml-8"
+          className="text-white mr-4 text-lg hover:scale-105 transform transition duration-300 ml-8"
         >
           projects
         </Link>
         <Link
           href="/gallery"
-          className="text-black dark:text-white mr-8 text-lg hover:scale-105 transform transition duration-300 ml-4"
+          className="text-white mr-8 text-lg hover:scale-105 transform transition duration-300 ml-4"
         >
           gallery
         </Link>
-        <BsFillMoonStarsFill
-          onClick={toggleDarkMode}
-          className="text-2xl cursor-pointer dark:text-white hover:scale-105 transform transition duration-300"
-        />
       </div>
 
       <div
@@ -77,7 +72,7 @@ const Navbar = ({ toggleDarkMode }) => {
         onClick={toggleMobileMenu}
       />
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-full bg-zinc-100 dark:bg-zinc-800 transform transition-transform ${
+        className={`md:hidden fixed top-0 right-0 h-full w-full bg-zinc-800 transform transition-transform ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -100,12 +95,6 @@ const Navbar = ({ toggleDarkMode }) => {
           </svg>
         </button>
         <ul className="flex flex-col items-center justify-center h-full">
-          <li className="mb-8 text-2xl hover:scale-105 ">
-            <BsFillMoonStarsFill
-              onClick={toggleDarkMode}
-              className="cursor-pointer"
-            />
-          </li>
           <li className="mb-8 text-xl hover:scale-105 ">
             <Link href="/">home</Link>
           </li>

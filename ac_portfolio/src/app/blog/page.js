@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Head from "next/head";
-import ParticlesBackground from "../components/ParticlesBackground";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import BlogPostCard from "../components/BlogPostCard";
@@ -9,9 +8,9 @@ import Link from "next/link";
 import BackToTopButton from "../components/BackToTopButton";
 import { blogPostData } from "../data/blogPostData";
 import { motion } from "framer-motion";
+import ParticlesBackground from "../components/ParticlesBackground";
 
 export default function BlogHome() {
-  const [darkMode, setDarkMode] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
 
   const postsPerPage = 5;
@@ -20,10 +19,6 @@ export default function BlogHome() {
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = blogPostData.slice(indexOfFirstPost, indexOfLastPost);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
 
   const renderPageNumbers = () => {
     const pageNumbers = [];
@@ -35,13 +30,9 @@ export default function BlogHome() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className={`mx-1 px-4 py-2 rounded-lg transition-all duration-300 ${
-            darkMode
-              ? i === currentPage
-                ? "bg-blue-600 text-white shadow-lg shadow-blue-500/20"
-                : "bg-zinc-800/50 text-gray-400 hover:bg-zinc-700/50"
-              : i === currentPage
-              ? "bg-blue-500 text-white shadow-lg shadow-blue-500/20"
-              : "bg-zinc-100 text-gray-700 hover:bg-zinc-200"
+            i === currentPage
+              ? "bg-blue-600 text-white shadow-lg shadow-blue-500/20"
+              : "bg-zinc-800/50 text-gray-400 hover:bg-zinc-700/50"
           }`}
         >
           {i}
@@ -52,21 +43,21 @@ export default function BlogHome() {
   };
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <Head>
         <title>Andrew Chow's Blogs</title>
         <meta name="description" content="Your blog description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ParticlesBackground darkMode={darkMode} />
-      <main className="bg-white dark:bg-zinc-900 min-h-screen">
+      {/* <ParticlesBackground /> */}
+      <main className="bg-zinc-900 min-h-screen">
         <section className="min-h-screen">
-          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <Navbar />
 
           <div className="relative max-w-4xl mx-auto px-6 py-16">
             {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-zinc-900 dark:to-zinc-900 opacity-50 rounded-3xl" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.1),transparent_50%)] rounded-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 to-zinc-900 opacity-50 rounded-3xl" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.1),transparent_50%)] rounded-3xl" />
 
             <div className="relative z-10">
               <motion.div
@@ -75,10 +66,10 @@ export default function BlogHome() {
                 transition={{ duration: 0.8 }}
                 className="text-center mb-16"
               >
-                <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 dark:from-blue-400 dark:via-purple-400 dark:to-blue-400 mb-4">
+                <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 mb-4">
                   Blog
                 </h1>
-                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                <p className="text-lg text-gray-300 max-w-2xl mx-auto">
                   Documenting my adventures in the world of software
                 </p>
               </motion.div>
@@ -104,7 +95,6 @@ export default function BlogHome() {
                         date={post.date}
                         description={post.description}
                         tags={post.tags}
-                        darkMode={darkMode}
                       />
                     </Link>
                   </motion.div>
@@ -123,7 +113,7 @@ export default function BlogHome() {
             </div>
           </div>
         </section>
-        <Footer darkMode={darkMode} />
+        <Footer />
         <BackToTopButton />
       </main>
     </div>

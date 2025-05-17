@@ -15,7 +15,7 @@ export default function ProjectsHome() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <ParticlesBackground darkMode={darkMode} />
+      {/* <ParticlesBackground darkMode={darkMode} /> */}
       <main className="bg-white dark:bg-zinc-900 min-h-screen">
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <section className="container mx-auto px-4 py-16">

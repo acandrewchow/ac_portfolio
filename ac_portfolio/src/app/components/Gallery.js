@@ -60,7 +60,7 @@ const Gallery = ({ photos }) => {
   return (
     <div className="space-y-8">
       {/* Search and Filter Section */}
-      <div className="bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-white/20 dark:border-zinc-700/20">
+      <div className="bg-zinc-800/80 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-zinc-700/20">
         <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
           {/* Search Bar */}
           <div className="relative flex-1 w-full">
@@ -69,13 +69,13 @@ const Gallery = ({ photos }) => {
               placeholder="Search photos..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-2 pl-10 rounded-lg bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
+              className="w-full px-4 py-2 pl-10 rounded-lg bg-zinc-900 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white placeholder-gray-400"
             />
-            <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500" />
+            <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery("")}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-300"
               >
                 <FaTimes />
               </button>
@@ -93,7 +93,7 @@ const Gallery = ({ photos }) => {
                 className={`px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 ${
                   selectedTags.includes(tag)
                     ? "bg-blue-500 text-white"
-                    : "bg-gray-100 dark:bg-zinc-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-zinc-600"
+                    : "bg-zinc-700 text-gray-300 hover:bg-zinc-600"
                 }`}
               >
                 {tag}

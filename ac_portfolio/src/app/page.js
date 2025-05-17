@@ -1,19 +1,13 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Head from "next/head";
-import ParticlesBackground from "./components/ParticlesBackground";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import BackToTopButton from "./components/BackToTopButton";
+import ParticlesBackground from "./components/ParticlesBackground";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://www.googletagmanager.com/gtag/js?id=G-504QE7Y45C";
@@ -31,7 +25,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <Head>
         <title>Andrew Chow</title>
         <meta name="description" content="Personal Portfolio" />
@@ -49,13 +43,13 @@ export default function Home() {
         <meta property="og:site_name" content="Andrew Chow's Site" />
         <link rel="icon" href="./favicons/favicon.ico" />
       </Head>
-      <main className="bg-white dark:bg-zinc-900">
+      <main className="bg-zinc-900">
         <section className="min-h-screen">
-          <ParticlesBackground darkMode={darkMode} />
-          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          {/* <ParticlesBackground /> */}
+          <Navbar />
           <HeroSection />
         </section>
-        <Footer darkMode={darkMode} />
+        <Footer />
         <BackToTopButton />
       </main>
     </div>

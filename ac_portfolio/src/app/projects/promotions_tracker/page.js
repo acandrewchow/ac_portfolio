@@ -23,7 +23,7 @@ const PromotionsTracker = () => {
         <meta name="description" content="TSB Promotions Tracker" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ParticlesBackground darkMode={darkMode} />
+      {/* <ParticlesBackground darkMode={darkMode} /> */}
 
       <main className="bg-white dark:bg-zinc-900 px-4 md:px-8">
         <section className="min-h-screen">

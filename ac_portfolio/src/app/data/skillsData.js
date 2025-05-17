@@ -16,6 +16,7 @@ import {
   SiExpress,
   SiNestjs,
   SiTypescript,
+  SiAmazonaws,
 } from "react-icons/si";
 
 export const skillsData = [
@@ -31,7 +32,7 @@ export const skillsData = [
   { name: "GraphQL", icon: SiGraphql, delay: 1.1 },
   { name: "Next.js", icon: SiNextdotjs, delay: 1.2 },
   { name: "Node.js", icon: SiNodedotjs, delay: 1.3 },
-  { name: "Nest.js", icon: SiNestjs, delay: 1.4 },
+  { name: "AWS", icon: SiAmazonaws, delay: 1.4 },
   { name: "Express.js", icon: SiExpress, delay: 1.5 },
   { name: "Phoenix", icon: SiPhoenixframework, delay: 1.6 },
   { name: "Tailwind", icon: SiTailwindcss, delay: 1.7 },

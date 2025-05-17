@@ -2,6 +2,17 @@ import { FaCode, FaMobile, FaSchool } from "react-icons/fa";
 
 export const experienceData = [
   {
+    id: 5,
+    company: "Mistplay",
+    role: "Software Engineer Intern",
+    period: "May 2025 - Present",
+    location: "Toronto, ON",
+    description:
+      "Platform Engineering",
+    skills: ["TypeScript", "JavaScript", "ExpressJS", "PostgreSQL", "AWS", "DynamoDB", "Redis"],
+    icon: FaCode,
+  },
+  {
     id: 1,
     company: "University of Guelph",
     role: "Teaching Assistant",
